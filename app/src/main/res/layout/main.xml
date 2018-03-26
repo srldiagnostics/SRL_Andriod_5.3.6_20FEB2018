@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+                     xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                     android:layout_margin="10dp"
+                    android:background="@drawable/bg_search_bar1"
+                    android:paddingLeft="4dp"
+                    android:paddingRight="4dp">
+
+        <ImageView
+            android:id="@+id/iv_magnify"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_magnify" />
+
+        <ImageView
+            android:id="@+id/iv_clear"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_close_circle"
+            android:visibility="gone" />
+
+        <com.srllimited.srl.constants.ClearableAutoTextView
+            android:id="@+id/auto_text_2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+
+            android:layout_marginRight="8dp"
+            android:hint="Google places text"
+            android:paddingLeft="10dp"
+            android:maxLines="1"
+            android:layout_toLeftOf="@+id/iv_clear"
+            android:layout_toRightOf="@+id/iv_magnify"
+            android:singleLine="true"
+            android:textCursorDrawable="@drawable/color_cursor"
+            android:textColor="@android:color/black"
+            android:textSize="14sp"
+            app:google_places_api_key="@string/google_maps_api_key"/>
+
+    </RelativeLayout>

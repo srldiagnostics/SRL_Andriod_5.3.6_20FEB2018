@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="#bb000000"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/close"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="true"
+            android:scaleType="centerInside"
+            android:src="@drawable/menu_close_icon"/>
+
+        <TextView
+            android:id="@+id/heading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="@string/filters_text"
+            android:textColor="@color/white"
+            android:textSize="20sp"/>
+
+
+        <TextView
+            android:id="@+id/apply"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="@string/filter_apply"
+            android:textColor="@color/white"
+            android:textSize="20sp"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/layout_margin_default"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <CheckBox
+            android:id="@+id/filter_pacakge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/layout_padding_default"
+            android:text="@string/filter_package_text"
+            android:textColor="@color/HeaderTitleColor"
+           />
+
+        <CheckBox
+            android:id="@+id/filter_test"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/layout_padding_default"
+            android:text="@string/filter_test_text"
+            android:textColor="@color/HeaderTitleColor"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/bg_color_book_now"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/layout_margin_default"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:textColor="@color/HeaderTitleColor"
+                android:text="@string/filter_condition_text"
+                android:textSize="20sp"/>
+            <ScrollView
+                android:id="@+id/ScrlView"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent" >
+            <RadioGroup
+                android:id="@+id/filter_radio_group"
+                android:layout_width="match_parent"
+                android:textColor="@color/HeaderTitleColor"
+                android:layout_height="match_parent">
+
+
+            </RadioGroup>
+            </ScrollView>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

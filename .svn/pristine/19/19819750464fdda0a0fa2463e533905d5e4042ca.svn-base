@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/graphrel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp">
+
+        <TextView
+            android:id="@+id/txtptntcd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="4dp"
+            android:text="dfgdfg"
+            android:layout_marginLeft="4dp"
+            android:textSize="@dimen/twelve"/>
+        <TextView
+            android:id="@+id/txtpatientName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_toRightOf="@+id/txtptntcd"
+            android:paddingRight="3dp"
+            android:layout_weight="5"
+            android:text="gdfgdf"
+            android:textSize="@dimen/twelve"/>
+
+
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,36 @@
+package com.srllimited.srl;
+
+import com.srllimited.srl.serverapis.ApiRequestManager;
+
+import android.app.Application;
+import android.content.Context;
+import android.support.multidex.MultiDex;
+
+/**
+ * Created by RuchiTiwari on 1/9/2017.
+ */
+public class SRLApplication extends Application
+{
+	public static SRLApplication mInstance1;
+	private static SRLApplication mInstance;
+
+	public static synchronized SRLApplication getInstance()
+	{
+		return mInstance;
+	}
+
+	@Override
+	public void onCreate()
+	{
+		super.onCreate();
+		mInstance = this;
+		ApiRequestManager.startup(this);
+	}
+
+	@Override
+	protected void attachBaseContext(final Context base)
+	{
+		super.attachBaseContext(base);
+		MultiDex.install(this);
+	}
+}

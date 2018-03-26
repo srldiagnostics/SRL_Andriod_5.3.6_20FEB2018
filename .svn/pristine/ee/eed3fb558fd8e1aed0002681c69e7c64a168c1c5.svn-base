@@ -1,0 +1,3 @@
+# view AndroidManifest.xml #generated:59
+-keep class com.srllimited.srl.SRLApplication { <init>(...); }
+

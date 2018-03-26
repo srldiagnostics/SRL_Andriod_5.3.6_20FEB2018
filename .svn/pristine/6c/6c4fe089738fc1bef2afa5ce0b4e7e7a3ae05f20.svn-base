@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroud"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/poweredbyimg"
+       >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="@dimen/default_image_size_two"
+                android:layout_height="@dimen/default_image_size_two"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="16dp"
+                android:src="@drawable/login_logo" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#eee" />
+
+            <TextView
+                android:id="@+id/versionnum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="10dp"
+                android:text="VERSION 5.1.7"
+                android:textColor="@color/lightGreen"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#eee" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:padding="@dimen/layout_padding_default">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/default_padding_one"
+                    android:background="@color/white"
+                    android:text="@string/about_us_heading"
+                    android:textColor="#555"
+                    android:textSize="14sp"
+                    android:visibility="gone" />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/layout_margin_default"
+                    android:text="Key Features"
+                    android:textSize="@dimen/default_text_size_one"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/about_us_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/default_padding_one"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#eee" />
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+    <LinearLayout
+        android:id="@+id/poweredbyimg"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:gravity="center"
+        android:paddingBottom="10dp"
+        android:visibility="gone"
+        android:layout_alignParentStart="true">
+        <TextView
+            android:id="@+id/poweredbytext"
+            android:layout_width="wrap_content"
+            android:text="Made with"
+            android:paddingLeft="10dp"
+            android:textColor="@color/menuitemcolor"
+            android:layout_gravity="center_vertical"
+            android:textStyle="bold"
+            android:textSize="16dp"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:id="@+id/love"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center_vertical"
+            android:scaleType="centerCrop"
+            android:layout_marginLeft="5dp"
+            android:layout_above="@+id/poweredbytext"
+            android:src="@drawable/hearts" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="by"
+            android:paddingLeft="5dp"
+            android:textColor="@color/menuitemcolor"
+            android:layout_gravity="center_vertical"
+            android:textStyle="bold"
+            android:textSize="16dp"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_gravity="center_vertical"
+            android:layout_above="@+id/poweredbytext"
+            android:src="@drawable/poweredby2" />
+
+
+    </LinearLayout>
+</RelativeLayout>

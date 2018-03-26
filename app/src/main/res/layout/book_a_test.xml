@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/progress_frame_layout"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@color/colorPrimary"
+            android:padding="6dp">
+
+
+            <com.srllimited.srl.widget.UISearchBar
+                android:id="@+id/searchView"
+                android:layout_width="match_parent"
+                android:layout_height="38dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="4dp"
+                android:layout_toLeftOf="@+id/filterlin"/>
+
+            <LinearLayout
+                android:id="@+id/filterlin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="3dp"
+                android:background="@drawable/filter_rect_bg"
+                android:orientation="horizontal"
+                android:padding="4dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical"
+                    android:padding="5dp"
+                    android:text="Filter"
+                    android:textSize="15dp"/>
+
+                <ImageView
+                    android:id="@+id/filter_img_view"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/fliter_icon"/>
+
+            </LinearLayout>
+        </RelativeLayout>
+
+        <com.srllimited.srl.widget.materialtabs.MaterialTabHost
+            android:id="@+id/textTabHost"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:visibility="gone"
+            app:accentColor="@color/colorPrimaryDark"
+            app:materialTabHostScrollable="true"
+            app:materialTabHostsTextSize="16"
+            app:materialTabsPrimaryColor="@color/lightgrey"
+            app:textColor="@color/colorPrimaryDark"/>
+
+        <TextView
+            android:id="@+id/count_packages"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="Found 26 packages on All Health Packages"
+            android:textColor="@color/lightblue"
+            android:textSize="15dp"
+            android:visibility="gone"/>
+
+        <LinearLayout
+            android:id="@+id/book_test_offer_layout"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/mostpopular"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="@drawable/bg_srl_location"
+                android:gravity="center_vertical"
+                android:padding="@dimen/default_padding_two"
+                android:text="@string/book_most_popular_tests"
+                android:textColor="@color/colorPrimary"
+                android:textSize="18dp"/>
+
+            <ImageView
+                android:id="@+id/offers"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_weight="4"
+                android:background="@drawable/offers"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1.3"
+                android:background="@color/white"
+                android:gravity="center_vertical|left"
+                android:orientation="horizontal"
+                android:padding="@dimen/default_margin_ledt"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/book_test_code"
+                    android:textSize="13dp"
+                    android:textStyle="bold"
+
+                    />
+
+                <ImageView
+                    android:layout_width="@dimen/default_image_size_three"
+                    android:layout_height="@dimen/settings_toggle_circle_radius"
+                    android:layout_marginLeft="@dimen/default_margin_ledt"
+                    android:background="@drawable/sort_icon"
+                    android:scaleType="centerInside"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="wrap_content"
+                android:background="@color/bg_color_book_now"/>
+
+            <LinearLayout
+                android:id="@+id/sortestname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1.2"
+                android:background="@color/white"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="@dimen/default_margin_ledt">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/book_test_name"
+                    android:textSize="13dp"
+                    android:textStyle="bold"
+
+                    />
+
+                <ImageView
+                android:id="@+id/testsorticon"
+                android:layout_width="@dimen/default_image_size_three"
+                android:layout_height="@dimen/settings_toggle_circle_radius"
+                android:layout_marginLeft="@dimen/default_margin_ledt"
+                android:background="@drawable/sort_icon"
+                android:scaleType="centerInside"/>
+
+                <ImageView
+                    android:id="@+id/testsorttopicon"
+                    android:layout_width="@dimen/default_image_size_three"
+                    android:layout_height="@dimen/settings_toggle_circle_radius"
+                    android:layout_marginLeft="@dimen/default_margin_ledt"
+                    android:background="@drawable/sort_icon_top"
+                    android:visibility="gone"
+                    android:scaleType="centerInside"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="wrap_content"
+                android:background="@color/bg_color_book_now"/>
+
+            <LinearLayout
+                android:id="@+id/sortprice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1.1"
+                android:background="@color/white"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="@dimen/default_margin_ledt">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/book_price"
+                    android:textSize="15dp"
+                    android:textStyle="bold"/>
+
+                <ImageView
+
+                    android:layout_width="@dimen/default_image_size_three"
+                    android:layout_height="@dimen/settings_toggle_circle_radius"
+                    android:layout_marginLeft="@dimen/default_margin_ledt"
+                    android:background="@drawable/sort_icon"
+                    android:scaleType="centerInside"
+                    android:id="@+id/pricesorticon" />
+
+                <ImageView
+
+                    android:layout_width="@dimen/default_image_size_three"
+                    android:layout_height="@dimen/settings_toggle_circle_radius"
+                    android:layout_marginLeft="@dimen/default_margin_ledt"
+                    android:background="@drawable/sort_icon_top"
+                    android:scaleType="centerInside"
+                    android:visibility="gone"
+                    android:id="@+id/pricesorttopicon" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/bg_color_book_now"/>
+
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/swipeRefreshLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/test_receyclerview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/default_margin_ledt"
+                android:scrollbarFadeDuration="0"
+                android:clipToPadding="false"
+                android:scrollbars="vertical"/>
+            <!--<include layout="@layout/book_a_test_item"/>-->
+
+        </android.support.v4.widget.SwipeRefreshLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/draggable_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/progress_frame_layout"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="10dp"
+
+        android:layout_marginRight="10dp"
+
+        android:background="@drawable/blue_circle"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/cart_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+
+                android:background="@drawable/mycart_icon"/>
+
+            <TextView
+                android:id="@+id/cart_count"
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/redcircle"
+                android:gravity="center"
+                android:text="1"
+                android:textColor="@color/white"
+                android:textSize="14dp"/>
+
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/cartpricetext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="\u20B9 2400"
+            android:textColor="@color/white"
+            android:textSize="14dp"/>
+
+    </LinearLayout>
+
+    <include
+        layout="@layout/roundcorner_progressview"
+        />
+
+</RelativeLayout>

@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "D:\\Trupti_workspace\\SRLandroid-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v23\\abc_control_background_material.xml",
+        "source": "C:\\Users\\lakhan.yadav\\.android\\build-cache\\d71cdfe1b454ea6b4aebda04361218f8ceeefe18\\output\\res\\drawable-v23\\abc_control_background_material.xml"
+    },
+    {
+        "merged": "D:\\Trupti_workspace\\SRLandroid-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v23\\snv_switch_track_material.xml",
+        "source": "D:\\Trupti_workspace\\SRLandroid-master\\sublimenavigationview\\build\\intermediates\\bundles\\default\\res\\drawable-v23\\snv_switch_track_material.xml"
+    }
+]

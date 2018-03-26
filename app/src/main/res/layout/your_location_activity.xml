@@ -1,0 +1,106 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/lab_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|center_vertical"
+        android:background="#0076bc"
+        android:gravity="center_horizontal">
+
+        <ImageView
+            android:id="@+id/loctionIVID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:padding="@dimen/ten"
+            android:scaleType="fitCenter"
+            android:src="@drawable/top_bar_loction_icon" />
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/loctionIVID"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/yourCurrentLocationTVID"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:gravity="center_horizontal"
+                android:paddingLeft="@dimen/five"
+                android:paddingRight="@dimen/ten"
+                android:paddingTop="5dp"
+                android:text="@string/current_location_label"
+                android:textColor="#fff"
+
+                android:textSize="@dimen/twelve" />
+
+            <TextView
+                android:id="@+id/yourPresentLocationTVID"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/yourCurrentLocationTVID"
+                android:layout_toRightOf="@+id/loctionIVID"
+                android:gravity="center_horizontal"
+                android:paddingLeft="5dp"
+                android:text="Andheri east, Mumbai "
+                android:textColor="#fff"
+                android:textSize="@dimen/fourteen" />
+
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/yourCurrentLocationTVID"
+                android:layout_toRightOf="@+id/loctionIVID"
+                android:gravity="center_horizontal"
+                android:paddingBottom="5dp"
+                android:paddingLeft="5dp"
+                android:text="[Tap here to change/select the location]"
+                android:textColor="#fff"
+                android:textSize="@dimen/fourteen" />
+        </LinearLayout>
+    </RelativeLayout>
+
+
+    <include
+        layout="@layout/map_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="160dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+
+        <TextView
+            android:id="@+id/myreportsTVID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/ten"
+            android:text="@string/found_labs_label"
+            android:textColor="@color/sky_blue"
+            android:textSize="@dimen/fifteen" />
+
+    </LinearLayout>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/loc_receyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/default_margin_ledt"
+        android:clipToPadding="false" />
+
+</LinearLayout>
+
+

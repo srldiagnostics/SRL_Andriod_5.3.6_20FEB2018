@@ -1,0 +1,538 @@
+[
+    {
+        "merged": "D:\\Trupti_workspace\\SRLandroid-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\track_home_collect_expert.png",
+        "source": "D:\\Trupti_workspace\\SRLandroid-master\\app\\src\\main\\res\\drawable-xxhdpi\\track_home_collect_expert.png"
+    },
+    {
+        "merged": "D:\\Trupti_workspace\\SRLandroid-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\collection_center_icon.png",
+        "source": "D:\\Trupti_workspace\\SRLandroid-master\\app\\src\\main\\res\\drawable-xxhdpi\\collection_center_icon.png"
+    },
+    {
+        "merged": "D:\\Trupti_workspace\\SRLandroid-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\phone_icon.png",
+        "source": "D:\\Trupti_workspace\\SRLandroid-master\\app\\src\\main\\res\\drawable-xxhdpi\\phone_icon.png"
+    },
+    {
+        "merged": "D:\\Trupti_workspace\\SRLandroid-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\myreports_minus_icon.png",
+        "source": "D:\\Trupti_workspace\\SRLandroid-master\\app\\src\\main\\res\\drawable-xxhdpi\\myreports_minus_icon.png"
+    },
+    {
+        "merged": "D:\\Trupti_workspace\\SRLandroid-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\loction_icon.png",
+        "source": "D:\\Trupti_workspace\\SRLandroid-master\\app\\src\\main\\res\\drawable-xxhdpi\\loction_icon.png"
+    },
+    {
+        "merged": "D:\\Trupti_workspace\\SRLandroid-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\close_list_icon.png",
+        "source": "D:\\Trupti_workspace\\SRLandroid-master\\app\\src\\main\\res\\drawable-xxhdpi\\close_list_icon.png"
+    },
+    {
+        "merged": "D:\\Trupti_workspace\\SRLandroid-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\my_family_menu_icon1.png",
+        "source": "D:\\Trupti_workspace\\SRLandroid-master\\app\\src\\main\\res\\drawable-xxhdpi\\my_family_menu_icon1.png"
+    },
+    {
+        "merged": "D:\\Trupti_workspace\\SRLandroid-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\drawer_normal.png",
+        "source": "D:\\Trupti_workspace\\SRLandroid-master\\app\\src\\main\\res\\drawable-xxhdpi\\drawer_normal.png"
+    },
+    {
+        "merged": "D:\\Trupti_workspace\\SRLandroid-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\alter_icon.png",
+        "source": "D:\\Trupti_workspace\\SRLandroid-master\\app\\src\\main\\res\\drawable-xxhdpi\\alter_icon.png"
+    },
+    {
+        "merged": "D:\\Trupti_workspace\\SRLandroid-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\profile_camera.png",
+        "source": "D:\\Trupti_workspace\\SRLandroid-master\\app\\src\\main\\res\\drawable-xxhdpi\\profile_camera.png"
+    },
+    {
+        "merged": "D:\\Trupti_workspace\\SRLandroid-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\offer_banner_icon.png",
+        "source": "D:\\Trupti_workspace\\SRLandroid-master\\app\\src\\main\\res\\drawable-xxhdpi\\offer_banner_icon.png"
+    },
+    {
+        "merged": "D:\\Trupti_workspace\\SRLandroid-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\close_icon_map.png",
+        "source": "D:\\Trupti_workspace\\SRLandroid-master\\app\\src\\main\\res\\drawable-xxhdpi\\close_icon_map.png"
+    },
+    {
+        "merged": "D:\\Trupti_workspace\\SRLandroid-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\my_orders_menu_icon.png",
+        "source": "D:\\Trupti_workspace\\SRLandroid-master\\app\\src\\main\\res\\drawable-xxhdpi\\my_orders_menu_icon.png"
+    },
+    {
+        "merged": "D:\\Trupti_workspace\\SRLandroid-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\bottom_arrowup_icon.png",
+        "source": "D:\\Trupti_workspace\\SRLandroid-master\\app\\src\\main\\res\\drawable-xxhdpi\\bottom_arrowup_icon.png"
+    },
+    {
+        "merged": "D:\\Trupti_workspace\\SRLandroid-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\selected_hover_icon.png",
+        "source": "D:\\Trupti_workspace\\SRLandroid-master\\app\\src\\main\\res\\drawable-xxhdpi\\selected_hover_icon.png"
+    },
+    {
+        "merged": "D:\\Trupti_workspace\\SRLandroid-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\my_health_menu_icon.png",
+        "source": "D:\\Trupti_workspace\\SRLandroid-master\\app\\src\\main\\res\\drawable-xxhdpi\\my_health_menu_icon.png"
+    },
+    {
+        "merged": "D:\\Trupti_workspace\\SRLandroid-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\top_bar_loction_icon.png",
+        "source": "D:\\Trupti_workspace\\SRLandroid-master\\app\\src\\main\\res\\drawable-xxhdpi\\top_bar_loction_icon.png"
+    },
+    {
+        "merged": "D:\\Trupti_workspace\\SRLandroid-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\new_registrationmenu_icon.png",
+        "source": "D:\\Trupti_workspace\\SRLandroid-master\\app\\src\\main\\res\\drawable-xxhdpi\\new_registrationmenu_icon.png"
+    },
+    {
+        "merged": "D:\\Trupti_workspace\\SRLandroid-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\bottom_bar_aboutus_icon.png",
+        "source": "D:\\Trupti_workspace\\SRLandroid-master\\app\\src\\main\\res\\drawable-xxhdpi\\bottom_bar_aboutus_icon.png"
+    },
+    {
+        "merged": "D:\\Trupti_workspace\\SRLandroid-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\reports_icon.png",
+        "source": "D:\\Trupti_workspace\\SRLandroid-master\\app\\src\\main\\res\\drawable-xxhdpi\\reports_icon.png"
+    },
+    {
+        "merged": "D:\\Trupti_workspace\\SRLandroid-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\srl_white_logo.png",
+        "source": "D:\\Trupti_workspace\\SRLandroid-master\\app\\src\\main\\res\\drawable-xxhdpi\\srl_white_logo.png"
+    },
+    {
+        "merged": "D:\\Trupti_workspace\\SRLandroid-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\search_hover_icon.png",
+        "source": "D:\\Trupti_workspace\\SRLandroid-master\\app\\src\\main\\res\\drawable-xxhdpi\\search_hover_icon.png"
+    },
+    {
+        "merged": "D:\\Trupti_workspace\\SRLandroid-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\srl_locator_menu_icon.png",
+        "source": "D:\\Trupti_workspace\\SRLandroid-master\\app\\src\\main\\res\\drawable-xxhdpi\\srl_locator_menu_icon.png"
+    },
+    {
+        "merged": "D:\\Trupti_workspace\\SRLandroid-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\small_pdf_icon.png",
+        "source": "D:\\Trupti_workspace\\SRLandroid-master\\app\\src\\main\\res\\drawable-xxhdpi\\small_pdf_icon.png"
+    },
+    {
+        "merged": "D:\\Trupti_workspace\\SRLandroid-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\address_icon.png",
+        "source": "D:\\Trupti_workspace\\SRLandroid-master\\app\\src\\main\\res\\drawable-xxhdpi\\address_icon.png"
+    },
+    {
+        "merged": "D:\\Trupti_workspace\\SRLandroid-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\list_add_icon.png",
+        "source": "D:\\Trupti_workspace\\SRLandroid-master\\app\\src\\main\\res\\drawable-xxhdpi\\list_add_icon.png"
+    },
+    {
+        "merged": "D:\\Trupti_workspace\\SRLandroid-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\right_arrow.png",
+        "source": "D:\\Trupti_workspace\\SRLandroid-master\\app\\src\\main\\res\\drawable-xxhdpi\\right_arrow.png"
+    },
+    {
+        "merged": "D:\\Trupti_workspace\\SRLandroid-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\picker_close_icon.png",
+        "source": "D:\\Trupti_workspace\\SRLandroid-master\\app\\src\\main\\res\\drawable-xxhdpi\\picker_close_icon.png"
+    },
+    {
+        "merged": "D:\\Trupti_workspace\\SRLandroid-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\remeber_select_icon.png",
+        "source": "D:\\Trupti_workspace\\SRLandroid-master\\app\\src\\main\\res\\drawable-xxhdpi\\remeber_select_icon.png"
+    },
+    {
+        "merged": "D:\\Trupti_workspace\\SRLandroid-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\mycart_icon.png",
+        "source": "D:\\Trupti_workspace\\SRLandroid-master\\app\\src\\main\\res\\drawable-xxhdpi\\mycart_icon.png"
+    },
+    {
+        "merged": "D:\\Trupti_workspace\\SRLandroid-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\bottom_bar_callus_icon.png",
+        "source": "D:\\Trupti_workspace\\SRLandroid-master\\app\\src\\main\\res\\drawable-xxhdpi\\bottom_bar_callus_icon.png"
+    },
+    {
+        "merged": "D:\\Trupti_workspace\\SRLandroid-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\bg_button_overlay.9.png",
+        "source": "D:\\Trupti_workspace\\SRLandroid-master\\app\\src\\main\\res\\drawable-xxhdpi\\bg_button_overlay.9.png"
+    },
+    {
+        "merged": "D:\\Trupti_workspace\\SRLandroid-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\setting_m_icon.png",
+        "source": "D:\\Trupti_workspace\\SRLandroid-master\\app\\src\\main\\res\\drawable-xxhdpi\\setting_m_icon.png"
+    },
+    {
+        "merged": "D:\\Trupti_workspace\\SRLandroid-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\book_a_test_icon.png",
+        "source": "D:\\Trupti_workspace\\SRLandroid-master\\app\\src\\main\\res\\drawable-xxhdpi\\book_a_test_icon.png"
+    },
+    {
+        "merged": "D:\\Trupti_workspace\\SRLandroid-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\login_logo.png",
+        "source": "D:\\Trupti_workspace\\SRLandroid-master\\app\\src\\main\\res\\drawable-xxhdpi\\login_logo.png"
+    },
+    {
+        "merged": "D:\\Trupti_workspace\\SRLandroid-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\text_field_drop_down.png",
+        "source": "D:\\Trupti_workspace\\SRLandroid-master\\app\\src\\main\\res\\drawable-xxhdpi\\text_field_drop_down.png"
+    },
+    {
+        "merged": "D:\\Trupti_workspace\\SRLandroid-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\back_btn_icon.png",
+        "source": "D:\\Trupti_workspace\\SRLandroid-master\\app\\src\\main\\res\\drawable-xxhdpi\\back_btn_icon.png"
+    },
+    {
+        "merged": "D:\\Trupti_workspace\\SRLandroid-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\labstime.png",
+        "source": "D:\\Trupti_workspace\\SRLandroid-master\\app\\src\\main\\res\\drawable-xxhdpi\\labstime.png"
+    },
+    {
+        "merged": "D:\\Trupti_workspace\\SRLandroid-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\about_us_icon_menu.png",
+        "source": "D:\\Trupti_workspace\\SRLandroid-master\\app\\src\\main\\res\\drawable-xxhdpi\\about_us_icon_menu.png"
+    },
+    {
+        "merged": "D:\\Trupti_workspace\\SRLandroid-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\small_share_icon.png",
+        "source": "D:\\Trupti_workspace\\SRLandroid-master\\app\\src\\main\\res\\drawable-xxhdpi\\small_share_icon.png"
+    },
+    {
+        "merged": "D:\\Trupti_workspace\\SRLandroid-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\refresh_icon_menu.png",
+        "source": "D:\\Trupti_workspace\\SRLandroid-master\\app\\src\\main\\res\\drawable-xxhdpi\\refresh_icon_menu.png"
+    },
+    {
+        "merged": "D:\\Trupti_workspace\\SRLandroid-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\myreports_date_icon.png",
+        "source": "D:\\Trupti_workspace\\SRLandroid-master\\app\\src\\main\\res\\drawable-xxhdpi\\myreports_date_icon.png"
+    },
+    {
+        "merged": "D:\\Trupti_workspace\\SRLandroid-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\show_details_icon.png",
+        "source": "D:\\Trupti_workspace\\SRLandroid-master\\app\\src\\main\\res\\drawable-xxhdpi\\show_details_icon.png"
+    },
+    {
+        "merged": "D:\\Trupti_workspace\\SRLandroid-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\list_arrow_icon.png",
+        "source": "D:\\Trupti_workspace\\SRLandroid-master\\app\\src\\main\\res\\drawable-xxhdpi\\list_arrow_icon.png"
+    },
+    {
+        "merged": "D:\\Trupti_workspace\\SRLandroid-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\sort_icon.png",
+        "source": "D:\\Trupti_workspace\\SRLandroid-master\\app\\src\\main\\res\\drawable-xxhdpi\\sort_icon.png"
+    },
+    {
+        "merged": "D:\\Trupti_workspace\\SRLandroid-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\loaction_list_icon.png",
+        "source": "D:\\Trupti_workspace\\SRLandroid-master\\app\\src\\main\\res\\drawable-xxhdpi\\loaction_list_icon.png"
+    },
+    {
+        "merged": "D:\\Trupti_workspace\\SRLandroid-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\google_playstore.png",
+        "source": "D:\\Trupti_workspace\\SRLandroid-master\\app\\src\\main\\res\\drawable-xxhdpi\\google_playstore.png"
+    },
+    {
+        "merged": "D:\\Trupti_workspace\\SRLandroid-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\rate_my_srl_menu_icon.png",
+        "source": "D:\\Trupti_workspace\\SRLandroid-master\\app\\src\\main\\res\\drawable-xxhdpi\\rate_my_srl_menu_icon.png"
+    },
+    {
+        "merged": "D:\\Trupti_workspace\\SRLandroid-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\email_icon.png",
+        "source": "D:\\Trupti_workspace\\SRLandroid-master\\app\\src\\main\\res\\drawable-xxhdpi\\email_icon.png"
+    },
+    {
+        "merged": "D:\\Trupti_workspace\\SRLandroid-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\srl_locator_icon.png",
+        "source": "D:\\Trupti_workspace\\SRLandroid-master\\app\\src\\main\\res\\drawable-xxhdpi\\srl_locator_icon.png"
+    },
+    {
+        "merged": "D:\\Trupti_workspace\\SRLandroid-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\popup_lock_icon.png",
+        "source": "D:\\Trupti_workspace\\SRLandroid-master\\app\\src\\main\\res\\drawable-xxhdpi\\popup_lock_icon.png"
+    },
+    {
+        "merged": "D:\\Trupti_workspace\\SRLandroid-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\offer_menu_icon.png",
+        "source": "D:\\Trupti_workspace\\SRLandroid-master\\app\\src\\main\\res\\drawable-xxhdpi\\offer_menu_icon.png"
+    },
+    {
+        "merged": "D:\\Trupti_workspace\\SRLandroid-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\register_m_icon.png",
+        "source": "D:\\Trupti_workspace\\SRLandroid-master\\app\\src\\main\\res\\drawable-xxhdpi\\register_m_icon.png"
+    },
+    {
+        "merged": "D:\\Trupti_workspace\\SRLandroid-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\distance_icon.png",
+        "source": "D:\\Trupti_workspace\\SRLandroid-master\\app\\src\\main\\res\\drawable-xxhdpi\\distance_icon.png"
+    },
+    {
+        "merged": "D:\\Trupti_workspace\\SRLandroid-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\myreports_graph_icon.png",
+        "source": "D:\\Trupti_workspace\\SRLandroid-master\\app\\src\\main\\res\\drawable-xxhdpi\\myreports_graph_icon.png"
+    },
+    {
+        "merged": "D:\\Trupti_workspace\\SRLandroid-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\my_reports_menu_icon.png",
+        "source": "D:\\Trupti_workspace\\SRLandroid-master\\app\\src\\main\\res\\drawable-xxhdpi\\my_reports_menu_icon.png"
+    },
+    {
+        "merged": "D:\\Trupti_workspace\\SRLandroid-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\my_family_menu_icon.png",
+        "source": "D:\\Trupti_workspace\\SRLandroid-master\\app\\src\\main\\res\\drawable-xxhdpi\\my_family_menu_icon.png"
+    },
+    {
+        "merged": "D:\\Trupti_workspace\\SRLandroid-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\packages_icon.png",
+        "source": "D:\\Trupti_workspace\\SRLandroid-master\\app\\src\\main\\res\\drawable-xxhdpi\\packages_icon.png"
+    },
+    {
+        "merged": "D:\\Trupti_workspace\\SRLandroid-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\family_member_male.png",
+        "source": "D:\\Trupti_workspace\\SRLandroid-master\\app\\src\\main\\res\\drawable-xxhdpi\\family_member_male.png"
+    },
+    {
+        "merged": "D:\\Trupti_workspace\\SRLandroid-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\minus_menu_icon.png",
+        "source": "D:\\Trupti_workspace\\SRLandroid-master\\app\\src\\main\\res\\drawable-xxhdpi\\minus_menu_icon.png"
+    },
+    {
+        "merged": "D:\\Trupti_workspace\\SRLandroid-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\my_loction_icon.png",
+        "source": "D:\\Trupti_workspace\\SRLandroid-master\\app\\src\\main\\res\\drawable-xxhdpi\\my_loction_icon.png"
+    },
+    {
+        "merged": "D:\\Trupti_workspace\\SRLandroid-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\myfamily_banner_icon.png",
+        "source": "D:\\Trupti_workspace\\SRLandroid-master\\app\\src\\main\\res\\drawable-xxhdpi\\myfamily_banner_icon.png"
+    },
+    {
+        "merged": "D:\\Trupti_workspace\\SRLandroid-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\banner_02.png",
+        "source": "D:\\Trupti_workspace\\SRLandroid-master\\app\\src\\main\\res\\drawable-xxhdpi\\banner_02.png"
+    },
+    {
+        "merged": "D:\\Trupti_workspace\\SRLandroid-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\drop_down_icon.png",
+        "source": "D:\\Trupti_workspace\\SRLandroid-master\\app\\src\\main\\res\\drawable-xxhdpi\\drop_down_icon.png"
+    },
+    {
+        "merged": "D:\\Trupti_workspace\\SRLandroid-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\login_logo3.png",
+        "source": "D:\\Trupti_workspace\\SRLandroid-master\\app\\src\\main\\res\\drawable-xxhdpi\\login_logo3.png"
+    },
+    {
+        "merged": "D:\\Trupti_workspace\\SRLandroid-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\settings_menu_icon.png",
+        "source": "D:\\Trupti_workspace\\SRLandroid-master\\app\\src\\main\\res\\drawable-xxhdpi\\settings_menu_icon.png"
+    },
+    {
+        "merged": "D:\\Trupti_workspace\\SRLandroid-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\popup_close.png",
+        "source": "D:\\Trupti_workspace\\SRLandroid-master\\app\\src\\main\\res\\drawable-xxhdpi\\popup_close.png"
+    },
+    {
+        "merged": "D:\\Trupti_workspace\\SRLandroid-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\date_icon.png",
+        "source": "D:\\Trupti_workspace\\SRLandroid-master\\app\\src\\main\\res\\drawable-xxhdpi\\date_icon.png"
+    },
+    {
+        "merged": "D:\\Trupti_workspace\\SRLandroid-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\myreports_plus_icon.png",
+        "source": "D:\\Trupti_workspace\\SRLandroid-master\\app\\src\\main\\res\\drawable-xxhdpi\\myreports_plus_icon.png"
+    },
+    {
+        "merged": "D:\\Trupti_workspace\\SRLandroid-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\my_profile_menu_icon.png",
+        "source": "D:\\Trupti_workspace\\SRLandroid-master\\app\\src\\main\\res\\drawable-xxhdpi\\my_profile_menu_icon.png"
+    },
+    {
+        "merged": "D:\\Trupti_workspace\\SRLandroid-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\mysrl_logo.png",
+        "source": "D:\\Trupti_workspace\\SRLandroid-master\\app\\src\\main\\res\\drawable-xxhdpi\\mysrl_logo.png"
+    },
+    {
+        "merged": "D:\\Trupti_workspace\\SRLandroid-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\left_arrow.png",
+        "source": "D:\\Trupti_workspace\\SRLandroid-master\\app\\src\\main\\res\\drawable-xxhdpi\\left_arrow.png"
+    },
+    {
+        "merged": "D:\\Trupti_workspace\\SRLandroid-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\my_reports_pic_icon.png",
+        "source": "D:\\Trupti_workspace\\SRLandroid-master\\app\\src\\main\\res\\drawable-xxhdpi\\my_reports_pic_icon.png"
+    },
+    {
+        "merged": "D:\\Trupti_workspace\\SRLandroid-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\book_a_test_menu_icon.png",
+        "source": "D:\\Trupti_workspace\\SRLandroid-master\\app\\src\\main\\res\\drawable-xxhdpi\\book_a_test_menu_icon.png"
+    },
+    {
+        "merged": "D:\\Trupti_workspace\\SRLandroid-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\menu_icon.png",
+        "source": "D:\\Trupti_workspace\\SRLandroid-master\\app\\src\\main\\res\\drawable-xxhdpi\\menu_icon.png"
+    },
+    {
+        "merged": "D:\\Trupti_workspace\\SRLandroid-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\drawer_close.png",
+        "source": "D:\\Trupti_workspace\\SRLandroid-master\\app\\src\\main\\res\\drawable-xxhdpi\\drawer_close.png"
+    },
+    {
+        "merged": "D:\\Trupti_workspace\\SRLandroid-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\uber_forward_icon.png",
+        "source": "D:\\Trupti_workspace\\SRLandroid-master\\app\\src\\main\\res\\drawable-xxhdpi\\uber_forward_icon.png"
+    },
+    {
+        "merged": "D:\\Trupti_workspace\\SRLandroid-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\splashed.png",
+        "source": "D:\\Trupti_workspace\\SRLandroid-master\\app\\src\\main\\res\\drawable-xxhdpi\\splashed.png"
+    },
+    {
+        "merged": "D:\\Trupti_workspace\\SRLandroid-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\pop_up_call_icon.png",
+        "source": "D:\\Trupti_workspace\\SRLandroid-master\\app\\src\\main\\res\\drawable-xxhdpi\\pop_up_call_icon.png"
+    },
+    {
+        "merged": "D:\\Trupti_workspace\\SRLandroid-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\lab_icon.png",
+        "source": "D:\\Trupti_workspace\\SRLandroid-master\\app\\src\\main\\res\\drawable-xxhdpi\\lab_icon.png"
+    },
+    {
+        "merged": "D:\\Trupti_workspace\\SRLandroid-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\connet_icon.png",
+        "source": "D:\\Trupti_workspace\\SRLandroid-master\\app\\src\\main\\res\\drawable-xxhdpi\\connet_icon.png"
+    },
+    {
+        "merged": "D:\\Trupti_workspace\\SRLandroid-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\login_banner.png",
+        "source": "D:\\Trupti_workspace\\SRLandroid-master\\app\\src\\main\\res\\drawable-xxhdpi\\login_banner.png"
+    },
+    {
+        "merged": "D:\\Trupti_workspace\\SRLandroid-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\radio_btn_hover.png",
+        "source": "D:\\Trupti_workspace\\SRLandroid-master\\app\\src\\main\\res\\drawable-xxhdpi\\radio_btn_hover.png"
+    },
+    {
+        "merged": "D:\\Trupti_workspace\\SRLandroid-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\pop_up_radio_hover_btn.png",
+        "source": "D:\\Trupti_workspace\\SRLandroid-master\\app\\src\\main\\res\\drawable-xxhdpi\\pop_up_radio_hover_btn.png"
+    },
+    {
+        "merged": "D:\\Trupti_workspace\\SRLandroid-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\forget_icon.png",
+        "source": "D:\\Trupti_workspace\\SRLandroid-master\\app\\src\\main\\res\\drawable-xxhdpi\\forget_icon.png"
+    },
+    {
+        "merged": "D:\\Trupti_workspace\\SRLandroid-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\tracker_menu_icon.png",
+        "source": "D:\\Trupti_workspace\\SRLandroid-master\\app\\src\\main\\res\\drawable-xxhdpi\\tracker_menu_icon.png"
+    },
+    {
+        "merged": "D:\\Trupti_workspace\\SRLandroid-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\bg_button_0.9.png",
+        "source": "D:\\Trupti_workspace\\SRLandroid-master\\app\\src\\main\\res\\drawable-xxhdpi\\bg_button_0.9.png"
+    },
+    {
+        "merged": "D:\\Trupti_workspace\\SRLandroid-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\family_member_female.png",
+        "source": "D:\\Trupti_workspace\\SRLandroid-master\\app\\src\\main\\res\\drawable-xxhdpi\\family_member_female.png"
+    },
+    {
+        "merged": "D:\\Trupti_workspace\\SRLandroid-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\offers_icon.png",
+        "source": "D:\\Trupti_workspace\\SRLandroid-master\\app\\src\\main\\res\\drawable-xxhdpi\\offers_icon.png"
+    },
+    {
+        "merged": "D:\\Trupti_workspace\\SRLandroid-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\myreports_share_icon.png",
+        "source": "D:\\Trupti_workspace\\SRLandroid-master\\app\\src\\main\\res\\drawable-xxhdpi\\myreports_share_icon.png"
+    },
+    {
+        "merged": "D:\\Trupti_workspace\\SRLandroid-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\banner_03.png",
+        "source": "D:\\Trupti_workspace\\SRLandroid-master\\app\\src\\main\\res\\drawable-xxhdpi\\banner_03.png"
+    },
+    {
+        "merged": "D:\\Trupti_workspace\\SRLandroid-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\fliter_icon.png",
+        "source": "D:\\Trupti_workspace\\SRLandroid-master\\app\\src\\main\\res\\drawable-xxhdpi\\fliter_icon.png"
+    },
+    {
+        "merged": "D:\\Trupti_workspace\\SRLandroid-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\callus_icon.png",
+        "source": "D:\\Trupti_workspace\\SRLandroid-master\\app\\src\\main\\res\\drawable-xxhdpi\\callus_icon.png"
+    },
+    {
+        "merged": "D:\\Trupti_workspace\\SRLandroid-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\login_logo1.png",
+        "source": "D:\\Trupti_workspace\\SRLandroid-master\\app\\src\\main\\res\\drawable-xxhdpi\\login_logo1.png"
+    },
+    {
+        "merged": "D:\\Trupti_workspace\\SRLandroid-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\book_a_test_banner_icon.png",
+        "source": "D:\\Trupti_workspace\\SRLandroid-master\\app\\src\\main\\res\\drawable-xxhdpi\\book_a_test_banner_icon.png"
+    },
+    {
+        "merged": "D:\\Trupti_workspace\\SRLandroid-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\splash.png",
+        "source": "D:\\Trupti_workspace\\SRLandroid-master\\app\\src\\main\\res\\drawable-xxhdpi\\splash.png"
+    },
+    {
+        "merged": "D:\\Trupti_workspace\\SRLandroid-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\list_selection_icon.png",
+        "source": "D:\\Trupti_workspace\\SRLandroid-master\\app\\src\\main\\res\\drawable-xxhdpi\\list_selection_icon.png"
+    },
+    {
+        "merged": "D:\\Trupti_workspace\\SRLandroid-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\tag_icon.png",
+        "source": "D:\\Trupti_workspace\\SRLandroid-master\\app\\src\\main\\res\\drawable-xxhdpi\\tag_icon.png"
+    },
+    {
+        "merged": "D:\\Trupti_workspace\\SRLandroid-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\bmi_calculate_menu_icon.png",
+        "source": "D:\\Trupti_workspace\\SRLandroid-master\\app\\src\\main\\res\\drawable-xxhdpi\\bmi_calculate_menu_icon.png"
+    },
+    {
+        "merged": "D:\\Trupti_workspace\\SRLandroid-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\googlepluse_icon.png",
+        "source": "D:\\Trupti_workspace\\SRLandroid-master\\app\\src\\main\\res\\drawable-xxhdpi\\googlepluse_icon.png"
+    },
+    {
+        "merged": "D:\\Trupti_workspace\\SRLandroid-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\picker_done_icon.png",
+        "source": "D:\\Trupti_workspace\\SRLandroid-master\\app\\src\\main\\res\\drawable-xxhdpi\\picker_done_icon.png"
+    },
+    {
+        "merged": "D:\\Trupti_workspace\\SRLandroid-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\star_hover.png",
+        "source": "D:\\Trupti_workspace\\SRLandroid-master\\app\\src\\main\\res\\drawable-xxhdpi\\star_hover.png"
+    },
+    {
+        "merged": "D:\\Trupti_workspace\\SRLandroid-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\banner_01.png",
+        "source": "D:\\Trupti_workspace\\SRLandroid-master\\app\\src\\main\\res\\drawable-xxhdpi\\banner_01.png"
+    },
+    {
+        "merged": "D:\\Trupti_workspace\\SRLandroid-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\chnage_password_menu_icon.png",
+        "source": "D:\\Trupti_workspace\\SRLandroid-master\\app\\src\\main\\res\\drawable-xxhdpi\\chnage_password_menu_icon.png"
+    },
+    {
+        "merged": "D:\\Trupti_workspace\\SRLandroid-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\edit_icon.png",
+        "source": "D:\\Trupti_workspace\\SRLandroid-master\\app\\src\\main\\res\\drawable-xxhdpi\\edit_icon.png"
+    },
+    {
+        "merged": "D:\\Trupti_workspace\\SRLandroid-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\home_menu_icon.png",
+        "source": "D:\\Trupti_workspace\\SRLandroid-master\\app\\src\\main\\res\\drawable-xxhdpi\\home_menu_icon.png"
+    },
+    {
+        "merged": "D:\\Trupti_workspace\\SRLandroid-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\facebook_icon.png",
+        "source": "D:\\Trupti_workspace\\SRLandroid-master\\app\\src\\main\\res\\drawable-xxhdpi\\facebook_icon.png"
+    },
+    {
+        "merged": "D:\\Trupti_workspace\\SRLandroid-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\star_normal.png",
+        "source": "D:\\Trupti_workspace\\SRLandroid-master\\app\\src\\main\\res\\drawable-xxhdpi\\star_normal.png"
+    },
+    {
+        "merged": "D:\\Trupti_workspace\\SRLandroid-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\login_logo2.png",
+        "source": "D:\\Trupti_workspace\\SRLandroid-master\\app\\src\\main\\res\\drawable-xxhdpi\\login_logo2.png"
+    },
+    {
+        "merged": "D:\\Trupti_workspace\\SRLandroid-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\menu_close_icon.png",
+        "source": "D:\\Trupti_workspace\\SRLandroid-master\\app\\src\\main\\res\\drawable-xxhdpi\\menu_close_icon.png"
+    },
+    {
+        "merged": "D:\\Trupti_workspace\\SRLandroid-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\contact_us_menu_icon.png",
+        "source": "D:\\Trupti_workspace\\SRLandroid-master\\app\\src\\main\\res\\drawable-xxhdpi\\contact_us_menu_icon.png"
+    },
+    {
+        "merged": "D:\\Trupti_workspace\\SRLandroid-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\remeber_me_normal_icon.png",
+        "source": "D:\\Trupti_workspace\\SRLandroid-master\\app\\src\\main\\res\\drawable-xxhdpi\\remeber_me_normal_icon.png"
+    },
+    {
+        "merged": "D:\\Trupti_workspace\\SRLandroid-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\logout_menu_icon.png",
+        "source": "D:\\Trupti_workspace\\SRLandroid-master\\app\\src\\main\\res\\drawable-xxhdpi\\logout_menu_icon.png"
+    },
+    {
+        "merged": "D:\\Trupti_workspace\\SRLandroid-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\bottom_arrow_icon.png",
+        "source": "D:\\Trupti_workspace\\SRLandroid-master\\app\\src\\main\\res\\drawable-xxhdpi\\bottom_arrow_icon.png"
+    },
+    {
+        "merged": "D:\\Trupti_workspace\\SRLandroid-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\call_us_support_icon.png",
+        "source": "D:\\Trupti_workspace\\SRLandroid-master\\app\\src\\main\\res\\drawable-xxhdpi\\call_us_support_icon.png"
+    },
+    {
+        "merged": "D:\\Trupti_workspace\\SRLandroid-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\reset_icon.png",
+        "source": "D:\\Trupti_workspace\\SRLandroid-master\\app\\src\\main\\res\\drawable-xxhdpi\\reset_icon.png"
+    },
+    {
+        "merged": "D:\\Trupti_workspace\\SRLandroid-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\remove_icon.png",
+        "source": "D:\\Trupti_workspace\\SRLandroid-master\\app\\src\\main\\res\\drawable-xxhdpi\\remove_icon.png"
+    },
+    {
+        "merged": "D:\\Trupti_workspace\\SRLandroid-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\radio_btn_normal.png",
+        "source": "D:\\Trupti_workspace\\SRLandroid-master\\app\\src\\main\\res\\drawable-xxhdpi\\radio_btn_normal.png"
+    },
+    {
+        "merged": "D:\\Trupti_workspace\\SRLandroid-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\track_m_icon.png",
+        "source": "D:\\Trupti_workspace\\SRLandroid-master\\app\\src\\main\\res\\drawable-xxhdpi\\track_m_icon.png"
+    },
+    {
+        "merged": "D:\\Trupti_workspace\\SRLandroid-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\plus_menu_icon.png",
+        "source": "D:\\Trupti_workspace\\SRLandroid-master\\app\\src\\main\\res\\drawable-xxhdpi\\plus_menu_icon.png"
+    },
+    {
+        "merged": "D:\\Trupti_workspace\\SRLandroid-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\profile_icon.png",
+        "source": "D:\\Trupti_workspace\\SRLandroid-master\\app\\src\\main\\res\\drawable-xxhdpi\\profile_icon.png"
+    },
+    {
+        "merged": "D:\\Trupti_workspace\\SRLandroid-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\offer_banner.png",
+        "source": "D:\\Trupti_workspace\\SRLandroid-master\\app\\src\\main\\res\\drawable-xxhdpi\\offer_banner.png"
+    },
+    {
+        "merged": "D:\\Trupti_workspace\\SRLandroid-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\pop_up_radio_normal_btn.png",
+        "source": "D:\\Trupti_workspace\\SRLandroid-master\\app\\src\\main\\res\\drawable-xxhdpi\\pop_up_radio_normal_btn.png"
+    },
+    {
+        "merged": "D:\\Trupti_workspace\\SRLandroid-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\myreports_banner.png",
+        "source": "D:\\Trupti_workspace\\SRLandroid-master\\app\\src\\main\\res\\drawable-xxhdpi\\myreports_banner.png"
+    },
+    {
+        "merged": "D:\\Trupti_workspace\\SRLandroid-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\more_icon.png",
+        "source": "D:\\Trupti_workspace\\SRLandroid-master\\app\\src\\main\\res\\drawable-xxhdpi\\more_icon.png"
+    },
+    {
+        "merged": "D:\\Trupti_workspace\\SRLandroid-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\view_icon.png",
+        "source": "D:\\Trupti_workspace\\SRLandroid-master\\app\\src\\main\\res\\drawable-xxhdpi\\view_icon.png"
+    },
+    {
+        "merged": "D:\\Trupti_workspace\\SRLandroid-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\track_order.png",
+        "source": "D:\\Trupti_workspace\\SRLandroid-master\\app\\src\\main\\res\\drawable-xxhdpi\\track_order.png"
+    },
+    {
+        "merged": "D:\\Trupti_workspace\\SRLandroid-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\my_order_done_icon.png",
+        "source": "D:\\Trupti_workspace\\SRLandroid-master\\app\\src\\main\\res\\drawable-xxhdpi\\my_order_done_icon.png"
+    },
+    {
+        "merged": "D:\\Trupti_workspace\\SRLandroid-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\flask_icon.png",
+        "source": "D:\\Trupti_workspace\\SRLandroid-master\\app\\src\\main\\res\\drawable-xxhdpi\\flask_icon.png"
+    },
+    {
+        "merged": "D:\\Trupti_workspace\\SRLandroid-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\selected_icon.png",
+        "source": "D:\\Trupti_workspace\\SRLandroid-master\\app\\src\\main\\res\\drawable-xxhdpi\\selected_icon.png"
+    },
+    {
+        "merged": "D:\\Trupti_workspace\\SRLandroid-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\myreports_pdf_icon.png",
+        "source": "D:\\Trupti_workspace\\SRLandroid-master\\app\\src\\main\\res\\drawable-xxhdpi\\myreports_pdf_icon.png"
+    },
+    {
+        "merged": "D:\\Trupti_workspace\\SRLandroid-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\time_icon.png",
+        "source": "D:\\Trupti_workspace\\SRLandroid-master\\app\\src\\main\\res\\drawable-xxhdpi\\time_icon.png"
+    },
+    {
+        "merged": "D:\\Trupti_workspace\\SRLandroid-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\guest_user_icon.png",
+        "source": "D:\\Trupti_workspace\\SRLandroid-master\\app\\src\\main\\res\\drawable-xxhdpi\\guest_user_icon.png"
+    },
+    {
+        "merged": "D:\\Trupti_workspace\\SRLandroid-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\search_normal_icon.png",
+        "source": "D:\\Trupti_workspace\\SRLandroid-master\\app\\src\\main\\res\\drawable-xxhdpi\\search_normal_icon.png"
+    }
+]

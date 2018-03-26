@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/bottomLLID"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:padding="@dimen/five"
+        android:gravity="center"
+        android:background="@color/white"
+        android:text="@string/book_test"
+        android:textColor="@color/lightblue"
+        android:textSize="@dimen/seventeen" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/grey_color"
+        android:paddingBottom="@dimen/five"
+        android:paddingTop="@dimen/five">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/circle1LLID"
+            android:layout_below="@+id/circle1LLID"
+            android:paddingTop="@dimen/three"
+            android:text="@string/total_test_price"
+            android:textSize="14dp"
+            android:textColor="@color/total_test_price_color" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/circle2LLID"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/three"
+            android:gravity="center"
+            android:text="@string/offer_price"
+            android:textColor="@color/offer_price_color" />
+
+        <LinearLayout
+            android:id="@+id/circle3LLID"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/fifteen"
+            android:background="@drawable/you_save_circle"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="@string/rupee_symbol_with_amount"
+                android:textColor="@color/white"
+                android:textSize="@dimen/fifteen" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@id/circle3LLID"
+            android:layout_below="@+id/circle3LLID"
+            android:layout_marginTop="@dimen/three"
+            android:gravity="center"
+            android:text="@string/you_save"
+            android:textColor="@color/you_save_color" />
+
+        <LinearLayout
+            android:id="@+id/circle1LLID"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="@dimen/fifteen"
+            android:background="@drawable/total_test_circle"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="@string/rupee_symbol_with_amount"
+                android:textColor="@color/white"
+                android:textSize="@dimen/fifteen" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/circle2LLID"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/offer_circle"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="@string/rupee_symbol_with_amount"
+                android:textColor="@color/white"
+
+                android:textSize="@dimen/fifteen" />
+        </LinearLayout>
+    </RelativeLayout>
+
+
+    <Button
+        android:id="@+id/trackBTNID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/darkblue"
+        android:text="@string/book_now"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="@dimen/fifteen" />
+
+
+</LinearLayout>
+

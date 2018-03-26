@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr format="boolean" name="collapsed"/>
+    <attr format="boolean" name="collapsible"/>
+    <attr format="reference" name="snvBadgeTextAppearance"/>
+    <attr format="enum" name="snvBadgeTypefaceStyle">
+        <enum name="normal" value="0"/>
+        <enum name="bold" value="1"/>
+        <enum name="italic" value="2"/>
+        <enum name="bold_italic" value="3"/>
+    </attr>
+    <attr format="enum" name="snvDefaultTheme">
+        <enum name="light" value="0"/>
+        <enum name="dark" value="1"/>
+    </attr>
+    <attr format="reference" name="snvHintTextAppearance"/>
+    <attr format="enum" name="snvHintTypefaceStyle">
+        <enum name="normal" value="0"/>
+        <enum name="bold" value="1"/>
+        <enum name="italic" value="2"/>
+        <enum name="bold_italic" value="3"/>
+    </attr>
+    <attr format="reference" name="snvItemTextAppearance"/>
+    <attr format="enum" name="snvItemTypefaceStyle">
+        <enum name="normal" value="0"/>
+        <enum name="bold" value="1"/>
+        <enum name="italic" value="2"/>
+        <enum name="bold_italic" value="3"/>
+    </attr>
+    <attr format="reference" name="snvSubheaderHintTextAppearance"/>
+    <attr format="enum" name="snvSubheaderHintTypefaceStyle">
+        <enum name="normal" value="0"/>
+        <enum name="bold" value="1"/>
+        <enum name="italic" value="2"/>
+        <enum name="bold_italic" value="3"/>
+    </attr>
+    <attr format="reference" name="snvSubheaderItemTextAppearance"/>
+    <attr format="enum" name="snvSubheaderItemTypefaceStyle">
+        <enum name="normal" value="0"/>
+        <enum name="bold" value="1"/>
+        <enum name="italic" value="2"/>
+        <enum name="bold_italic" value="3"/>
+    </attr>
+    <attr format="boolean" name="valueProvidedAsync"/>
+    <color name="snv_background_material_dark">#ff303030</color>
+    <color name="snv_background_material_light">#fffafafa</color>
+    <color name="snv_primary_material_dark">#fff5f5f5</color>
+    <color name="snv_primary_material_light">#ff212121</color>
+    <color name="snv_primary_text_default_material_dark">#ffffffff</color>
+    <color name="snv_primary_text_default_material_light">#de000000</color>
+    <color name="snv_primary_text_disabled_material_dark">#4Dffffff</color>
+    <color name="snv_primary_text_disabled_material_light">#39000000</color>
+    <color name="snv_ripple_material_dark">#42ffffff</color>
+    <color name="snv_ripple_material_light">#1f000000</color>
+    <color name="snv_secondary_text_default_material_dark">#b3ffffff</color>
+    <color name="snv_secondary_text_default_material_light">#8a000000</color>
+    <color name="snv_secondary_text_disabled_material_dark">#36ffffff</color>
+    <color name="snv_secondary_text_disabled_material_light">#24000000</color>
+    <declare-styleable name="SnvScrimInsetsFrameLayout"><attr format="color|reference" name="snvInsetForeground"/></declare-styleable>
+    <declare-styleable name="StateAwareTextView"><attr format="reference" name="saTextAppearance"/><attr name="android:textAppearance"/></declare-styleable>
+    <declare-styleable name="SublimeMenuGenericItem"><attr name="android:id"/><attr name="android:title"/><attr name="android:hint"/><attr name="android:icon"/><attr name="android:checkable"/><attr name="android:checked"/><attr name="android:visible"/><attr name="android:enabled"/><attr name="valueProvidedAsync"/><attr format="string" name="badgeText"/><attr format="boolean" name="showIconSpace"/></declare-styleable>
+    <declare-styleable name="SublimeMenuGroup"><attr name="android:id"/><attr name="android:checkableBehavior"/><attr name="android:visible"/><attr name="android:enabled"/><attr name="collapsed"/><attr name="collapsible"/></declare-styleable>
+    <declare-styleable name="SublimeMenuItemState"><attr format="boolean" name="state_item_checked"/></declare-styleable>
+    <declare-styleable name="SublimeNavigationView"><attr name="android:background"/><attr name="android:fitsSystemWindows"/><attr name="android:maxWidth"/><attr name="elevation"/><attr format="reference" name="snvMenu"/><attr format="color" name="snvItemIconTint"/><attr format="color" name="snvItemTextColor"/><attr format="color" name="snvHintTextColor"/><attr format="color" name="snvSubheaderItemTextColor"/><attr format="color" name="snvSubheaderHintTextColor"/><attr format="color" name="snvBadgeTextColor"/><attr format="string" name="snvItemTypefaceFilename"/><attr format="string" name="snvHintTypefaceFilename"/><attr format="string" name="snvSubheaderItemTypefaceFilename"/><attr format="string" name="snvSubheaderHintTypefaceFilename"/><attr format="string" name="snvBadgeTypefaceFilename"/><attr name="snvItemTypefaceStyle"/><attr name="snvHintTypefaceStyle"/><attr name="snvSubheaderItemTypefaceStyle"/><attr name="snvSubheaderHintTypefaceStyle"/><attr name="snvBadgeTypefaceStyle"/><attr format="reference|color" name="snvItemBackground"/><attr format="reference" name="snvHeaderLayout"/><attr name="snvDefaultTheme"/><attr format="reference" name="snvGroupExpandDrawable"/><attr format="reference" name="snvGroupCollapseDrawable"/></declare-styleable>
+    <dimen name="snv_navigation_elevation">12dp</dimen>
+    <dimen name="snv_navigation_icon_padding">10dp</dimen>
+    <dimen name="snv_navigation_icon_size">24dp</dimen>
+    <dimen name="snv_navigation_max_width">320dp</dimen>
+    <dimen name="snv_navigation_padding_bottom">6dp</dimen>
+    <dimen name="snv_navigation_padding_top_default">0dp</dimen>
+    <dimen name="snv_navigation_separator_vertical_padding">8dp</dimen>
+    <string name="app_name">SublimeNavigationViewLibrary</string>
+    <style name="SnvDefaultBadgeTextAppearance" parent="TextAppearance.AppCompat.Body2">
+        <item name="android:textSize">15sp</item>
+    </style>
+    <style name="SnvDefaultHintTextAppearance" parent="TextAppearance.AppCompat.Body2">
+        <item name="android:textSize">12sp</item>
+    </style>
+    <style name="SnvDefaultItemTextAppearance" parent="TextAppearance.AppCompat.Body2">
+        <item name="android:textSize">15sp</item>
+    </style>
+    <style name="SnvDefaultSubheaderHintTextAppearance" parent="TextAppearance.AppCompat.Body1">
+        <item name="android:textSize">12sp</item>
+    </style>
+    <style name="SnvDefaultSubheaderItemTextAppearance" parent="TextAppearance.AppCompat.Body2">
+        <item name="android:textSize">15sp</item>
+    </style>
+    <style name="SnvDefaultTextAppearance" parent="TextAppearance.AppCompat.Body2">
+        <item name="android:textSize">15sp</item>
+    </style>
+    <style name="SnvScrimInsetsFrameLayout" parent="">
+        <item name="snvInsetForeground">#4000</item>
+    </style>
+    <style name="SnvSublimeNavigationView" parent="">
+        <item name="elevation">@dimen/snv_navigation_elevation</item>
+        <item name="android:background">#999900</item>
+        <item name="android:fitsSystemWindows">true</item>
+        <item name="android:maxWidth">@dimen/snv_navigation_max_width</item>
+    </style>
+</resources>

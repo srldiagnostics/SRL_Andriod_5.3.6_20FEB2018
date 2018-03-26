@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/offerItemDetailRLID"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/tag_circle"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_margin="16dp">
+
+        <ImageView
+            android:id="@+id/offer_circle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/circle" />
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/tag_icon" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/offer_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_toLeftOf="@+id/rightArrow"
+        android:layout_toRightOf="@+id/tag_circle"
+
+        android:textColor="@color/HeaderTitleColor"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/offer_details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/offer_title"
+        android:layout_marginTop="8dp"
+        android:layout_toLeftOf="@+id/rightArrow"
+        android:layout_toRightOf="@+id/tag_circle"
+        android:layout_marginBottom="8dp"
+        android:textColor="@color/discount_text_olor" />
+
+    <ImageView
+        android:id="@+id/rightArrow"
+        android:layout_width="32dp"
+
+        android:layout_height="32dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/list_arrow_icon" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:background="#ccc" />
+
+</RelativeLayout>

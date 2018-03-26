@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/ten">
+
+            <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/guestIVID"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="@dimen/ten"
+                android:src="@drawable/guest_user_icon"
+                app:civ_border_color="@color/lightgrey"
+                app:civ_border_width="1dp" />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@+id/guestIVID">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/five"
+                        android:padding="@dimen/five"
+                        android:textColor="@color/divider"
+                        android:textSize="@dimen/fourteen" />
+
+                    <TextView
+                        android:id="@+id/login_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/five"
+                        android:padding="@dimen/five"
+                        android:textColor="@color/divider"
+                        android:textSize="@dimen/fourteen" />
+
+
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/dropdown"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="2dp"
+                    android:gravity="center_vertical"
+                    android:padding="5dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/downarrow"
+                    android:textSize="16dp" />
+
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginBottom="@dimen/five"
+            android:background="@color/divider" />
+
+        <LinearLayout
+            android:id="@+id/dateacc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+
+            android:orientation="vertical">
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/sort_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2.5"
+                    android:orientation="horizontal"
+                    android:padding="6dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="5dp"
+                        android:text="Dates"
+                        android:textSize="18dp"
+                        android:textStyle="bold"
+
+                        />
+
+                    <ImageView
+                        android:id="@+id/datesorticon"
+                        android:layout_width="@dimen/default_image_size_three"
+                        android:layout_height="@dimen/settings_toggle_circle_radius"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/default_margin_ledt"
+                        android:background="@drawable/sort_icon"
+                        android:scaleType="centerInside" />
+
+                    <ImageView
+                        android:id="@+id/datesorttopicon"
+                        android:layout_width="@dimen/default_image_size_three"
+                        android:layout_height="@dimen/settings_toggle_circle_radius"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/default_margin_ledt"
+                        android:background="@drawable/sort_icon_top"
+                        android:scaleType="centerInside"
+                        android:visibility="gone" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="fill_parent"
+                    android:layout_marginBottom="@dimen/five"
+                    android:background="@color/divider" />
+
+                <LinearLayout
+                    android:id="@+id/sort_accession"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:padding="6dp">
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="5dp"
+                        android:text="Accession"
+                        android:textSize="18dp"
+                        android:textStyle="bold"
+
+                        />
+
+                    <ImageView
+                        android:id="@+id/acessionsorticon"
+                        android:layout_width="@dimen/default_image_size_three"
+                        android:layout_height="@dimen/settings_toggle_circle_radius"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/default_margin_ledt"
+                        android:background="@drawable/sort_icon"
+                        android:scaleType="centerInside" />
+
+                    <ImageView
+                        android:id="@+id/acessionsorttopicon"
+                        android:layout_width="@dimen/default_image_size_three"
+                        android:layout_height="@dimen/settings_toggle_circle_radius"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/default_margin_ledt"
+                        android:background="@drawable/sort_icon_top"
+                        android:scaleType="centerInside"
+                        android:visibility="gone" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginBottom="@dimen/five"
+                android:background="@color/divider" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="[Tap on Accession number to view report]"
+                android:textColor="@color/colorPrimaryDark" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginBottom="@dimen/five"
+                android:background="@color/divider" />
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:background="@color/white"
+                android:gravity="center">
+
+                <android.support.v4.widget.SwipeRefreshLayout
+                    android:id="@+id/swipeRefreshLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/recycler_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:scrollbars="vertical" />
+                </android.support.v4.widget.SwipeRefreshLayout>
+
+                <LinearLayout
+                    android:id="@+id/hidePopup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_gravity="bottom"
+                    android:visibility="gone"
+
+                    >
+
+                    <include layout="@layout/salutation" />
+                </LinearLayout>
+
+            </RelativeLayout>
+
+
+        </FrameLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

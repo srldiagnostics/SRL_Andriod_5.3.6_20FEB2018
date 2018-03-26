@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:id="@+id/relativeLayout1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2">
+
+
+            <TextView
+                android:id="@+id/populartestTVID"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/five"
+                android:layout_weight="1"
+                android:padding="@dimen/five"
+                android:text="@string/get_reports"
+                android:textColor="@color/HeaderTitleColor"
+                android:textSize="@dimen/twenty" />
+
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_weight="1"
+                android:background="@drawable/myreports_banner" />
+
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/loginwithUserIDBTNID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/ten"
+            android:background="@color/darkblue"
+            android:clickable="false"
+            android:padding="@dimen/five"
+            android:text="@string/login_userID"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/fourteen" />
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_margin="@dimen/ten">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/one"
+                android:layout_gravity="center_vertical|center"
+                android:background="@color/divider" />
+
+            <Button
+                android:id="@+id/orBTNID"
+                android:layout_width="@dimen/fourty"
+                android:layout_height="@dimen/fourty"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+
+                android:background="@drawable/circle"
+                android:padding="@dimen/five"
+                android:text="@string/or"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="@dimen/fourteen" />
+
+
+        </FrameLayout>
+
+
+        <Button
+            android:id="@+id/viewreportWithFirstNameBTNID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_margin="@dimen/ten"
+            android:background="@color/ligthblue"
+            android:padding="@dimen/five"
+            android:text="@string/view_report"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/fourteen" />
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_margin="@dimen/ten">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/one"
+                android:layout_gravity="center_vertical|center"
+                android:background="@color/divider" />
+
+            <Button
+                android:layout_width="@dimen/fourty"
+                android:layout_height="@dimen/fourty"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+
+                android:background="@drawable/circle"
+                android:padding="@dimen/five"
+                android:text="@string/or"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="@dimen/fourteen" />
+
+
+        </FrameLayout>
+
+
+        <Button
+            android:id="@+id/viewreportWithMobileNoBTNID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/ten"
+            android:background="@color/darkblue"
+            android:padding="@dimen/five"
+            android:text="@string/view_report_mobile"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/fourteen" />
+
+    </LinearLayout>
+</LinearLayout>

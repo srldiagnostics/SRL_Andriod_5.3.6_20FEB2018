@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/graphrel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="10"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp">
+
+        <TextView
+            android:id="@+id/txtptntcd"
+            android:layout_width="0dp"
+            android:layout_weight="4"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="4dp"
+            android:text="dfgdfg"
+            android:layout_marginLeft="4dp"
+            android:textSize="@dimen/twelve"/>
+        <TextView
+            android:id="@+id/txtpatientName"
+            android:layout_width="0dp"
+
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_toRightOf="@+id/txtptntcd"
+            android:paddingRight="3dp"
+            android:layout_weight="6"
+            android:text="gdfgdf"
+            android:textSize="@dimen/twelve"/>
+
+
+    </LinearLayout>
+</LinearLayout>

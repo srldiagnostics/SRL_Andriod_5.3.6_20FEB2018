@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/login_background_color"
+    android:gravity="center_horizontal|center_vertical"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/recycler_header"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/rateustitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|center"
+            android:layout_marginBottom="@dimen/five"
+            android:layout_marginTop="@dimen/ten"
+            android:gravity="center"
+            android:text="Rate Us"
+            android:textColor="@color/HeaderTitleColor"
+            android:textSize="@dimen/margin_twenty"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/rate_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/ten"
+            android:layout_marginTop="@dimen/ten"
+            android:gravity="center"
+            android:orientation="horizontal"></LinearLayout>
+
+        <TextView
+            android:id="@+id/good"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|center"
+            android:layout_marginBottom="@dimen/ten"
+            android:layout_marginTop="@dimen/ten"
+            android:gravity="center"
+            android:text="Good"
+            android:textColor="@color/HeaderTitleColor"
+            android:textSize="17dp" />
+
+        <LinearLayout
+            android:id="@+id/layout"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_margin="@dimen/ten"
+            android:background="@drawable/rectangle_bg"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <EditText
+                android:id="@+id/comment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/emptycolor"
+                android:clickable="true"
+                android:hint="Please enter your comments max 150 characters allowed"
+                android:maxLength="150"
+                android:padding="5dp"
+                android:textColor="#555"
+                android:textColorHint="@color/grey"
+                android:textCursorDrawable="@drawable/color_cursor"
+
+                android:textSize="17sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/chartersEntredLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginRight="10dp"
+            android:gravity="right">
+
+            <TextView
+                android:id="@+id/inputlength"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:text="0"
+                android:textColor="@color/offer_price_color"
+                android:textSize="15dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="/"
+                android:textColor="@color/offer_price_color"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="150"
+                android:textColor="@color/offer_price_color"
+                android:textSize="15dp" />
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginTop="@dimen/ten"
+            android:background="@color/grey" />
+
+        <LinearLayout
+            android:id="@+id/buttonsLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <View
+                android:layout_width="0.5dp"
+                android:layout_height="fill_parent"
+                android:background="@color/grey" />
+
+            <Button
+                android:id="@+id/cancel_btn"
+                style="?android:textAppearanceSmall"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:text="Cancel"
+                android:textAllCaps="false"
+                android:textColor="@color/lightblue" />
+
+            <View
+                android:layout_width="0.5dp"
+                android:layout_height="fill_parent"
+                android:background="@color/grey" />
+
+            <Button
+                android:id="@+id/submit_btn"
+                style="?android:textAppearanceSmall"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:text="Submit"
+                android:textAllCaps="false"
+                android:textColor="@color/lightblue" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/grey" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

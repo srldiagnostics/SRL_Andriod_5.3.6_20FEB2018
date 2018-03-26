@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/hederLLID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/zeropointfive">
+
+        <include layout="@layout/header_myreport" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:layout_gravity="center_horizontal">
+
+        <include layout="@layout/map_fragment" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/ten"
+            android:background="@color/white"
+
+            android:padding="@dimen/five">
+
+            <LinearLayout
+                android:id="@+id/from_to_LLID"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="@dimen/twenty"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/five"
+                    android:text="@string/from_place"
+                    android:textColor="@color/from_text_color" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/five"
+                    android:text="@string/to_place"
+                    android:textColor="@color/from_text_color" />
+
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/dividerVID"
+                android:layout_width="@dimen/zeropointfive"
+                android:layout_height="@dimen/twenty"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_vertical"
+                android:layout_toLeftOf="@+id/cancelIVID"
+                android:background="@color/divider"
+                android:layout_marginRight="@dimen/five"
+                android:padding="@dimen/ten" />
+
+            <ImageView
+                android:id="@+id/cancelIVID"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/five"
+                android:layout_marginRight="@dimen/five"
+                android:background="@drawable/close_icon_map"
+                android:padding="@dimen/five" />
+
+        </RelativeLayout>
+
+    </FrameLayout>
+</LinearLayout>

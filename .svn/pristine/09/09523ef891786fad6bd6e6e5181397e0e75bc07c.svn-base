@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:attrs="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/familyLabelsHILLID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/grey_color"
+            android:gravity="left"
+            android:orientation="vertical"
+            android:padding="@dimen/eigth">
+
+            <TextView
+                android:id="@+id/accessionTVID"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/family_members_list"
+                android:textColor="@color/HeaderTitleColor"
+                android:textSize="@dimen/default_text_size_one"
+                attrs:TypeFace="@string/Bold" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/zeropointfive"
+            android:background="@color/divider" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/grey_color"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="@dimen/five">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center_horizontal"
+                android:text="@string/swipe_rigth_delete"
+                android:textColor="@color/ligthblue"
+                android:textSize="@dimen/small_text_size" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/zeropointfive"
+            android:background="@color/divider" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bottomHRLID"
+        android:layout_below="@+id/familyLabelsHILLID"
+        android:background="@color/white">
+
+        <!--  <include layout="@layout/family_member_list_item"/>-->
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/famillyRecyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:clipToPadding="false" />
+
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/bottomHRLID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/or_color"
+        android:clickable="true"
+        android:descendantFocusability="beforeDescendants"
+        android:focusableInTouchMode="true"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="@dimen/padding_ten">
+
+
+        <ImageView
+            android:id="@+id/addImgIVID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/register_m_icon" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/ten"
+            android:background="@color/emptycolor"
+            android:text="@string/add_member"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/default_text_size_one"
+            attrs:TypeFace="@string/Bold" />
+    </LinearLayout>
+</RelativeLayout>
+

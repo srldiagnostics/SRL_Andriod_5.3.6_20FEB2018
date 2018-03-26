@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "775538925339",
+    "firebase_url": "https://srldiagnostics-1858d.firebaseio.com",
+    "project_id": "srldiagnostics-1858d",
+    "storage_bucket": "srldiagnostics-1858d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:775538925339:android:9faad33aed285700",
+        "android_client_info": {
+          "package_name": "com.srllimited.srl"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "775538925339-dp57dnhigrhfkghet5g1jk73b5mp1di3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyClRQWKAe0ridJRwqvxgHkUZdkXF5PskiY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

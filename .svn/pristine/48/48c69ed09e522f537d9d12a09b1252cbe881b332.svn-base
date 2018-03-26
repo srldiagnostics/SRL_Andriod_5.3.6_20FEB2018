@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "D:\\Trupti_workspace\\SRLandroid-master\\EBS\\build\\intermediates\\res\\merged\\debug\\menu\\menu_idle_time_out.xml",
+        "source": "D:\\Trupti_workspace\\SRLandroid-master\\EBS\\res\\menu\\menu_idle_time_out.xml"
+    },
+    {
+        "merged": "D:\\Trupti_workspace\\SRLandroid-master\\EBS\\build\\intermediates\\res\\merged\\debug\\menu\\payment_failure.xml",
+        "source": "D:\\Trupti_workspace\\SRLandroid-master\\EBS\\res\\menu\\payment_failure.xml"
+    },
+    {
+        "merged": "D:\\Trupti_workspace\\SRLandroid-master\\EBS\\build\\intermediates\\res\\merged\\debug\\menu\\payment_success.xml",
+        "source": "D:\\Trupti_workspace\\SRLandroid-master\\EBS\\res\\menu\\payment_success.xml"
+    }
+]

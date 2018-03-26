@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@color/colorPrimary"
+        android:padding="@dimen/five">
+
+
+        <TextView
+            android:id="@+id/parent_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/five"
+            android:layout_toLeftOf="@+id/viewDetailsIVID"
+            android:padding="@dimen/five"
+
+            android:textColor="@color/white"
+            android:textSize="@dimen/fourteen"
+            android:textStyle="bold" />
+
+
+        <ImageView
+            android:id="@+id/viewDetailsIVID"
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="@dimen/five"
+            android:layout_marginRight="@dimen/five"
+            android:layout_marginTop="@dimen/five"
+            android:background="@drawable/remove_circle"
+            android:padding="@dimen/five" />
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/expandable_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/divider" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/lightgrey"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_gravity="center_horizontal|center"
+                android:layout_weight="1"
+                android:background="@color/emptycolor"
+                android:text="@string/result_label"
+                android:textAllCaps="false"
+                android:textColor="@color/colorPrimaryDark"
+
+                android:textSize="@dimen/fifteen"
+                android:textStyle="bold" />
+
+            <View
+                android:id="@+id/subprductsview"
+                android:layout_width="@dimen/zeropointfive"
+                android:layout_height="fill_parent"
+                android:background="@color/divider" />
+
+            <Button
+                android:id="@+id/rangeBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_gravity="center_horizontal|center"
+                android:layout_weight="1"
+                android:background="@color/emptycolor"
+                android:text="@string/bio_ref_range_label"
+                android:textAllCaps="false"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="@dimen/fifteen"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/divider" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusableInTouchMode="true"
+            android:scrollbars="vertical" />
+    </LinearLayout>
+</LinearLayout>

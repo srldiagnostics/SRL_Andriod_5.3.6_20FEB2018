@@ -1,0 +1,20 @@
+<FrameLayout android:id="@+id/layout_container"
+             xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/home_content_color"
+        android:clipToPadding="false"
+        android:paddingBottom="12dp"
+        android:paddingLeft="12dp"
+        android:scrollbarSize="5dp"
+        android:scrollbarThumbVertical="@android:color/darker_gray"
+        android:scrollbars="vertical"/>
+
+    <include layout="@layout/home_header"/>
+
+</FrameLayout>

@@ -1,0 +1,410 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/login_background_color"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/login_background_color"
+        android:descendantFocusability="beforeDescendants"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clipToPadding="true"
+                android:orientation="vertical"
+                android:paddingBottom="45dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/salutation_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/salutation"
+                        android:textSize="16dp"/>
+
+
+                    <include
+                        layout="@layout/mandatory"
+                        android:visibility="gone"/>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/salutation_edittext"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="4dp"
+                    android:background="@drawable/edittext_modify_states"
+                    android:clickable="true"
+                    android:padding="10dp"
+                    android:textColor="#555"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/firstname_text"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/firstname"
+                                android:textSize="16dp"/>
+
+                            <include layout="@layout/mandatory"/>
+                        </LinearLayout>
+
+                        <EditText
+                            android:id="@+id/firstname_edittext"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_marginRight="2dp"
+                            android:layout_marginTop="4dp"
+                            android:background="@drawable/edittext_modify_states"
+                            android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ'"
+                            android:inputType="textCapWords|textCapSentences|text|textNoSuggestions"
+                            android:maxLines="1"
+                            android:padding="10dp"
+                            android:singleLine="true"
+                            android:textColor="#555"
+                            android:textCursorDrawable="@drawable/color_cursor"/>
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/lastname_text"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/lastname"
+                                android:textSize="16dp"/>
+
+                            <include layout="@layout/mandatory"/>
+                        </LinearLayout>
+
+                        <EditText
+                            android:id="@+id/lastname_edittext"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_marginTop="4dp"
+                            android:background="@drawable/edittext_modify_states"
+                            android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                            android:inputType="textCapWords|textCapSentences|text|textNoSuggestions"
+                            android:maxLines="1"
+                            android:padding="10dp"
+                            android:singleLine="true"
+                            android:textColor="#555"
+                            android:textCursorDrawable="@drawable/color_cursor"/>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/email_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="@string/emailaddress"
+                        android:textSize="16dp"/>
+
+                    <include layout="@layout/mandatory"/>
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/email_edittext"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="4dp"
+                    android:background="@drawable/edittext_modify_states"
+                    android:inputType="textEmailAddress"
+                    android:maxLines="1"
+                    android:padding="10dp"
+                    android:singleLine="true"
+                    android:textColor="#555"
+                    android:textCursorDrawable="@drawable/color_cursor"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/mobile_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+
+                        android:text="@string/mobilenumber"
+                        android:textSize="16dp"/>
+
+                    <include layout="@layout/mandatory"/>
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/mobile_edittext"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="4dp"
+                    android:background="@drawable/edittext_modify_states"
+                    android:digits="0123456789"
+                    android:inputType="phone"
+                    android:maxLength="10"
+                    android:maxLines="1"
+                    android:padding="10dp"
+                    android:singleLine="true"
+                    android:textColor="#555"
+                    android:textCursorDrawable="@drawable/color_cursor"/>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/dob_text"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/dateofbirth"
+                                android:textSize="16dp"/>
+
+                            <include layout="@layout/mandatory"/>
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/dob_edittext"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_marginRight="2dp"
+                            android:layout_marginTop="4dp"
+                            android:background="@drawable/edittext_modify_states"
+                            android:clickable="true"
+                            android:padding="10dp"
+                            android:textColor="#555"/>
+
+                    </LinearLayout>
+
+                    <Button
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:background="@drawable/circle"
+                        android:text="@string/or"
+                        android:textColor="@color/white"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/appx_age_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:text="@string/approximateage"
+                            android:textSize="16dp"/>
+
+                        <TextView
+                            android:id="@+id/appx_age_edittext"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_marginRight="2dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/edittext_modify_states"
+                            android:clickable="true"
+                            android:padding="10dp"
+                            android:textColor="#555"/>
+
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/gender_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/gender"
+                        android:textSize="16dp"/>
+
+                    <include layout="@layout/mandatory"/>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/gender_edittext"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="4dp"
+                    android:background="@drawable/edittext_modify_states"
+                    android:clickable="true"
+                    android:padding="10dp"
+                    android:textColor="#555"/>
+                <LinearLayout
+                    android:id="@+id/lblstateLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/State"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/statee_label"
+                        android:textSize="16dp"/>
+                    <include
+
+                        layout="@layout/mandatory"/>
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/stateTVID"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="4dp"
+                    android:background="@drawable/edittext_modify_states"
+                    android:clickable="true"
+                    android:padding="10dp"
+                    android:textColor="#555"/>
+
+                <LinearLayout
+                    android:id="@+id/lblcityLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/City"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/cityy_label"
+                        android:textSize="16dp"/>
+                    <include
+
+                        layout="@layout/mandatory"/>
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/cityTVID"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="4dp"
+                    android:background="@drawable/edittext_modify_states"
+                    android:clickable="true"
+                    android:padding="10dp"
+                    android:textColor="#555"/>
+            </LinearLayout>
+
+
+        </ScrollView>
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/next"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:background="@color/ligth_white"
+        android:clickable="true"
+        android:padding="8dp"
+        android:text="@string/next"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+    />
+
+    <LinearLayout
+        android:id="@+id/hidePopup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/progress_frame_layout"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:visibility="gone">
+
+        <include layout="@layout/salutation"/>
+    </LinearLayout>
+    <!--<LinearLayout
+        android:id="@+id/hidePopup"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:layout_above="@+id/progress_frame_layout"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:visibility="gone">
+
+        <include layout="@layout/city_combo_list" />
+    </LinearLayout>-->
+    <include
+
+        layout="@layout/roundcorner_progressview"
+    />
+
+</RelativeLayout>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                 xmlns:app="http://schemas.android.com/apk/res-auto"
+
+                                                 xmlns:tools="http://schemas.android.com/tools"
+                                                 android:layout_width="match_parent"
+                                                 android:layout_height="match_parent"
+                                                 android:fitsSystemWindows="true"
+                                                 tools:context="com.srllimited.srl.Dashboard">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/grey_color"
+        android:orientation="vertical">
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <!--<TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:padding="@dimen/five"
+                    android:text="@string/avail_label"
+                    android:textColor="@color/HeaderTitleColor"
+                    android:textSize="@dimen/fifteen" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/zeropointfive"
+                    android:background="@color/divider" />-->
+
+
+                <!--<TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@color/white"
+                    android:gravity="center_horizontal"
+                    android:padding="@dimen/five"
+                    android:text="@string/avail_label"
+                    android:textColor="@color/lightblue"
+                    android:textSize="@dimen/seventeen" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/zeropointfive"
+                    android:background="@color/grey" />-->
+
+                <!-- <LinearLayout
+                     android:id="@+id/myreportHID"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:layout_alignParentLeft="true"
+                     android:layout_alignParentStart="true"
+                     android:layout_alignParentTop="true">
+
+                     <include layout="@layout/header_myreport" />
+                 </LinearLayout>-->
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/ten"
+                    android:orientation="vertical">
+
+                    <include layout="@layout/offer_middle_data"/>
+                </ScrollView>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/bottomHLID"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true">
+
+                <Button
+                    android:id="@+id/trackBTNID"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/lightblue"
+                    android:text="@string/book_now"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/fifteen"/>
+            </LinearLayout>
+
+
+        </RelativeLayout>
+    </LinearLayout>
+</android.support.design.widget.CoordinatorLayout>

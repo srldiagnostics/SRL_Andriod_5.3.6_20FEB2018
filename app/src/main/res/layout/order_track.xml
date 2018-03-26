@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/headerLLID"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottomLLID">
+
+        <include
+            android:id="@+id/headerwithDeatilsLLID"
+            layout="@layout/order_confirmation_activity" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/bottomLLID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="@dimen/fifteen"
+        android:gravity="center_horizontal"
+        android:background="@color/darkblue"
+        android:padding="@dimen/five">
+
+
+        <Button
+            android:id="@+id/trackBTNID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/five"
+            android:text="@string/trackorder"
+            android:background="@color/emptycolor"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/seventeen" />
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

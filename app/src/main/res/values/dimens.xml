@@ -1,0 +1,104 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="nav_header_vertical_spacing">16dp</dimen>
+    <dimen name="nav_header_height">150dp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="tab_max_width">48dp</dimen>
+    <dimen name="order_tracking_text_size">13sp</dimen>
+    <dimen name="tabhostHeight">48dp</dimen>
+    <dimen name="tabSelectorHeight">2dp</dimen>
+    <dimen name="materialTextTab">10sp</dimen>
+
+    <dimen name="min_height_header">58dp</dimen>
+    <dimen name="max_sliding_banners_height">150dp</dimen>
+    <dimen name="max_height_header">208dp</dimen>
+
+    <dimen name="layout_margin_default">10dp</dimen>
+    <dimen name="layout_padding_default">10dp</dimen>
+    <dimen name="header_img_size">70dp</dimen>
+    <dimen name="divider_height">0.5dp</dimen>
+    <dimen name="margin_bottom_scrollview">40dp</dimen>
+    <dimen name="nav_drawer_width">235dp</dimen>
+
+    <dimen name="header_font_size">14sp</dimen>
+    <dimen name="movie_icon_container_height">300dp</dimen>
+
+    <dimen name="settings_toggle_width">57dp</dimen>
+    <dimen name="settings_toggle_height">25dp</dimen>
+    <dimen name="settings_toggle_circle_diameter">24dp</dimen>
+    <dimen name="settings_toggle_circle_radius">15dp</dimen>
+    <dimen name="txt_size_book_now">15sp</dimen>
+
+    <dimen name="default_text_size_one">18sp</dimen>
+    <dimen name="default_text_size_two">16sp</dimen>
+
+    <dimen name="default_image_size_one">40dp</dimen>
+    <dimen name="default_image_size_two">80dp</dimen>
+    <dimen name="default_image_size_four">30dp</dimen>
+    <dimen name="default_image_size_three">20dp</dimen>
+
+    <dimen name="default_padding_one">4dp</dimen>
+    <dimen name="default_padding_two">8dp</dimen>
+
+    <dimen name="default_margin_ledt">5dp</dimen>
+
+    <dimen name="small_text_size">12dp</dimen>
+
+    <dimen name="address_height">100dp</dimen>
+
+
+    <!--Booking List-->
+    <dimen name="zeropointfive">0.5dp</dimen>
+    <dimen name="five">5dp</dimen>
+    <dimen name="ten">10dp</dimen>
+    <dimen name="fifteen">15dp</dimen>
+    <dimen name="two">2dp</dimen>
+    <dimen name="one">1dp</dimen>
+    <dimen name="fourteen">14sp</dimen>
+    <dimen name="twelve">12sp</dimen>
+    <dimen name="seventeen">17dp</dimen>
+    <dimen name="twenty">20dp</dimen>
+    <dimen name="fourty">40dp</dimen>
+    <dimen name="three">3dp</dimen>
+    <dimen name="eigth">8dp</dimen>
+
+
+    <!--Padding-->
+    <dimen name="padding_two">2dp</dimen>
+    <dimen name="padding_five">5dp</dimen>
+    <dimen name="padding_ten">10dp</dimen>
+    <dimen name="padding_twenty">20dp</dimen>
+
+    <!--Margin-->
+    <dimen name="margin_two">2dp</dimen>
+    <dimen name="margin_five">5dp</dimen>
+    <dimen name="margin_ten">10dp</dimen>
+    <dimen name="margin_twenty">20dp</dimen>
+
+    <!--Margin-->
+    <dimen name="text_thirteen">13sp</dimen>
+    <dimen name="margin__five">5dp</dimen>
+    <dimen name="margin__ten">10dp</dimen>
+    <dimen name="margin__twenty">20dp</dimen>
+
+    <dimen name="support_screen_social_media_icon_size">48dp</dimen>
+
+
+    <dimen name="tab_text_size">12sp</dimen>
+
+    <dimen name="sample_widget_height">72dp</dimen>
+    <dimen name="sample_widget_width">294dp</dimen>
+    <dimen name="pie_segment_label_font_size">10sp</dimen>
+    <!--<dimen name="snv_navigation_icon_padding">2dp</dimen>-->
+    <!--<dimen name="snv_navigation_icon_size">24dp</dimen>-->
+    <!--<dimen name="snv_navigation_elevation">8dp</dimen>-->
+    <!--<dimen name="snv_navigation_max_width">320dp</dimen>-->
+    <!--<dimen name="snv_navigation_padding_top_default">0dp</dimen>-->
+    <!--<dimen name="snv_navigation_padding_bottom">0dp</dimen>-->
+    <!--<dimen name="snv_navigation_separator_vertical_padding">0dp</dimen>-->
+
+
+</resources>

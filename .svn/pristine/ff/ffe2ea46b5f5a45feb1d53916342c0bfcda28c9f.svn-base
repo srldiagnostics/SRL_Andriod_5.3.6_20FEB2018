@@ -1,0 +1,22 @@
+[
+    {
+        "merged": "D:\\Trupti_workspace\\SRLandroid-master\\app\\build\\intermediates\\res\\merged\\debug\\layout-v21\\notification_action.xml",
+        "source": "C:\\Users\\lakhan.yadav\\.android\\build-cache\\d71cdfe1b454ea6b4aebda04361218f8ceeefe18\\output\\res\\layout-v21\\notification_action.xml"
+    },
+    {
+        "merged": "D:\\Trupti_workspace\\SRLandroid-master\\app\\build\\intermediates\\res\\merged\\debug\\layout-v21\\place_autocomplete_fragment.xml",
+        "source": "C:\\Users\\lakhan.yadav\\.android\\build-cache\\8c4e67d05f0a658eec5a5dcba12217f07ef1378c\\output\\res\\layout-v21\\place_autocomplete_fragment.xml"
+    },
+    {
+        "merged": "D:\\Trupti_workspace\\SRLandroid-master\\app\\build\\intermediates\\res\\merged\\debug\\layout-v21\\notification_template_custom_big.xml",
+        "source": "C:\\Users\\lakhan.yadav\\.android\\build-cache\\d71cdfe1b454ea6b4aebda04361218f8ceeefe18\\output\\res\\layout-v21\\notification_template_custom_big.xml"
+    },
+    {
+        "merged": "D:\\Trupti_workspace\\SRLandroid-master\\app\\build\\intermediates\\res\\merged\\debug\\layout-v21\\notification_action_tombstone.xml",
+        "source": "C:\\Users\\lakhan.yadav\\.android\\build-cache\\d71cdfe1b454ea6b4aebda04361218f8ceeefe18\\output\\res\\layout-v21\\notification_action_tombstone.xml"
+    },
+    {
+        "merged": "D:\\Trupti_workspace\\SRLandroid-master\\app\\build\\intermediates\\res\\merged\\debug\\layout-v21\\notification_template_icon_group.xml",
+        "source": "C:\\Users\\lakhan.yadav\\.android\\build-cache\\d71cdfe1b454ea6b4aebda04361218f8ceeefe18\\output\\res\\layout-v21\\notification_template_icon_group.xml"
+    }
+]

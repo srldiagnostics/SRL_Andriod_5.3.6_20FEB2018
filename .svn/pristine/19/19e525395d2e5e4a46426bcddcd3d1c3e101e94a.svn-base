@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/myorderHeader"
+        layout="@layout/header_myreport" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/darkblue"
+        android:padding="@dimen/five"
+        android:gravity="center_horizontal">
+
+        <EditText
+            android:id="@+id/orderIdETID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/rounded_edittext"
+
+            android:drawableLeft="@android:drawable/ic_menu_search"
+            android:padding="5dip"
+            android:text="@string/enter_pkg_oc"
+            android:textColor="@color/edittextColor" />
+    </LinearLayout>
+</LinearLayout>

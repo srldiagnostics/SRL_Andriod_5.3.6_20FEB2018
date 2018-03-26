@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/expanded_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical"
+android:visibility="visible"
+   >
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/lightgrey" />
+
+    <LinearLayout
+        android:id="@+id/collectDetailsLLID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/collectAddressdetailsIVID"
+        android:orientation="horizontal"
+        android:padding="@dimen/five"
+        android:weightSum="2">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="0.7"
+            android:text="@string/collection_label"
+            android:textColor="@color/HeaderTitleColor"
+            android:textSize="@dimen/fifteen" />
+        <!--<View
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:background="@color/lightgrey" />-->
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1.3"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/view2VID"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal">
+
+                <ImageView
+                    android:id="@+id/dateImgIVID"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+
+                    android:background="@drawable/date_icon" />
+
+                <TextView
+                    android:id="@+id/dateTVID"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/three"
+                    android:layout_toRightOf="@+id/dateImgIVID"
+                    android:textColor="@color/HeaderTitleColor"
+                    android:textSize="@dimen/fifteen" />
+
+                <ImageView
+                    android:id="@+id/timeImgIVID"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/five"
+                    android:layout_toRightOf="@+id/dateTVID"
+                    android:background="@drawable/time_icon" />
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/timeImgIVID"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/startTimeTVID"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/three"
+                        android:padding="@dimen/two"
+
+
+                        android:textColor="@color/HeaderTitleColor"
+                        android:textSize="@dimen/fifteen" />
+
+                    <TextView
+                        android:id="@+id/endTimeTVID"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/startTimeTVID"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/three"
+                        android:layout_toRightOf="@+id/timeImgIVID"
+                        android:padding="@dimen/two"
+
+                        android:textColor="@color/HeaderTitleColor"
+                        android:textSize="@dimen/fifteen" />
+                </LinearLayout>
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/lightgrey" />
+
+    <LinearLayout
+        android:id="@+id/paymentModeLLID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/collectDetailsLLID"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:padding="@dimen/five">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.1"
+
+            android:text="@string/payment_mode_label"
+            android:textColor="@color/HeaderTitleColor"
+            android:textSize="@dimen/fifteen" />
+        <!--<View
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:background="@color/lightgrey" />-->
+
+
+        <TextView
+            android:id="@+id/cardtypeTVID"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+
+            android:text="@string/credit_debit_label" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/lightgrey" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/ligth_whitee"
+        android:padding="@dimen/five"
+        android:text="@string/test_details_label"
+        android:textColor="@color/HeaderTitleColor"
+        android:textSize="@dimen/fifteen" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/orders_receyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="false" />
+
+
+
+
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/lightgrey" />
+
+    <LinearLayout
+        android:id="@+id/lay_discountPaybleLLID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/ligth_whitee"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        android:padding="@dimen/five">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+
+            android:text="@string/discount"
+            android:textColor="@color/divider"
+            android:textSize="@dimen/fifteen" />
+
+        <TextView
+            android:id="@+id/discountAmountTVID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:gravity="right"
+            android:text="@string/rs"
+            android:textColor="@color/divider"
+            android:textSize="@dimen/fifteen" />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/lightgrey" />
+
+    <LinearLayout
+        android:id="@+id/totalAmountPaybleLLID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/ligth_whitee"
+        android:orientation="horizontal"
+        android:padding="@dimen/five">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+
+            android:text="@string/total_amount_label"
+            android:textColor="@color/divider"
+            android:textSize="@dimen/fifteen" />
+
+        <TextView
+            android:id="@+id/totalAmountTVID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:gravity="right"
+            android:text="@string/rs"
+            android:textColor="@color/divider"
+            android:textSize="@dimen/fifteen" />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/lightgrey" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/paymentModeLLID"
+        android:background="@color/ligth_whitee"
+        android:orientation="horizontal"
+        android:padding="@dimen/five">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:gravity="left"
+            android:text="@string/payment_status_label"
+            android:textColor="@color/progresscolor"
+            android:textSize="@dimen/fifteen" />
+
+        <TextView
+            android:id="@+id/paidStatusTVID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:padding="@dimen/three"
+            android:text="@string/paid_label"
+            android:textColor="@color/progresscolor"
+            android:textSize="@dimen/fifteen" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/expanded_details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+
+        android:layout_gravity="center_horizontal"
+
+        android:clickable="true">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/drawer_close" />
+
+
+        <ImageView
+            android:layout_width="@dimen/default_image_size_one"
+            android:layout_height="@dimen/default_image_size_one"
+            android:layout_gravity="center_horizontal|bottom"
+            android:gravity="bottom"
+            android:paddingBottom="@dimen/layout_margin_default"
+            android:scaleType="fitCenter"
+            android:src="@drawable/close_list_icon"
+            android:visibility="gone" />
+    </FrameLayout>
+
+</LinearLayout>

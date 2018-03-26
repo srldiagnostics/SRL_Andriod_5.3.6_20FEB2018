@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/header"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/max_height_header"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/sliding_banners"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/max_sliding_banners_height"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/min_height_header"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/yourLocationRLID"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/bg_srl_location"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="2dp">
+
+            <ImageView
+                android:id="@+id/loc_icon"
+                android:layout_width="38dp"
+                android:layout_height="38dp"
+                android:layout_centerVertical="true"
+                android:scaleType="centerInside"
+                android:src="@drawable/loction_icon"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/loc_icon"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/your_cur_loc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/loc_icon"
+                    android:gravity="center_horizontal"
+                    android:text="@string/your_cur_loc"
+                    android:textColor="@color/green"
+                    android:textSize="13dp"/>
+
+                <TextView
+                    android:id="@+id/address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/your_cur_loc"
+                    android:layout_toRightOf="@+id/loc_icon"
+                    android:text="@string/static_address"
+                    android:gravity="center_horizontal"
+                    android:textColor="@android:color/black"
+                    android:textSize="13dp"/>
+
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/srlLocatorRLID"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.5"
+            android:background="@color/lightblue"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="2dp">
+
+            <ImageView
+                android:id="@+id/srl_loc_icon"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/srl_locator_icon"
+                android:scaleType="fitXY"
+                />
+
+            <TextView
+                android:id="@+id/srl_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/srl_loc_icon"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="4dp"
+                android:gravity="center"
+                android:text="@string/srl_address"
+                android:textColor="@android:color/white"
+                android:textSize="13dp"/>
+        </RelativeLayout>
+
+    </LinearLayout>
+</LinearLayout>

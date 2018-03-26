@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout android:id="@+id/drawer_layout"
+                                        xmlns:android="http://schemas.android.com/apk/res/android"
+                                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                                        xmlns:tools="http://schemas.android.com/tools"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:fitsSystemWindows="true"
+                                        tools:openDrawer="start">
+
+    <include
+        layout="@layout/app_bar_dashboard"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <com.appeaser.sublimenavigationviewlibrary.SublimeNavigationView
+        android:id="@+id/navigation_view"
+        style="@style/NavigationViewStyle"
+        android:layout_width="wrap_content"
+        android:minWidth="240dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:fitsSystemWindows="true"
+        app:snvHeaderLayout="@layout/nav_header_dashboard"
+        app:snvMenu="@menu/test_nav_menu_1">
+
+        <LinearLayout
+            android:id="@+id/logout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="@color/colorPrimary"
+            android:clickable="true"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/logout_icon"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="right"
+                android:scaleType="centerInside"
+                android:src="@drawable/logout_menu_icon"/>
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Logout"
+                android:textColor="@color/white"
+                android:textSize="20dp"/>
+        </LinearLayout>
+    </com.appeaser.sublimenavigationviewlibrary.SublimeNavigationView>
+
+</android.support.v4.widget.DrawerLayout>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/internalSVID"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/zeropointfive"
+            android:background="@color/divider" />
+
+
+        <RelativeLayout
+
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/grey_color"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <TextView
+                android:id="@+id/chamicalnameTVID"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_gravity="center_horizontal|center"
+                android:layout_marginLeft="@dimen/five"
+
+                android:background="@color/emptycolor"
+                android:padding="@dimen/five"
+                android:text="-"
+                android:textAllCaps="false"
+                android:textColor="@color/HeaderTitleColor"
+                android:textSize="12dp" />
+
+
+            <TextView
+                android:id="@+id/graph"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="center_horizontal|center"
+                android:layout_marginRight="5dp"
+                android:background="@color/emptycolor"
+                android:drawableRight="@drawable/myreports_graph_icon"
+                android:gravity="right"
+                android:padding="@dimen/five"
+
+                android:textAllCaps="false"
+
+                android:textColor="@color/HeaderTitleColor"
+                android:textSize="@dimen/fourteen" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/lightgrey"
+
+            >
+
+            <TextView
+                android:id="@+id/millletersTVID"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:background="@color/emptycolor"
+                android:gravity="start"
+                android:padding="@dimen/five"
+                android:text="-"
+                android:textAllCaps="false"
+                android:textColor="@color/HeaderTitleColor"
+                android:textSize="@dimen/fourteen" />
+
+            <View
+                android:id="@+id/itemview"
+                android:layout_width="0.5dp"
+                android:layout_height="fill_parent"
+                android:background="@color/white" />
+
+
+            <TextView
+                android:id="@+id/rangeTVID"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center"
+                android:layout_weight="1"
+                android:background="@color/emptycolor"
+                android:gravity="center_horizontal"
+                android:padding="@dimen/five"
+                android:text="-"
+                android:textAllCaps="false"
+                android:textColor="@color/HeaderTitleColor"
+                android:textSize="@dimen/fourteen" />
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/zeropointfive"
+
+            android:background="@color/divider" />
+    </LinearLayout>
+
+</ScrollView>

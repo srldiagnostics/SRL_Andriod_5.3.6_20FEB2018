@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+
+        android:id="@+id/card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        card_view:cardCornerRadius="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:padding="@dimen/five">
+
+                <TextView
+                    android:id="@+id/offer_discount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@color/white"
+                    android:padding="@dimen/ten"
+                    android:textColor="@color/lightblue"
+                    android:textSize="@dimen/fifteen" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/zeropointfive"
+                    android:background="@color/grey" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/five"
+                    android:padding="@dimen/five"
+                    android:text="Test Details"
+                    android:textColor="@color/HeaderTitleColor"
+                    android:textSize="@dimen/fifteen" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/eigth">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/diseases_label"
+                        android:textColor="@color/grey"
+                        android:textSize="@dimen/fifteen"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+
+                        android:layout_height="wrap_content"/>
+                    <TextView
+                        android:id="@+id/disease"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:layout_marginLeft="47dp"
+                        android:gravity="left"
+                        android:text="@string/diseases_dummy"
+
+
+                        android:textColor="@color/grey"
+                        android:textSize="@dimen/fifteen" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/eigth">
+
+                    <TextView
+                        android:id="@+id/methology_label"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/methology_label"
+                        android:textColor="@color/grey"
+                        android:textSize="@dimen/fifteen"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/methology"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:layout_marginLeft="18dp"
+                        android:gravity="left"
+                        android:text="@string/diseases_dummy"
+
+                        android:textColor="@color/grey"
+                        android:textSize="@dimen/fifteen" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="@dimen/eigth">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/preffer_label"
+                        android:textColor="@color/grey"
+                        android:textSize="@dimen/fifteen"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/preferred"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/eigth"
+
+                        android:textColor="@color/grey"
+                        android:textSize="@dimen/fifteen" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/zeropointfive"
+                    android:layout_marginTop="@dimen/five"
+                    android:background="@color/grey" />
+
+                <TextView
+                    android:id="@+id/expiredate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginTop="@dimen/five"
+                    android:padding="@dimen/five"
+                    android:textColor="@color/HeaderTitleColor"
+                    android:textSize="@dimen/fifteen" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+</ScrollView>

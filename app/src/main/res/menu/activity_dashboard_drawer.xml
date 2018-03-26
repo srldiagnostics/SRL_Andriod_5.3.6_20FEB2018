@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <group
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/menu_home"
+            android:icon="@drawable/home_menu_icon"
+            android:title="@string/menu_home"/>
+
+        <item
+            android:id="@+id/menu_book_a_test"
+            android:icon="@drawable/book_a_test_menu_icon"
+            android:title="@string/menu_book_a_test"/>
+
+
+
+        <item
+            android:id="@+id/menu_srl_locator"
+            android:icon="@drawable/srl_locator_menu_icon"
+            android:title="@string/menu_srl_locator"/>
+
+
+        <item
+            android:id="@+id/menu_track_your_order"
+            android:icon="@drawable/tracker_menu_icon"
+            android:title="@string/menu_track_your_order"/>
+
+            <item
+                android:id="@+id/menu_new_registration"
+                android:icon="@drawable/new_registrationmenu_icon"
+                android:title="@string/menu_register"/>
+            <item
+                android:id="@+id/menu_offers"
+                android:icon="@drawable/offer_menu_icon"
+                android:visible="false"
+                android:title="@string/menu_offers"/>
+
+            <item
+                android:id="@+id/menu_about_us"
+                app:showAsAction="always|withText"
+                android:visible="false"
+                android:icon="@drawable/about_us_icon_menu"
+                android:title="@string/menu_about_us"/>
+
+            <item
+                android:id="@+id/menu_contact_us"
+                android:visible="false"
+                android:icon="@drawable/contact_us_menu_icon"
+                android:title="@string/menu_contact_us"/>
+   </group>
+
+
+
+
+</menu>

@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:layout_margin="@dimen/ten"
+    android:gravity="center_horizontal|center"
+
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal|center"
+
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+
+            android:text="BMI"
+            android:textColor="@color/HeaderTitleColor"
+            android:textSize="@dimen/default_text_size_one"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+
+            android:layout_weight="1"
+            android:maxLines="1"
+            android:text="Weight Status"
+            android:textColor="#555"
+            android:textCursorDrawable="@drawable/color_cursor"
+            android:textSize="@dimen/default_text_size_one"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="@dimen/five"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+
+            android:text="Below 18.5"
+            android:textColor="@color/HeaderTitleColor"
+            android:textSize="@dimen/fifteen" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+
+            android:layout_weight="1"
+            android:maxLines="1"
+            android:text="UnderWeight"
+            android:textColor="#555"
+            android:textCursorDrawable="@drawable/color_cursor"
+            android:textSize="@dimen/fifteen" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/five"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+
+            android:text="18.5 - 24.9"
+            android:textColor="@color/HeaderTitleColor"
+            android:textSize="@dimen/fifteen" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+
+            android:layout_weight="1"
+            android:maxLines="1"
+            android:text="Normal"
+            android:textColor="#555"
+            android:textCursorDrawable="@drawable/color_cursor"
+            android:textSize="@dimen/fifteen" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/five"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+
+            android:text="25.0 - 29.9"
+            android:textColor="@color/HeaderTitleColor"
+            android:textSize="@dimen/fifteen" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+
+            android:layout_weight="1"
+            android:maxLines="1"
+            android:text="OverWeight"
+            android:textColor="#555"
+            android:textCursorDrawable="@drawable/color_cursor"
+            android:textSize="@dimen/fifteen" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/five"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+
+            android:text="30.0"
+            android:textColor="@color/HeaderTitleColor"
+            android:textSize="@dimen/fifteen" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+
+            android:layout_weight="1"
+            android:maxLines="1"
+            android:text="Obese"
+            android:textColor="#555"
+            android:textCursorDrawable="@drawable/color_cursor"
+            android:textSize="@dimen/fifteen" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/five"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+
+            android:text="40.0"
+            android:textColor="@color/HeaderTitleColor"
+            android:textSize="@dimen/fifteen" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+
+            android:layout_weight="1"
+            android:maxLines="1"
+            android:text="Morbidly Obese"
+            android:textColor="#555"
+            android:textCursorDrawable="@drawable/color_cursor"
+            android:textSize="@dimen/fifteen" />
+    </LinearLayout>
+
+</LinearLayout>

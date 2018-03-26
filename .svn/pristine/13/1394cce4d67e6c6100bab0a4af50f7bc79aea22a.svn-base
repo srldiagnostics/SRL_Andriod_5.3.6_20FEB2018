@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:ap="http://schemas.android.com/apk/res-auto"
+              android:layout_height="match_parent"
+              android:layout_width="match_parent"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:background="@android:color/transparent"
+              android:orientation="vertical"
+              tools:context="com.srllimited.srl.MyTrendActivity">
+
+    <RelativeLayout
+        android:id="@+id/activity_health_chart"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/transparent">
+        <LinearLayout
+            android:id="@+id/element_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/eigth"
+            android:layout_marginTop="@dimen/two"
+            android:orientation="horizontal"
+
+            android:padding="@dimen/three">
+
+            <TextView
+                android:id="@+id/elemtTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/element_label"
+                android:textColor="@color/ligthblue"
+                android:textSize="@dimen/fifteen"/>
+
+            <TextView
+                android:id="@+id/element_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginLeft="50dp"
+
+                android:gravity="left"
+                android:textColor="@color/HeaderTitleColor"
+                android:textSize="@dimen/fifteen"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/resultlayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/element_layout"
+            android:layout_marginLeft="@dimen/eigth"
+            android:orientation="horizontal"
+            android:padding="@dimen/three">
+
+            <TextView
+                android:id="@+id/result_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/result_units"
+                android:textColor="@color/ligthblue"
+                android:textSize="@dimen/fifteen"/>
+
+            <TextView
+                android:id="@+id/result_units"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:textColor="@color/HeaderTitleColor"
+                android:textSize="@dimen/fifteen"/>
+        </LinearLayout>
+
+       <!-- <com.androidplot.xy.XYPlot
+            style="@style/APDefacto.Dark"
+            android:id="@+id/plot"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            ap:title="A Simple XY Plot"
+            ap:rangeTitle="range"
+            ap:domainTitle="domain"
+            ap:lineLabels="left|bottom"
+            ap:lineLabelRotationBottom="-45"/>-->
+
+      <!--  <com.github.mikephil.charting.charts.LineChart
+            android:id="@+id/linechart"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_above="@+id/statuss_layout"
+            android:layout_below="@+id/resultlayout"
+            android:background="@android:color/transparent"
+            android:padding="@dimen/five"/>-->
+
+       <!-- <LinearLayout
+            android:id="@+id/statuss_layout"
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/fifteen"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            >
+
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_margin="@dimen/five"
+                android:src="@drawable/dark_red_rect"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="@dimen/five"
+                android:text="High"
+
+                android:textColor="@color/HeaderTitleColor"
+                android:textSize="@dimen/eigth"/>
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_margin="@dimen/five"
+                android:src="@drawable/ligth_blue_rect"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="@dimen/five"
+                android:gravity="center_vertical"
+                android:text="Result"
+                android:textColor="@color/HeaderTitleColor"
+                android:textSize="@dimen/eigth"/>
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_below="@+id/linechart"
+                android:layout_margin="@dimen/five"
+                android:src="@drawable/ligth_red_rect"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="@dimen/five"
+                android:gravity="center_vertical"
+                android:text="Low"
+                android:textColor="@color/HeaderTitleColor"
+                android:textSize="@dimen/eigth"/>
+
+        </LinearLayout>-->
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>

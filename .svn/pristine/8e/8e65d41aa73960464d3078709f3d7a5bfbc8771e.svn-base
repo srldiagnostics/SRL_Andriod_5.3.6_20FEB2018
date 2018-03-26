@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#0076bc</color>
+    <color name="colorPrimaryDark">#0076bc</color>
+    <color name="colorAccent">#FFFFFF</color>
+    <color name="menuitemcolor">#4e4e4e</color>
+    <color name="lightblue">#37A9ED</color>
+    <color name="lightgrey">#E4E4E4</color>
+    <color name="srl_location_grey">#ABABB2</color>
+    <color name="home_content_color">#EDF0F2</color>
+    <color name="violet">#7096D7</color>
+    <color name="contentcolor">#083d5d</color>
+    <color name="green">#05b65c</color>
+    <color name="booknowcolor">#303030</color>
+    <color name="login_background_color">#edf0f1</color>
+    <color name="edithighlightcolor">#d3ecfc</color>
+    <color name="list_group_title">#808080</color>
+    <color name="list_item_title">#AAAAAA</color>
+    <color name="sample_color">#989a9a</color>
+    <color name="group_divider_color">#80CBC4</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+
+    <color name="lime">#E6EE9C</color>
+    <color name="orange">#FFCC80</color>
+    <color name="grey">#B0BEC5</color>
+    <color name="purple">#B39DDB</color>
+    <color name="pink">#F48FB1</color>
+    <color name="bg_color_book_now">#c5c6c6</color>
+    <color name="txt_color_book_now">#303030</color>
+    <color name="or_color">#86c867</color>
+    <color name="credentials_text_color">#5f5f5f</color>
+
+    <color name="remove_color">#ff7777</color>
+
+
+    <color name="colorPrimary1">#3F51B5</color>
+    <color name="colorPrimaryDark1">#303F9F</color>
+    <color name="colorAccent1">#FF4081</color>
+
+
+    <color name="red">#ff7777</color>
+    <color name="edittextColor">#c3c3c3</color>
+    <color name="HeaderTitleColor">#4e4e4e</color>
+
+    <color name="emptycolor">#00000000</color>
+
+    <color name="darkblue">#0076bc</color>
+    <color name="ligthblue">#37a9ed</color>
+    <color name="divider">#808080</color>
+    <color name="ligth_white">#a3a3a3</color>
+    <color name="ligth_green">#86c867</color>
+    <color name="green1">#2d8703</color>
+
+
+    <color name="red_dark">#fa3d34</color>
+
+
+    <color name="ligth_grey">#eeebeb</color>
+
+    <color name="ligth_whitee">#edf0f1</color>
+
+
+    <color name="lightGreen">#86c867</color>
+    <color name="trackingText">#808080</color>
+    <color name="collectionText">#4e4e4e</color>
+    <color name="textHint">#c3c3c3</color>
+
+
+    <color name="grey_color">#edf0f1</color>
+    <color name="progress_color">#0b904d</color>
+    <color name="progresscolor">#0b904d</color>
+    <color name="cancel_color">#ff7777</color>
+    <color name="sky_blue">#37a9ed</color>
+
+    <color name="total_test_price_color">#34a6b1</color>
+    <color name="offer_price_color">#62c8d2</color>
+    <color name="you_save_color">#5ce4f1</color>
+
+    <!--Lab Locator Color-->
+
+    <color name="ligth_black">#686868</color>
+    <color name="ligthwhite">#a7a5a5</color>
+    <color name="from_text_color">#767676</color>
+
+    <color name="discount_text_olor">#888686</color>
+    <color name="dark_blue">#1B5BA8</color>
+
+
+</resources>

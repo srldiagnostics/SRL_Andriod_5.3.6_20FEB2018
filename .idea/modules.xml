@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/EBS/EBS.iml" filepath="$PROJECT_DIR$/EBS/EBS.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SRL_SVN.iml" filepath="$PROJECT_DIR$/SRL_SVN.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/placesautocompletetextview/placesautocompletetextview.iml" filepath="$PROJECT_DIR$/placesautocompletetextview/placesautocompletetextview.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sublimenavigationview/sublimenavigationview.iml" filepath="$PROJECT_DIR$/sublimenavigationview/sublimenavigationview.iml" />
+      <module fileurl="file://$PROJECT_DIR$/volley/volley.iml" filepath="$PROJECT_DIR$/volley/volley.iml" />
+    </modules>
+  </component>
+</project>

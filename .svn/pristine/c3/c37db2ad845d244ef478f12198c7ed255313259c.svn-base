@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/grey_color"
+                android:fitsSystemWindows="true"
+                android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/layout_place_search_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@color/colorPrimary">
+
+        <com.srllimited.srl.widget.UISearchBar
+            android:id="@+id/place_search_view"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="8dp"/>
+
+    </FrameLayout>
+
+
+    <Button
+        android:id="@+id/doneBTNID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center_horizontal"
+        android:background="#0076bc"
+        android:padding="@dimen/fifteen"
+        android:text="@string/done"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="@dimen/fifteen"/>
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/doneBTNID"
+        android:layout_below="@+id/layout_place_search_view">
+
+        <ListView
+            android:id="@+id/searched_places_list_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="8dp"
+            android:divider="@android:color/transparent"
+            android:background="@android:color/white"
+            android:clipToPadding="false"
+            android:visibility="gone"/>
+
+        <ScrollView
+            android:id="@+id/recentsearchSVID"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/recent_searches_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/grey_color"
+                    android:orientation="vertical"
+                    android:padding="@dimen/ten">
+
+                    <TextView
+                        android:id="@+id/labNameTVID"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/ten"
+                        android:text="@string/recent_search_label"
+                        android:textColor="@color/HeaderTitleColor"
+                        android:textSize="@dimen/fifteen"/>
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/five"
+                        android:background="@drawable/dashed_border">
+
+                        <include layout="@layout/recent_serch_item"/>
+
+                    </FrameLayout>
+                    <FrameLayout
+                        android:layout_marginTop="@dimen/five"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content">
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/one"
+                            android:layout_gravity="center_vertical|center"
+                            android:background="@color/divider"/>
+
+                        <Button
+                            android:id="@+id/orBTNID"
+                            android:layout_width="@dimen/fourty"
+                            android:layout_height="@dimen/fourty"
+                            android:layout_centerHorizontal="true"
+                            android:layout_gravity="center"
+
+                            android:background="@drawable/circle_green_complete"
+                            android:padding="@dimen/five"
+                            android:text="@string/or"
+                            android:textAllCaps="false"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/fourteen"/>
+
+
+                    </FrameLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/autoDetectLLID"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/eigth"
+                    android:clickable="true"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/autodetectIVID"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="@dimen/five"
+                        android:background="@drawable/my_loction_icon"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:padding="@dimen/ten"
+                        android:text="@string/auto_detect_label"/>
+
+
+                </LinearLayout>
+
+                <!--  <ScrollView
+                      android:id="@+id/mapButtonSVID"
+                      android:layout_width="match_parent"
+                      android:layout_height="match_parent"
+                      android:visibility="gone"
+                      >
+
+
+                  </ScrollView>-->
+                <LinearLayout
+                    android:id="@+id/mapViewLLID"
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <include
+                        layout="@layout/map_fragment"
+                        android:layout_width="match_parent"
+                        android:layout_height="250dp"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+    </FrameLayout>
+
+</RelativeLayout>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" >
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#FFF"
+        android:text="dfsad"
+        android:layout_toRightOf="@+id/image"/>
+<LinearLayout android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:layout_below="@+id/text">
+    <Button
+        android:id="@+id/dialogButtonOK"
+        android:layout_width="100px"
+        android:layout_height="wrap_content"
+        android:text=" Ok "
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="5dp"
+
+    />
+    <Button
+        android:id="@+id/btnno"
+        android:layout_width="100px"
+        android:layout_height="wrap_content"
+        android:text=" Ok1 "
+        android:layout_marginTop="5dp"
+
+        android:layout_marginRight="5dp"
+        android:layout_alignRight="@+id/dialogButtonOK"
+    />
+</LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/progress_frame_layout"
+    android:layout_width="match_parent"
+    android:layout_height="44dp"
+    android:layout_alignParentBottom="true"
+    android:background="@color/lightgrey"
+    android:padding="1dp"
+    android:layout_gravity="bottom">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@drawable/dialog_full_holo_light"
+        >
+
+
+        <com.srllimited.srl.widget.RoundCornerProgressView
+            android:id="@+id/rcpv_progress_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@+id/progress_layout"
+            app:rcpvProgressColor="#9937A9ED"
+
+            />
+
+        <LinearLayout
+            android:id="@+id/progress_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+           >
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="1dp"
+                android:layout_height="fill_parent"
+                android:layout_marginRight="@dimen/layout_padding_default"
+                android:layout_toLeftOf="@+id/onebyfive"
+                android:background="@color/bg_color_book_now" />
+
+            <TextView
+                android:id="@+id/progress_count_text"
+                android:layout_width="@dimen/default_image_size_one"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_vertical"
+                android:textColor="@color/black"
+                android:textSize="@dimen/default_text_size_one"
+                android:textStyle="normal" />
+
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            android:background="@drawable/bg_button_overlay"
+           
+             />
+
+    </RelativeLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_weight="1.3"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/progress_text"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="Order Now"
+            android:background="@drawable/btn2"
+            android:layout_alignParentRight="true"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/default_text_size_one"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

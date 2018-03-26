@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="ebs">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/EBS/libs/ebs.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

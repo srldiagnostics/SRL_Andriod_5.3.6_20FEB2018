@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:arb="http://schemas.android.com/apk/res-auto"
+    xmlns:attrs="http://schemas.android.com/tools"
+    xmlns:segmentedgroup="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/familyLabelsHILLID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/grey_color"
+            android:gravity="left"
+            android:orientation="vertical"
+
+            android:padding="@dimen/eigth"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/accessionTVID"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+
+                android:text="Notifications"
+                android:textColor="@color/HeaderTitleColor"
+                android:textSize="@dimen/default_text_size_one"
+                attrs:TypeFace="@string/Bold" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/zeropointfive"
+                android:background="@color/divider" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/grey_color"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="@dimen/five">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center_horizontal"
+                android:text="@string/swipe_rigth_delete_notification"
+                android:textColor="@color/ligthblue"
+                android:textSize="@dimen/small_text_size" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/zeropointfive"
+            android:background="@color/divider" />
+
+    <RelativeLayout
+        android:id="@+id/rel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:background="@color/white"
+        android:minHeight="80dp">
+
+        <info.hoang8f.android.segmented.SegmentedGroup
+            android:id="@+id/segmented3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            segmentedgroup:sc_border_width="1dp"
+            segmentedgroup:sc_corner_radius="5dp"
+            segmentedgroup:sc_tint_color="#37A9ED">
+
+            <RadioButton
+                android:id="@+id/personals"
+                style="@style/RadioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Personals" />
+
+            <RadioButton
+                android:id="@+id/offers"
+                style="@style/RadioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Offers" />
+
+
+        </info.hoang8f.android.segmented.SegmentedGroup>
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottomHRLID"
+        android:layout_below="@+id/familyLabelsHILLID"
+        android:background="@color/white">
+
+        <!--  <include layout="@layout/family_member_list_item"/>-->
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/notificationRecyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:clipToPadding="false" />
+
+    </ScrollView>
+
+
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/clearAll"
+        android:layout_width="match_parent"
+        android:background="@color/lightblue"
+        android:layout_alignParentBottom="true"
+        android:text="Clear All"
+        android:textColor="@color/white"
+        android:layout_height="wrap_content" />
+</RelativeLayout>
+

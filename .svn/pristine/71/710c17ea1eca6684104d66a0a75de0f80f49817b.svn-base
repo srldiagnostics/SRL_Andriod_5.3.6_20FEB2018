@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/login_background_color"
+    android:fitsSystemWindows="true"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/login_background_color"
+        android:orientation="vertical">
+
+        <include layout="@layout/toggole_button"
+            />
+
+ </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/confirm_footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/login_background_color"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/lightgrey"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="8dp">
+
+            <CheckBox
+                android:id="@+id/privacy_policy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:buttonTint="@android:color/darker_gray"
+
+                android:textColor="@android:color/darker_gray"
+                android:textSize="13sp"/>
+
+            <TextView
+                android:id="@+id/termcondition"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:text="I agree to our Privacy Policy and Terms &amp; Conditions"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="13sp"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/lightgrey"/>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp"
+    android:orientation="horizontal"
+    android:gravity="center"
+    android:weightSum="2">
+<LinearLayout
+    android:layout_width="0dp"
+    android:layout_height="match_parent"
+    android:layout_weight="1"
+    android:gravity="center"
+    >
+    <Button
+        android:id="@+id/mDecline"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/white"
+        android:clickable="true"
+        android:text="@string/decline"
+        android:textColor="@color/lightblue"
+        android:textSize="18sp"/>
+
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:layout_weight="1"
+        >
+        <Button
+            android:id="@+id/mAccept"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/lightblue"
+            android:clickable="true"
+            android:text="@string/Agree"
+            android:textColor="@color/white"
+            android:textSize="18sp"/>
+        </LinearLayout>
+</LinearLayout>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

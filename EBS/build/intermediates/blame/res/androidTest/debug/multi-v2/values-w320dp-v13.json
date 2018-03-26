@@ -1,0 +1,34 @@
+{
+    "logs": [
+        {
+            "outputFile": "D:\\Trupti_workspace\\SRL_SVN\\EBS\\build\\intermediates\\res\\merged\\androidTest\\debug\\values-w320dp-v13\\values-w320dp-v13.xml",
+            "map": [
+                {
+                    "source": "D:\\Trupti_workspace\\SRL_SVN\\EBS\\build\\intermediates\\bundles\\debug\\res\\values-w320dp-v13\\values-w320dp-v13.xml",
+                    "from": {
+                        "startLines": "2,3,4",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "55,113,166",
+                        "endColumns": "57,52,55",
+                        "endOffsets": "108,161,217"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "D:\\Trupti_workspace\\SRL_SVN\\EBS\\build\\intermediates\\incremental\\mergeDebugAndroidTestResources\\merged.dir\\values-w320dp-v13\\values-w320dp-v13.xml",
+            "map": [
+                {
+                    "source": "D:\\Trupti_workspace\\SRL_SVN\\EBS\\build\\intermediates\\bundles\\debug\\res\\values-w320dp-v13\\values-w320dp-v13.xml",
+                    "from": {
+                        "startLines": "2,3,4",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "55,113,166",
+                        "endColumns": "57,52,55",
+                        "endOffsets": "108,161,217"
+                    }
+                }
+            ]
+        }
+    ]
+}

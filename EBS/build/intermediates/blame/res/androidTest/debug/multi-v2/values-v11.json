@@ -1,0 +1,90 @@
+{
+    "logs": [
+        {
+            "outputFile": "D:\\Trupti_workspace\\SRL_SVN\\EBS\\build\\intermediates\\res\\merged\\androidTest\\debug\\values-v11\\values-v11.xml",
+            "map": [
+                {
+                    "source": "D:\\Trupti_workspace\\SRL_SVN\\EBS\\build\\intermediates\\bundles\\debug\\res\\values-v11\\values-v11.xml",
+                    "from": {
+                        "startLines": "2,8,12",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "55,374,524",
+                        "endLines": "7,11,15",
+                        "endColumns": "12,12,10",
+                        "endOffsets": "369,519,772"
+                    },
+                    "to": {
+                        "startLines": "2,8,180",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "55,374,13103",
+                        "endLines": "7,11,183",
+                        "endColumns": "12,12,10",
+                        "endOffsets": "369,519,13351"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\lakhan.yadav\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-24.2.1.aar\\4264be3ca40e3aba58c92817981f9c3f\\res\\values-v11\\values-v11.xml",
+                    "from": {
+                        "startLines": "2,8,14,20,26,32,38,39,40,41,46,51,56,58,60,61,62,115,169",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,474,899,1327,1753,2180,2605,2694,2795,2898,3306,3726,4148,4255,4384,4455,4538,8469,12543",
+                        "endLines": "7,13,19,25,31,37,38,39,40,45,50,55,57,59,60,61,114,168,169",
+                        "endColumns": "12,12,12,12,12,12,88,100,102,12,12,12,12,12,70,82,12,12,90",
+                        "endOffsets": "469,894,1322,1748,2175,2600,2689,2790,2893,3301,3721,4143,4250,4379,4450,4533,8464,12538,12629"
+                    },
+                    "to": {
+                        "startLines": "12,18,24,30,36,42,48,49,50,51,56,61,66,68,70,71,72,125,179",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "524,943,1368,1796,2222,2649,3074,3163,3264,3367,3775,4195,4617,4724,4853,4924,5007,8938,13012",
+                        "endLines": "17,23,29,35,41,47,48,49,50,55,60,65,67,69,70,71,124,178,179",
+                        "endColumns": "12,12,12,12,12,12,88,100,102,12,12,12,12,12,70,82,12,12,90",
+                        "endOffsets": "938,1363,1791,2217,2644,3069,3158,3259,3362,3770,4190,4612,4719,4848,4919,5002,8933,13007,13098"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "D:\\Trupti_workspace\\SRL_SVN\\EBS\\build\\intermediates\\incremental\\mergeDebugAndroidTestResources\\merged.dir\\values-v11\\values-v11.xml",
+            "map": [
+                {
+                    "source": "D:\\Trupti_workspace\\SRL_SVN\\EBS\\build\\intermediates\\bundles\\debug\\res\\values-v11\\values-v11.xml",
+                    "from": {
+                        "startLines": "2,8,12",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "55,374,524",
+                        "endLines": "7,11,15",
+                        "endColumns": "12,12,10",
+                        "endOffsets": "369,519,772"
+                    },
+                    "to": {
+                        "startLines": "2,8,180",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "55,374,13103",
+                        "endLines": "7,11,183",
+                        "endColumns": "12,12,10",
+                        "endOffsets": "369,519,13351"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\lakhan.yadav\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-24.2.1.aar\\4264be3ca40e3aba58c92817981f9c3f\\res\\values-v11\\values-v11.xml",
+                    "from": {
+                        "startLines": "2,8,14,20,26,32,38,39,40,41,46,51,56,58,60,61,62,115,169",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,474,899,1327,1753,2180,2605,2694,2795,2898,3306,3726,4148,4255,4384,4455,4538,8469,12543",
+                        "endLines": "7,13,19,25,31,37,38,39,40,45,50,55,57,59,60,61,114,168,169",
+                        "endColumns": "12,12,12,12,12,12,88,100,102,12,12,12,12,12,70,82,12,12,90",
+                        "endOffsets": "469,894,1322,1748,2175,2600,2689,2790,2893,3301,3721,4143,4250,4379,4450,4533,8464,12538,12629"
+                    },
+                    "to": {
+                        "startLines": "12,18,24,30,36,42,48,49,50,51,56,61,66,68,70,71,72,125,179",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "524,943,1368,1796,2222,2649,3074,3163,3264,3367,3775,4195,4617,4724,4853,4924,5007,8938,13012",
+                        "endLines": "17,23,29,35,41,47,48,49,50,55,60,65,67,69,70,71,124,178,179",
+                        "endColumns": "12,12,12,12,12,12,88,100,102,12,12,12,12,12,70,82,12,12,90",
+                        "endOffsets": "938,1363,1791,2217,2644,3069,3158,3259,3362,3770,4190,4612,4719,4848,4919,5002,8933,13007,13098"
+                    }
+                }
+            ]
+        }
+    ]
+}

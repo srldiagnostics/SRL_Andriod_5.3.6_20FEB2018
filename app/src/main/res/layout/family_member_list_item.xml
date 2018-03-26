@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.daimajia.swipe.SwipeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                xmlns:attrs="http://schemas.android.com/tools"
+                                android:id="@+id/swipe_layout"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+    <!-- Bottom View Start-->
+    <LinearLayout
+
+        android:layout_width="100dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="right"
+        android:gravity="right"
+
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/red_dark">
+
+            <ImageView
+                android:id="@+id/delete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:clickable="true"
+                android:background="@drawable/cancelimg" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/lightblue">
+
+            <ImageView
+                android:id="@+id/edit_query"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:layout_centerInParent="true"
+                android:background="@drawable/deleteimg" />
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/patientdetailslayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/bottom_wrapper"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:padding="@dimen/eigth">
+
+
+            <ImageView
+                android:id="@+id/memberimg2IVID"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/family_member_male" />
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/ten"
+                android:layout_toRightOf="@+id/memberimg2IVID"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/five">
+
+                <TextView
+                    android:id="@+id/usernameTVID"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/member_name"
+                    android:textColor="@color/HeaderTitleColor"
+                    android:textSize="16dp"
+                    />
+
+                <TextView
+                    android:id="@+id/userIDTVID"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/five"
+                    android:text="@string/member_no"
+                    android:textColor="@color/HeaderTitleColor"
+                    android:textSize="16dp"
+                    attrs:TypeFace="@string/Bold" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+        <include layout="@layout/family_members_item_complete_details" />
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_gravity="bottom"
+                android:layout_toLeftOf="@+id/showdetails_layout"
+                android:background="@color/bg_color_book_now" />
+
+            <FrameLayout
+                android:id="@+id/userdetailsframe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_centerHorizontal="true"
+                android:clickable="true">
+
+                <ImageView
+                    android:layout_width="120dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/drawer" />
+
+                <ImageView
+                    android:layout_width="@dimen/default_image_size_four"
+                    android:layout_height="@dimen/default_image_size_four"
+                    android:layout_gravity="center_horizontal|bottom"
+                    android:layout_marginBottom="@dimen/default_margin_ledt"
+                    android:gravity="bottom"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/show_details_icon"
+                    android:text="@string/book_show_details"
+                    android:textSize="@dimen/default_text_size_one" />
+            </FrameLayout>
+
+
+            <FrameLayout
+                android:id="@+id/expanded_frameLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_horizontal"
+                android:clickable="true"
+                android:visibility="gone">
+
+                <ImageView
+                    android:layout_width="140dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/drawer_gray" />
+
+
+                <ImageView
+                    android:layout_width="@dimen/default_image_size_one"
+                    android:layout_height="@dimen/default_image_size_one"
+                    android:layout_gravity="center_horizontal|bottom"
+                    android:gravity="bottom"
+                    android:paddingBottom="@dimen/layout_margin_default"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/close_list_icon" />
+            </FrameLayout>
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+</com.daimajia.swipe.SwipeLayout>

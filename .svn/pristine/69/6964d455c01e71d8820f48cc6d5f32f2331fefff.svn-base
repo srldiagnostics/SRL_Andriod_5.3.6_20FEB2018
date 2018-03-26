@@ -1,0 +1,1349 @@
+package com.srllimited.srl;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Map;
+
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
+
+import com.appsflyer.AFInAppEventParameterName;
+import com.appsflyer.AppsFlyerLib;
+import com.facebook.appevents.AppEventsLogger;
+import com.google.firebase.analytics.FirebaseAnalytics;
+import com.srllimited.srl.constants.Constants;
+import com.srllimited.srl.data.ServerResponseData;
+import com.srllimited.srl.data.UserData;
+import com.srllimited.srl.database.OrderDatabase;
+import com.srllimited.srl.serverapis.ApiConstants;
+import com.srllimited.srl.serverapis.ApiRequest;
+import com.srllimited.srl.serverapis.ApiRequestHelper;
+import com.srllimited.srl.serverapis.ApiRequestManager;
+import com.srllimited.srl.serverapis.ApiRequestReferralCode;
+import com.srllimited.srl.serverapis.ApiResponseListener;
+import com.srllimited.srl.serverapis.RestApiCallUtil;
+import com.srllimited.srl.util.SharedPrefsUtil;
+import com.srllimited.srl.util.TypefaceUtil;
+import com.srllimited.srl.util.Util;
+import com.srllimited.srl.util.Validate;
+import com.srllimited.srl.utilities.AppDataBaseHelper;
+
+import android.app.Activity;
+import android.app.AlertDialog;
+import android.app.Dialog;
+import android.content.Context;
+import android.content.DialogInterface;
+import android.content.Intent;
+import android.content.SharedPreferences;
+import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
+import android.os.Bundle;
+import android.support.design.widget.TextInputEditText;
+import android.support.v4.view.GravityCompat;
+import android.support.v4.widget.DrawerLayout;
+import android.support.v7.widget.Toolbar;
+import android.util.Log;
+import android.view.View;
+import android.view.Window;
+import android.view.inputmethod.InputMethodManager;
+import android.widget.Button;
+import android.widget.CheckBox;
+import android.widget.EditText;
+import android.widget.ImageView;
+import android.widget.LinearLayout;
+import android.widget.RadioButton;
+import android.widget.RadioGroup;
+import android.widget.RelativeLayout;
+import android.widget.TextView;
+import android.widget.Toast;
+
+public class LoginScreenActivity extends MenuBaseActivity
+		implements View.OnClickListener, RadioGroup.OnCheckedChangeListener, RestApiCallUtil.VolleyCallback
+{
+	public static Activity loginact;
+	ArrayList<UserData> _userData = new ArrayList<>();
+	Context context;
+	//Update Priofile
+	ArrayList<UserData> _updateuserData = new ArrayList<>();
+
+	UserData _updateuserdataset;
+
+	EditText userid_edittext;
+
+	TextInputEditText pwd_edittext;
+
+	Dialog alertDialog;
+	//Data Base
+	AppDataBaseHelper appDb = new AppDataBaseHelper(this);
+	UserData _userAppData;
+	OrderDatabase orderDB;
+	View view = null;
+	TextView enter_user_id, alert_submit, alert_heading;
+	EditText edittext_user_id, radio_mobile_edittext, radio_email_edittext, radio_mobileoremail_edittext;
+	ImageView alert_header_image, close_popup;
+	View view1, view2;
+	RadioGroup radio_group;
+	RadioButton radio_mobile_no, radio_email, radio_mobileoremail, radio_not_sure;
+	TextView forgot_pwd, call_request, entered_userid, landline_number;
+	Button register_btn, login_btn;
+	LinearLayout not_sure_view;
+	RelativeLayout not_sure_call;
+	String loggedin_username = "";
+	String loggedin_pwd = "";
+	CheckBox remember_me;
+	String loggedin_remember = "";
+	String fetchedMobileNo = "";
+	String fetchedEmailId = "";
+	Button login_as_guest_btn;
+	private FirebaseAnalytics firebaseAnalytics;
+	private ApiResponseListener<ServerResponseData> mResponseListener = new ApiResponseListener<ServerResponseData>()
+	{
+		@Override
+		public void onResponse(final ApiRequest request, final ServerResponseData serverResponseData)
+		{
+			Log.e("TAG12", String.valueOf(serverResponseData.getArrayData()) + " " + request.getReferralCode());
+			switch (request.getReferralCode())
+			{
+				case USER_DETAILS:
+				{
+					setProfileData(serverResponseData.getArrayData());
+
+				}
+					break;
+				case GET_LOGO:
+				{
+					setLOGO(serverResponseData.getArrayData());
+				}
+					break;
+				case GET_CALL_US:
+				{
+					setCallUS(serverResponseData.getArrayData());
+				}
+					break;
+
+				case LOGIN:
+				{
+					if (serverResponseData != null /*&& serverResponse.equalsIgnoreCase("Query Successful")*/)
+					{
+						SharedPrefsUtil.setBooleanPreference(context, "remember", false);
+						Constants.isLogin = false;
+						if (logout_text.getText().toString().equalsIgnoreCase("Login"))
+						{
+							logout_text.setText("Logout");
+						}
+
+						SharedPreferences pref = getApplicationContext()
+								.getSharedPreferences(Constants.login_credentials, MODE_PRIVATE);
+						SharedPreferences.Editor editor = pref.edit();
+						editor.putString(Constants.loggedin_username, userid_edittext.getText().toString());
+						editor.putString(Constants.loggedin_pwd, pwd_edittext.getText().toString());
+						editor.putString(Constants.rememberme, remember_me.isChecked() + "");
+						editor.commit();
+						SharedPrefsUtil.setStringPreference(context, Constants.constantUsername,
+								userid_edittext.getText().toString());
+						appDb = new AppDataBaseHelper(getApplicationContext());
+						orderDB = new OrderDatabase(getApplicationContext());
+						try
+						{
+							String userd = getData(userid_edittext.getText().toString());
+							if (userd != null && !userd.equalsIgnoreCase("null"))
+							{
+								navigateToActivity();
+							}
+							else
+							{
+								sendRequest(ApiRequestHelper.getUserDetails(context, Util.getStoredUsername(context)));
+							}
+						}
+						catch (Exception e)
+						{
+							e.printStackTrace();
+						}
+
+					}
+					else
+					{
+						Toast.makeText(context, "Invalid Credentials", Toast.LENGTH_SHORT).show();
+					}
+
+				}
+					break;
+			}
+		}
+
+		@Override
+		public void onResponseError(final ApiRequest request, final Exception error)
+		{
+
+		}
+	};
+
+	@Override
+	protected void onCreate(Bundle savedInstanceState)
+	{
+		super.onCreate(savedInstanceState);
+		super.addContentView(R.layout.login_screen);
+		context = LoginScreenActivity.this;
+		loginact = this;
+		SharedPreferences pref = getApplicationContext().getSharedPreferences(Constants.login_credentials, 0); // 0 - for private mode
+		SharedPreferences.Editor editor = pref.edit();
+		loggedin_username = pref.getString(Constants.loggedin_username, null);
+		loggedin_pwd = pref.getString(Constants.loggedin_pwd, null);
+
+		loggedin_remember = pref.getString(Constants.rememberme, "false");
+		orderDB = new OrderDatabase(getApplicationContext());
+		//               if (loggedin_username != null && !loggedin_username.isEmpty() && loggedin_remember != null && loggedin_remember.equalsIgnoreCase("false")) {
+		//            Util.killDashBoard();
+		//            Intent intent = new Intent(LoginScreenActivity.this, Dashboard.class);
+		//            startActivity(intent);
+		//            finish();
+		//        }
+
+		// Obtain the Firebase Analytics instance.
+		firebaseAnalytics = FirebaseAnalytics.getInstance(this);
+		Bundle bundle = new Bundle();
+		bundle.putInt(FirebaseAnalytics.Param.ITEM_ID, 1);
+		bundle.putString(FirebaseAnalytics.Param.ITEM_NAME, "LoginScreen");
+		//Logs an app event.
+		firebaseAnalytics.logEvent(FirebaseAnalytics.Event.SELECT_CONTENT, bundle);
+		//Sets whether analytics collection is enabled for this app on this device.
+		firebaseAnalytics.setAnalyticsCollectionEnabled(true);
+
+		//App Flyer
+		// AppsFlyerLib.getInstance().enableUninstallTracking(Constants.FCM_sender_id); // ADD THIS LINE HERE
+		AppsFlyerLib.getInstance().startTracking(this.getApplication(), Constants.APP_FLYER_KEY);
+
+		Map<String, Object> eventValue = new HashMap<String, Object>();
+		eventValue.put(AFInAppEventParameterName.CITY, "");
+		eventValue.put(AFInAppEventParameterName.SCORE, 100);
+		AppsFlyerLib.getInstance().trackEvent(context, "LoginScreen", eventValue);
+
+		//Facebook Analytic
+		AppEventsLogger logger = AppEventsLogger.newLogger(this);
+		logger.logEvent("LoginScreen");
+
+		// Constants.isLogin = true;
+
+		final String userid = SharedPrefsUtil.getStringPreference(context, Constants.loggedin_username);
+		Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+		setSupportActionBar(toolbar);
+		getSupportActionBar().setDisplayShowTitleEnabled(false);
+		userid_edittext = (EditText) findViewById(R.id.userid_edittext);
+		remember_me = (CheckBox) findViewById(R.id.remember_me);
+		pwd_edittext = (TextInputEditText) findViewById(R.id.pwd_edittext);
+		login_as_guest_btn = (Button) findViewById(R.id.login_as_guest_btn);
+		forgot_pwd = (TextView) findViewById(R.id.forgot_pwd);
+		register_btn = (Button) findViewById(R.id.register_btn);
+		login_btn = (Button) findViewById(R.id.login_btn);
+		header_loc_name.setText("Login");
+		header_loc_name.setEnabled(false);
+
+		TypefaceUtil.setTypeFace(context, TypefaceUtil.openSans_SemiBold, header_loc_name);
+
+		if (loggedin_remember != null && loggedin_remember.equalsIgnoreCase("true"))
+		{
+			remember_me.setChecked(true);
+			userid_edittext.setText(loggedin_username);
+			pwd_edittext.setText(loggedin_pwd);
+		}
+
+		userid_edittext.setOnFocusChangeListener(new View.OnFocusChangeListener()
+		{
+			@Override
+			public void onFocusChange(View v, boolean hasFocus)
+			{
+				if (hasFocus)
+				{
+					pwd_edittext.setBackgroundResource(R.drawable.edittext_modify_states);
+					userid_edittext.setBackgroundResource(R.drawable.bottom_edittext_line);
+				}
+				else
+				{
+					userid_edittext.setBackgroundResource(R.drawable.edittext_modify_states);
+				}
+			}
+		});
+
+		pwd_edittext.setOnFocusChangeListener(new View.OnFocusChangeListener()
+		{
+			@Override
+			public void onFocusChange(View v, boolean hasFocus)
+			{
+				if (hasFocus)
+				{
+					userid_edittext.setBackgroundResource(R.drawable.edittext_modify_states);
+
+					pwd_edittext.setBackgroundResource(R.drawable.bottom_edittext_line);
+				}
+				else
+				{
+					pwd_edittext.setBackgroundResource(R.drawable.edittext_modify_states);
+				}
+
+			}
+		});
+
+		//-----Popup on clicking forgot password
+		alertDialog = new Dialog(this);
+		alertDialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
+		alertDialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
+		alertDialog.setCancelable(false);
+		alertDialog.setContentView(R.layout.forgot_pwd_alert_dialog);
+
+		//-----Views in forgot password popup
+		alert_heading = (TextView) alertDialog.findViewById(R.id.alert_heading);
+		enter_user_id = (TextView) alertDialog.findViewById(R.id.enter_user_id);
+		call_request = (TextView) alertDialog.findViewById(R.id.call_request);
+		entered_userid = (TextView) alertDialog.findViewById(R.id.entered_userid);
+		not_sure_call = (RelativeLayout) alertDialog.findViewById(R.id.not_sure_call);
+		landline_number = (TextView) alertDialog.findViewById(R.id.landline_number);
+		not_sure_view = (LinearLayout) alertDialog.findViewById(R.id.not_sure_view);
+		alert_submit = (TextView) alertDialog.findViewById(R.id.alert_submit);
+		edittext_user_id = (EditText) alertDialog.findViewById(R.id.edittext_user_id);
+		radio_mobile_edittext = (EditText) alertDialog.findViewById(R.id.radio_mobile_edittext);
+		radio_email_edittext = (EditText) alertDialog.findViewById(R.id.radio_email_edittext);
+		radio_mobileoremail_edittext = (EditText) alertDialog.findViewById(R.id.radio_mobileoremail_edittext);
+		alert_header_image = (ImageView) alertDialog.findViewById(R.id.alert_header_image);
+		close_popup = (ImageView) alertDialog.findViewById(R.id.close_popup);
+		view1 = (View) alertDialog.findViewById(R.id.view1);
+		view2 = (View) alertDialog.findViewById(R.id.view2);
+		radio_mobile_no = (RadioButton) alertDialog.findViewById(R.id.radio_mobile_no);
+		radio_email = (RadioButton) alertDialog.findViewById(R.id.radio_email);
+		radio_mobileoremail = (RadioButton) alertDialog.findViewById(R.id.radio_mobileoremail);
+		radio_not_sure = (RadioButton) alertDialog.findViewById(R.id.radio_not_sure);
+		radio_group = (RadioGroup) alertDialog.findViewById(R.id.radio_group);
+
+		login_as_guest_btn.setOnClickListener(this);
+		forgot_pwd.setOnClickListener(this);
+		alert_submit.setOnClickListener(this);
+		radio_group.setOnCheckedChangeListener(this);
+		register_btn.setOnClickListener(this);
+		login_btn.setOnClickListener(this);
+		close_popup.setOnClickListener(this);
+
+		edittext_user_id.setOnFocusChangeListener(new View.OnFocusChangeListener()
+		{
+			@Override
+			public void onFocusChange(View v, boolean hasFocus)
+			{
+				if (hasFocus)
+				{
+					edittext_user_id.setBackgroundResource(R.drawable.edittext_border);
+				}
+				else
+				{
+					edittext_user_id.setBackgroundResource(R.color.lightgrey);
+				}
+
+			}
+		});
+
+		if (userid != null && !userid.isEmpty())
+		{
+			userid_edittext.setText(userid);
+			userid_edittext.setEnabled(false);
+			userid_edittext.setBackgroundResource(R.color.lightgrey);
+		}
+
+		//
+		//        if (logout_text.getText().toString().equalsIgnoreCase("Logout")) {
+		//			loggedin_userid.setText(loggedin_username);
+		clearImage();
+		loggedin_userid.setText("Guest");
+		logout_text.setText("Login");
+		//        } else {
+		//            logout_text.setText("Logout");
+		//        }
+
+		if (remember_me.isChecked())
+		{
+			clearImage();
+			loggedin_userid.setText("Guest");
+			logout_text.setText("Login");
+		}
+
+		logout_text.setOnClickListener(new View.OnClickListener()
+		{
+			@Override
+			public void onClick(View v)
+			{
+
+				DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
+				if (drawer.isDrawerOpen(GravityCompat.START))
+				{
+					drawer.closeDrawer(GravityCompat.START);
+				}
+
+				if (logout_text.getText().toString().equalsIgnoreCase("Login"))
+				{
+					SharedPrefsUtil.setBooleanPreference(context, "remember", true);
+
+					if (!userid_edittext.getText().toString().trim().isEmpty()
+							&& !pwd_edittext.getText().toString().trim().isEmpty())
+					{
+
+						SharedPreferences pref = getApplicationContext()
+								.getSharedPreferences(Constants.login_credentials, MODE_PRIVATE);
+						SharedPreferences.Editor editor = pref.edit();
+						editor.putString(Constants.loggedin_username, "");
+
+						String tempUserId = userid_edittext.getText().toString();
+						if (tempUserId != null && !tempUserId.isEmpty())
+						{
+							myFamilyDataBaseDeltion(tempUserId);
+						}
+
+						Map<String, String> params = new HashMap<String, String>();
+						params.put(Constants.ptntcode, userid_edittext.getText().toString());
+						params.put(Constants.pwd, pwd_edittext.getText().toString());
+
+						RestApiCallUtil.postServerResponse(context, ApiRequestReferralCode.LOGIN, params);
+
+					}
+					else
+					{
+						if (!userid_edittext.getText().toString().isEmpty())
+						{
+							if (pwd_edittext.getText().toString().isEmpty())
+							{
+								Toast.makeText(context, "Please enter password", Toast.LENGTH_SHORT).show();
+							}
+						}
+						else
+						{
+							Toast.makeText(context, "Please enter user name", Toast.LENGTH_SHORT).show();
+						}
+					}
+				}
+				else if (logout_text.getText().toString().equalsIgnoreCase("Logout"))
+				{
+
+					AlertDialog alert;
+
+					android.app.AlertDialog.Builder builder = new android.app.AlertDialog.Builder(
+							LoginScreenActivity.this, android.app.AlertDialog.THEME_HOLO_LIGHT);
+					builder.setMessage("Are you sure you want to logout?").setCancelable(false)
+							.setPositiveButton("No", new DialogInterface.OnClickListener()
+							{
+								public void onClick(DialogInterface dialog, int which)
+								{
+									if (dialog != null)
+										dialog.dismiss();
+								}
+							}).setNegativeButton("Yes", new DialogInterface.OnClickListener()
+							{
+								public void onClick(DialogInterface dialog, int which)
+								{
+									SharedPrefsUtil.setStringPreference(context, "fourdigitpin", "");
+									SharedPrefsUtil.setBooleanPreference(context, "splashpin", false);
+									SharedPrefsUtil.setBooleanPreference(context, "remember", false);
+									loggedin_userid.setText("");
+									clearImage();
+									logout_text.setText("Login");
+									if (remember_me.isChecked())
+									{
+
+										loggedin_remember = "true";
+									}
+									else
+										loggedin_remember = "false";
+									if (loggedin_remember != null && loggedin_remember.equalsIgnoreCase("true"))
+									{
+										Log.e("already", "logged in");
+									}
+									else
+									{
+										clearImage();
+										loggedin_userid.setText("Guest");
+										logout_text.setText("Login");
+										SharedPreferences pref = getApplicationContext()
+												.getSharedPreferences(Constants.login_credentials, MODE_PRIVATE);
+										SharedPreferences.Editor editor = pref.edit();
+										editor.putString(Constants.loggedin_username, "");
+										editor.putString(Constants.loggedin_pwd, "");
+										editor.putString(Constants.rememberme, "false");
+										//							SharedPrefsUtil.setStringPreference(context, Constants.constantUsername, "");
+										editor.commit();
+									}
+
+									Util.killLogin();
+									Intent aboutintent = new Intent(LoginScreenActivity.this,
+											LoginScreenActivity.class);
+									startActivity(aboutintent);
+								}
+							});
+
+					alert = builder.create();
+					alert.show();
+				}
+			}
+		});
+	}
+
+	@Override
+	public void onBackPressed()
+	{
+		super.onBackPressed();
+	}
+
+	@Override
+	public void onClick(View v)
+	{
+		switch (v.getId())
+		{
+			case R.id.login_as_guest_btn:
+				SharedPrefsUtil.setStringPreference(context, Constants.constantUsername,
+						userid_edittext.getText().toString());
+				int navigationcount = 0;
+				navigationcount = SharedPrefsUtil.getIntegerPreference(LoginScreenActivity.this,
+						Constants.sharedPreferenceSelectedLoginActivity, 0);
+
+				switch (navigationcount)
+				{
+					case Constants.m_cart:
+						Constants.isRegEdited = false;
+						Constants.isPatientDetails = true;
+						Util.killReg();
+						Intent intent = new Intent(LoginScreenActivity.this, RegistrationScreen.class);
+						startActivity(intent);
+						finish();
+						break;
+					case Constants.m_lab:
+						Util.killReg();
+						Constants.isRegEdited = false;
+						Constants.isPatientDetails = true;
+						Intent intenti = new Intent(LoginScreenActivity.this, RegistrationScreen.class);
+						startActivity(intenti);
+						finish();
+						break;
+
+					case Constants.m_dashboard:
+						Util.killDashBoard();
+						Intent intent1 = new Intent(LoginScreenActivity.this, Dashboard.class);
+						startActivity(intent1);
+						finish();
+						break;
+					default:
+						finish();
+						break;
+				}
+				break;
+
+			case R.id.login_btn:
+				if (!userid_edittext.getText().toString().isEmpty() && !pwd_edittext.getText().toString().isEmpty())
+				{
+
+					SharedPreferences pref = getApplicationContext().getSharedPreferences(Constants.login_credentials,
+							MODE_PRIVATE);
+					SharedPreferences.Editor editor = pref.edit();
+					editor.putString(Constants.loggedin_username, "");
+
+					String tempUserId = userid_edittext.getText().toString();
+					if (tempUserId != null && !tempUserId.isEmpty())
+					{
+						myFamilyDataBaseDeltion(tempUserId);
+					}
+
+					Map<String, String> params = new HashMap<String, String>();
+					params.put(Constants.ptntcode, userid_edittext.getText().toString());
+					params.put(Constants.pwd, pwd_edittext.getText().toString());
+					// sendRequest(ApiRequestHelper.getLogin(userid_edittext.getText().toString(),pwd_edittext.getText().toString()));
+					RestApiCallUtil.postServerResponse(context, ApiRequestReferralCode.LOGIN, params);
+
+				}
+				else
+				{
+					if (!userid_edittext.getText().toString().isEmpty())
+					{
+						if (pwd_edittext.getText().toString().isEmpty())
+						{
+							Toast.makeText(context, "Please enter password", Toast.LENGTH_SHORT).show();
+						}
+					}
+					else
+					{
+						Toast.makeText(context, "Please enter user name", Toast.LENGTH_SHORT).show();
+					}
+				}
+
+				//////////////////////////////////////////////////////////////
+				/* Map<String, String> params1 = new HashMap<String, String>();
+				params1.put(Constants.ptntcode, userid_edittext.getText().toString());
+				params1.put(Constants.pwd, pwd_edittext.getText().toString());
+				sendRequest(ApiRequestHelper.getMyLogin(params1));*/
+				//////////////////////////////////////////////////////////////////
+
+				break;
+			case R.id.register_btn:
+				//                Intent intentreg = new Intent(LoginScreenActivity.this, RegistrationScreen.class);
+				//                startActivity(intentreg);
+				Map<String, String> params = new HashMap<String, String>();
+				params.put(Constants.deviceID, Constants.devicetobepassed);
+				RestApiCallUtil.postServerResponse(context, ApiRequestReferralCode.PENDING_REGISTRATION, params);
+
+				break;
+			case R.id.forgot_pwd:
+				alertDialog.show();
+				//				if (!userid_edittext.getText().toString().isEmpty())
+				//				{
+				//					confirmForgotPwdPopup(v);
+				//					edittext_user_id.setText(userid_edittext.getText());
+				//				}
+				//				else
+				//				{
+				edittext_user_id.setText(userid_edittext.getText());
+				submitForgotPwdPopup();
+				//				}
+				break;
+			case R.id.alert_submit:
+
+				if (validatepopupUserId())
+				{
+
+					if (radio_group.getVisibility() == View.GONE && alert_submit.getText().toString().equals("Submit"))
+					{
+						if (!edittext_user_id.getText().toString().isEmpty())
+						{
+							view = v;
+							Map<String, String> getUserParams = new HashMap<String, String>();
+							getUserParams.put(Constants.ptntcode, edittext_user_id.getText().toString());
+							//  getUserParams.put("strToken", "bb5f7b15a7829ff7599e814eeb3d520d");
+							RestApiCallUtil.postServerResponse(context, ApiRequestReferralCode.USER, getUserParams);
+
+						}
+						else
+						{
+							Toast.makeText(context, "Please enter User Id", Toast.LENGTH_SHORT).show();
+						}
+
+					}
+					/* if (radio_group.getVisibility() == View.GONE && alert_submit.getText().toString().equals("SUBMIT")) {
+					    Map<String, String> userparams = new HashMap<String, String>();
+					    userparams.put(Constants.IN_USER_ID, edittext_user_id.getText().toString());
+					    RestApiCallUtil.postServerResponse(context, ApiRequestReferralCode.FORGOT_PWD, userparams);
+					}
+					*/ else if (alert_submit.getText().toString().equalsIgnoreCase("Call now"))
+					{
+						alertDialog.dismiss();
+
+						Util.handleTaskWithUserPermission(context, Util.PHONE_REQUES_CODE, "1800-222-000");
+					}
+					//					else if (radio_group.getVisibility() == View.GONE && alert_submit.getText().toString().equalsIgnoreCase("Submit"))
+					//					{
+					//						confirmForgotPwdPopup(v);
+					//						alert_submit.setText("Confirm");
+					//					}
+					else
+					{
+
+						if (radio_not_sure.isChecked())
+						{
+							notsurePopup(v);
+						}
+						else if (validateSelectedRadioEmail())
+						{
+							Map<String, String> userparams = new HashMap<String, String>();
+							userparams.put(Constants.IN_USER_ID, edittext_user_id.getText().toString());
+							RestApiCallUtil.postServerResponse(context, ApiRequestReferralCode.FORGOT_PWD, userparams);
+						}
+						//                            alertDialog.dismiss();
+					}
+				}
+				break;
+
+			case R.id.close_popup:
+				edittext_user_id.setText("");
+				if (alertDialog != null)
+				{
+					alertDialog.dismiss();
+				}
+				if (alertDialog != null)
+				{
+					alertDialog.dismiss();
+				}
+				break;
+		}
+	}
+
+	private boolean validatepopupUserId()
+	{
+		boolean isUserIdEntered = false;
+		if (edittext_user_id.getText().toString().isEmpty())
+		{
+			isUserIdEntered = false;
+			Toast.makeText(context, "Please enter user id", Toast.LENGTH_SHORT).show();
+		}
+		else
+		{
+			isUserIdEntered = true;
+		}
+
+		return isUserIdEntered;
+	}
+
+	//	private void confirmForgotPwdPopup(View v)
+	//	{
+	//		hideSoftKeyboard(v);
+	//		alert_heading.setText("Forgot Your Password?");
+	//		not_sure_call.setVisibility(View.GONE);
+	//		alert_header_image.setVisibility(View.GONE);
+	//		alert_heading.setVisibility(View.VISIBLE);
+	//		alert_submit.setVisibility(View.VISIBLE);
+	//		alert_submit.setText("Confirm");
+	//		enter_user_id.setVisibility(View.VISIBLE);
+	//		edittext_user_id.setVisibility(View.VISIBLE);
+	//		radio_group.setVisibility(View.GONE);
+	//		alert_submit.setText("Confirm");
+	//		view1.setVisibility(View.VISIBLE);
+	//		view2.setVisibility(View.VISIBLE);
+	//		not_sure_view.setVisibility(View.GONE);
+	//	}
+
+	private void submitForgotPwdPopup()
+	{
+		enter_user_id.setVisibility(View.VISIBLE);
+		alert_heading.setText("Forgot Password?");
+		radio_group.clearCheck();
+		not_sure_call.setVisibility(View.GONE);
+		alert_header_image.setVisibility(View.GONE);
+		alert_heading.setVisibility(View.VISIBLE);
+		alert_submit.setVisibility(View.VISIBLE);
+		alert_submit.setText("Submit");
+		if (edittext_user_id.getText() != null && !edittext_user_id.getText().toString().isEmpty())
+		{
+			enter_user_id.setText("User Id");
+		}
+		else
+		{
+			enter_user_id.setText("Enter User Id");
+		}
+
+		edittext_user_id.setVisibility(View.VISIBLE);
+		radio_group.setVisibility(View.GONE);
+		view1.setVisibility(View.VISIBLE);
+		view2.setVisibility(View.VISIBLE);
+		not_sure_view.setVisibility(View.GONE);
+	}
+
+	private void optionsForgotPwdPopup(View v)
+	{
+		hideSoftKeyboard(v);
+		radio_mobile_no.setChecked(false);
+		radio_email.setChecked(false);
+		radio_mobileoremail.setChecked(false);
+		radio_not_sure.setChecked(false);
+		radio_mobile_edittext.setVisibility(View.GONE);
+		radio_email_edittext.setVisibility(View.GONE);
+		radio_mobileoremail_edittext.setVisibility(View.GONE);
+		not_sure_call.setVisibility(View.GONE);
+		alert_header_image.setVisibility(View.VISIBLE);
+		alert_heading.setVisibility(View.VISIBLE);
+		view1.setVisibility(View.GONE);
+		alert_heading.setText("Where would you like to receive your password?");
+		alert_submit.setVisibility(View.GONE);
+		enter_user_id.setVisibility(View.GONE);
+		edittext_user_id.setVisibility(View.GONE);
+		radio_group.setVisibility(View.VISIBLE);
+		alert_submit.setText("Submit");
+		view2.setVisibility(View.GONE);
+		not_sure_view.setVisibility(View.GONE);
+	}
+
+	private void radioClickedAction()
+	{
+		radio_email_edittext.setVisibility(View.GONE);
+		radio_mobile_edittext.setVisibility(View.GONE);
+		radio_mobileoremail_edittext.setVisibility(View.GONE);
+		view2.setVisibility(View.VISIBLE);
+		alert_submit.setVisibility(View.VISIBLE);
+		radio_email_edittext.setText("");
+		radio_mobile_edittext.setText("");
+		radio_mobileoremail_edittext.setText("");
+	}
+
+	private void notsurePopup(View v)
+	{
+		hideSoftKeyboard(v);
+		String callus = SharedPrefsUtil.getStringPreference(LoginScreenActivity.this, Constants.CALLUS);
+		/*  if (!(callus.equalsIgnoreCase("null"))) {
+		    landline_number.setText(callus);
+		   }
+		else{*/
+		sendRequest(ApiRequestHelper.getCALL_US(context, "CALL_US", ApiConstants.appVersion));
+		// }
+		not_sure_call.setVisibility(View.VISIBLE);
+		alert_header_image.setVisibility(View.VISIBLE);
+		alert_heading.setVisibility(View.GONE);
+
+		view1.setVisibility(View.GONE);
+		alert_submit.setVisibility(View.VISIBLE);
+		not_sure_view.setVisibility(View.VISIBLE);
+		enter_user_id.setVisibility(View.GONE);
+		edittext_user_id.setVisibility(View.GONE);
+		radio_group.setVisibility(View.GONE);
+		alert_submit.setText("Call now");
+		entered_userid.setText("User Id : " + edittext_user_id.getText() + "");
+		view2.setVisibility(View.VISIBLE);
+	}
+
+	@Override
+	public void onCheckedChanged(RadioGroup group, int checkedId)
+	{
+		switch (checkedId)
+		{
+
+			case R.id.radio_mobile_no:
+				radioClickedAction();
+				view2.setVisibility(View.VISIBLE);
+				alert_submit.setVisibility(View.VISIBLE);
+				radio_mobile_edittext.setVisibility(View.VISIBLE);
+				break;
+			case R.id.radio_email:
+				radioClickedAction();
+				view2.setVisibility(View.VISIBLE);
+				alert_submit.setVisibility(View.VISIBLE);
+				radio_email_edittext.setVisibility(View.VISIBLE);
+				break;
+			case R.id.radio_mobileoremail:
+				radioClickedAction();
+				view2.setVisibility(View.VISIBLE);
+				alert_submit.setVisibility(View.VISIBLE);
+				radio_mobileoremail_edittext.setVisibility(View.VISIBLE);
+				break;
+			case R.id.radio_not_sure:
+				radioClickedAction();
+				break;
+		}
+	}
+
+	private boolean validateSelectedRadioEmail()
+	{
+		boolean isSelectedRadioEditEntered = false;
+		if (radio_mobile_edittext.getVisibility() == View.VISIBLE)
+		{
+			if (radio_mobile_edittext.getText().toString().isEmpty())
+			{
+				Toast.makeText(context, "Please enter mobile number", Toast.LENGTH_SHORT).show();
+			}
+			else
+			{
+				if (radio_mobile_edittext.getText().toString().equalsIgnoreCase(fetchedMobileNo))
+				{
+					isSelectedRadioEditEntered = true;
+				}
+				else
+				{
+					Toast.makeText(context, "Mobile number is incorrect", Toast.LENGTH_SHORT).show();
+				}
+			}
+		}
+
+		if (radio_email_edittext.getVisibility() == View.VISIBLE)
+		{
+			if (radio_email_edittext.getText().toString().isEmpty())
+			{
+				Toast.makeText(context, "Please enter email", Toast.LENGTH_SHORT).show();
+			}
+			else
+			{
+				if (radio_email_edittext.getText().toString().toLowerCase().trim()
+						.equalsIgnoreCase(fetchedEmailId.toLowerCase().trim()))
+				{
+					isSelectedRadioEditEntered = true;
+				}
+				else
+				{
+					Toast.makeText(context, "Email id is incorrect", Toast.LENGTH_SHORT).show();
+				}
+			}
+		}
+
+		if (radio_mobileoremail_edittext.getVisibility() == View.VISIBLE)
+		{
+			if (radio_mobileoremail_edittext.getText().toString().isEmpty())
+			{
+				Toast.makeText(context, "Please enter mobile/email number", Toast.LENGTH_SHORT).show();
+			}
+			else
+			{
+				if (radio_mobileoremail_edittext.getText().toString().toLowerCase().trim()
+						.equalsIgnoreCase(fetchedEmailId.toLowerCase().trim())
+						|| radio_mobileoremail_edittext.getText().toString().equalsIgnoreCase(fetchedMobileNo))
+				{
+					isSelectedRadioEditEntered = true;
+				}
+				else
+				{
+					Toast.makeText(context, "emailid/mobileno is incorrect", Toast.LENGTH_SHORT).show();
+				}
+			}
+
+		}
+
+		return isSelectedRadioEditEntered;
+	}
+
+	public void hideSoftKeyboard(View v)
+	{
+		InputMethodManager imm = (InputMethodManager) context.getSystemService(Activity.INPUT_METHOD_SERVICE);
+		if (v == null)
+		{
+			v = new View(context);
+		}
+		imm.hideSoftInputFromWindow(v.getWindowToken(), 0);
+	}
+
+	@Override
+	public void onSuccessResponse(ApiRequestReferralCode referralCode, String serverResponse,
+			HashMap<String, String> fetchValue)
+	{
+
+		switch (referralCode)
+		{
+
+			case UPDATE_USER_DETAILS:
+
+				break;
+
+			case PENDING_REGISTRATION:
+				if (serverResponse.equalsIgnoreCase("Pending Registration"))
+				{
+
+					if (fetchValue != null && fetchValue.get("mobile") != null)
+					{
+						Util.killOtpReg();
+						Intent intent = new Intent(LoginScreenActivity.this, OTPRegistration.class);
+						intent.putExtra(Constants.registered_mobile, fetchValue.get("mobile") + "");
+						startActivity(intent);
+					}
+					else
+					{
+						Util.killReg();
+						Constants.isRegEdited = false;
+						Constants.isPatientDetails = false;
+						Intent intent = new Intent(LoginScreenActivity.this, RegistrationScreen.class);
+						startActivity(intent);
+					}
+				}
+				else
+				{
+
+					Constants.isRegEdited = false;
+					Constants.isPatientDetails = false;
+					Util.killReg();
+					Intent intent = new Intent(LoginScreenActivity.this, RegistrationScreen.class);
+					startActivity(intent);
+
+				}
+				break;
+
+			case LOGIN:
+				if (serverResponse != null && serverResponse.equalsIgnoreCase("Query Successful"))
+				{
+					SharedPrefsUtil.setBooleanPreference(context, "remember", false);
+					Constants.isLogin = false;
+					if (logout_text.getText().toString().equalsIgnoreCase("Login"))
+					{
+						logout_text.setText("Logout");
+					}
+
+					SharedPreferences pref = getApplicationContext().getSharedPreferences(Constants.login_credentials,
+							MODE_PRIVATE);
+					SharedPreferences.Editor editor = pref.edit();
+					editor.putString(Constants.loggedin_username, userid_edittext.getText().toString());
+					editor.putString(Constants.loggedin_grp_id, fetchValue.get(Constants.GRP_ID));
+					editor.putString(Constants.loggedin_pwd, pwd_edittext.getText().toString());
+					editor.putString(Constants.rememberme, remember_me.isChecked() + "");
+					editor.commit();
+					SharedPrefsUtil.setStringPreference(context, Constants.constantUsername,
+							userid_edittext.getText().toString());
+					SharedPrefsUtil.setStringPreference(context, Constants.loggedin_mobile,
+							fetchValue.get(Constants.jsonFieldMOBILE));
+					SharedPrefsUtil.setStringPreference(context, Constants.loggedin_emailid,
+							fetchValue.get(Constants.jsonFieldEmail));
+
+					appDb = new AppDataBaseHelper(getApplicationContext());
+					orderDB = new OrderDatabase(getApplicationContext());
+					try
+					{
+						String userd = getData(userid_edittext.getText().toString());
+						sendRequest(ApiRequestHelper.getLOGO(context, "LOGO", ApiConstants.appVersion));
+						sendRequest(ApiRequestHelper.getCALL_US(context, "CALL_US", ApiConstants.appVersion));
+
+						if (userd != null && !userd.equalsIgnoreCase("null"))
+						{
+							int navigationcount = SharedPrefsUtil.getIntegerPreference(LoginScreenActivity.this,
+									Constants.sharedPreferenceSelectedLoginActivity, 0);
+							navigateToActivity();
+						}
+						else
+						{
+							sendRequest(ApiRequestHelper.getUserDetails(context, Util.getStoredUsername(context)));
+
+						}
+					}
+					catch (Exception e)
+					{
+						e.printStackTrace();
+					}
+
+				}
+				else
+				{
+					Toast.makeText(context, "Invalid Credentials", Toast.LENGTH_SHORT).show();
+				}
+
+				break;
+
+			case USER:
+				SharedPreferences pref = getApplicationContext().getSharedPreferences(Constants.login_credentials,
+						MODE_PRIVATE);
+				SharedPreferences.Editor editor = pref.edit();
+
+				if (fetchValue != null && fetchValue.get(Constants.jsonFieldMOBILE) != null)
+				{
+					fetchedMobileNo = fetchValue.get(Constants.jsonFieldMOBILE);
+					editor.putString(Constants.loggedin_username, fetchValue.get(Constants.jsonFieldPtnt_cd));
+					editor.putString(Constants.loggedin_grp_id, fetchValue.get(Constants.GRP_ID));
+					editor.putString(Constants.rememberme, remember_me.isChecked() + "");
+					editor.commit();
+
+					String mappedMobile = fetchValue.get(Constants.jsonFieldMOBILE);
+					String tempMob = "";
+					if (mappedMobile != null && !mappedMobile.equalsIgnoreCase("null") && mappedMobile.length() > 3)
+					{
+						tempMob = mappedMobile.substring(3, mappedMobile.length() - 3);
+					}
+					String valToReplace = "";
+					for (int i = 0; i < tempMob.length(); i++)
+					{
+						valToReplace = valToReplace + "X";
+					}
+
+					mappedMobile = mappedMobile.replace(tempMob, valToReplace);
+
+					radio_mobile_no.setText("To my registered mobile number " + mappedMobile);
+				}
+				if (fetchValue != null && fetchValue.get(Constants.jsonFieldEmail) != null)
+				{
+					fetchedEmailId = fetchValue.get(Constants.jsonFieldEmail);
+					String mappedEmail = fetchValue.get(Constants.jsonFieldEmail);
+					mappedEmail = mappedEmail.replaceAll("(?<=.{3}).(?=.*@)", "X");
+					radio_email.setText("To my registered email address " + mappedEmail);
+				}
+
+				if (serverResponse != null && !serverResponse.isEmpty()
+						&& serverResponse.equalsIgnoreCase("Query Successful") && view != null)
+				{
+					optionsForgotPwdPopup(view);
+				}
+				else
+				{
+					Toast.makeText(context, "User id doesn't exist", Toast.LENGTH_SHORT).show();
+				}
+				break;
+
+			case FORGOT_PWD:
+
+				if (serverResponse != null && serverResponse.split("--")[0].equalsIgnoreCase("Query Successful")
+						&& serverResponse.split("--")[1].equalsIgnoreCase("true"))
+				{
+					if (alertDialog != null)
+					{
+						alertDialog.dismiss();
+					}
+					Toast.makeText(context, "Your password has been sent to your email/mobile no", Toast.LENGTH_SHORT)
+							.show();
+				}
+				else if (serverResponse != null && serverResponse.split("--")[0].equalsIgnoreCase("Query Successful")
+						&& serverResponse.split("--")[1].equalsIgnoreCase("INVALID"))
+				{
+					if (alertDialog != null)
+					{
+						alertDialog.dismiss();
+					}
+					Toast.makeText(context, "User id Invalid", Toast.LENGTH_SHORT).show();
+				}
+				else
+				{
+					Toast.makeText(context, "Please check your email/mobile no", Toast.LENGTH_SHORT).show();
+				}
+
+				break;
+
+		}
+	}
+
+	private void myFamilyDataBaseDeltion(String tempUserId)
+	{
+		String existingMainUser = "";
+		try
+		{
+			existingMainUser = appDb.getMainUserSelection("true");
+		}
+		catch (Exception e)
+		{
+		}
+
+		if (existingMainUser != null && !existingMainUser.isEmpty())
+		{
+			if (!tempUserId.equalsIgnoreCase(existingMainUser))
+			{
+				orderDB.deleteOrder();
+				appDb.deleteFamilyMemberData();
+			}
+		}
+
+	}
+
+	private void sendRequest(ApiRequest request)
+	{
+		ApiRequestManager.getInstance().sendRequest(this, request, mResponseListener);
+	}
+
+	private void setCallUS(JSONArray jArray)
+	{
+		try
+		{
+			if (Validate.notNull(jArray))
+			{
+
+				for (int i = 0; i < jArray.length(); i++)
+				{
+					JSONObject jsonObject = jArray.getJSONObject(i);
+					String screenName = jsonObject.getString("SCREEN_NAME");
+					String content = jsonObject.getString("CONTENT");
+
+					if (Validate.notEmpty(screenName) && Validate.notEmpty(content))
+					{
+						SharedPrefsUtil.setStringPreference(context, Constants.CALLUS + "", content + "");
+						landline_number.setText(content);
+					}
+				}
+			}
+		}
+		catch (JSONException e)
+		{
+			e.printStackTrace();
+		}
+
+	}
+
+	private void setLOGO(JSONArray jArray)
+	{
+		try
+		{
+			if (Validate.notNull(jArray))
+			{
+
+				for (int i = 0; i < jArray.length(); i++)
+				{
+					JSONObject jsonObject = jArray.getJSONObject(i);
+					String screenName = jsonObject.getString("SCREEN_NAME");
+					String content = jsonObject.getString("CONTENT");
+
+					if (Validate.notEmpty(screenName) && Validate.notEmpty(content))
+					{
+						SharedPrefsUtil.setStringPreference(context, Constants.LOGO + "", content + "");
+					}
+				}
+			}
+		}
+		catch (JSONException e)
+		{
+			e.printStackTrace();
+		}
+
+	}
+
+	private void setProfileData(JSONArray jArray)
+	{
+		if (jArray != null)
+		{
+			try
+			{
+				if (Validate.notNull(jArray))
+				{
+					_userData = new ArrayList<>();
+					for (int i = 0; i < jArray.length(); i++)
+					{
+						UserData _userdataset = new UserData();
+						_userdataset.setUserid(jArray.getJSONObject(i).getString(Constants.userid));
+						_userdataset.setPtnt_cd(jArray.getJSONObject(i).getString(Constants.ptnt_cd));
+						_userdataset.setPtnt_tittle(jArray.getJSONObject(i).getString(Constants.ptnt_tittle));
+						_userdataset.setFirst_name(jArray.getJSONObject(i).getString(Constants.first_name));
+						_userdataset.setLast_name(jArray.getJSONObject(i).getString(Constants.last_name));
+						_userdataset.setGender(jArray.getJSONObject(i).getString(Constants.gender));
+						try
+						{
+							_userdataset.setDob(jArray.getJSONObject(i).getLong(Constants.dob));
+						}
+						catch (Exception e)
+						{
+
+						}
+						_userdataset.setMarital_status(jArray.getJSONObject(i).getString(Constants.marital_status));
+						_userdataset.setEmail_id(jArray.getJSONObject(i).getString(Constants.email_id));
+						_userdataset.setZip(jArray.getJSONObject(i).getString(Constants.zip));
+						_userdataset.setMobile_no(jArray.getJSONObject(i).getString(Constants.mobile_no));
+						_userdataset.setAddress1(jArray.getJSONObject(i).getString(Constants.address1));
+						_userdataset.setAddress2(jArray.getJSONObject(i).getString(Constants.address2));
+						_userdataset.setLandmark(jArray.getJSONObject(i).getString(Constants.landmark));
+						_userdataset.setCity(jArray.getJSONObject(i).getString(Constants.city));
+						_userdataset.setState(jArray.getJSONObject(i).getString(Constants.state));
+						_userdataset.setCountry(jArray.getJSONObject(i).getString(Constants.country));
+						_userdataset.setParent_id(jArray.getJSONObject(i).getString(Constants.parent_id));
+						_userdataset.setStatus("0");
+						_userdataset.setPwd(pwd_edittext.getText().toString().trim());
+
+						_userData.add(_userdataset);
+						appDb.addUserDetails(_userdataset, context);
+					}
+				}
+
+				navigateToActivity();
+			}
+			catch (JSONException e)
+			{
+				e.printStackTrace();
+			}
+
+		}
+		else
+		{
+			navigateToActivity();
+		}
+	}
+
+	private void navigateToActivity()
+	{
+
+		String sharedpin = SharedPrefsUtil.getStringPreference(context, "fourdigitpin");
+
+		if (Validate.notEmpty(sharedpin))
+		{
+
+			int navigationcount = 0;
+
+			navigationcount = SharedPrefsUtil.getIntegerPreference(LoginScreenActivity.this,
+					Constants.sharedPreferenceSelectedLoginActivity, 0);
+			Intent intent = null;
+			switch (navigationcount)
+			{
+				case Constants.m_pwd:
+					Util.killChangePwd();
+					intent = new Intent(LoginScreenActivity.this, ChangePwdActivity.class);
+					break;
+				case Constants.m_orders:
+					Util.killOrders();
+					intent = new Intent(LoginScreenActivity.this, OrdersActivity.class);
+					break;
+				case Constants.m_login:
+					Util.killDashBoard();
+					intent = new Intent(LoginScreenActivity.this, Dashboard.class);
+					break;
+				case Constants.m_reports:
+					Util.killMyReportEntry();
+					intent = new Intent(LoginScreenActivity.this, MyReportEntryDetails.class);
+					break;
+				case Constants.m_cart:
+					Util.killAddPatient();
+					Constants.isLabOrCollection = false;
+					intent = new Intent(LoginScreenActivity.this, AddPatientActivity.class);
+					finish();
+					break;
+				case Constants.m_lab:
+					Util.killAddPatient();
+					Constants.isLabOrCollection = true;
+					intent = new Intent(LoginScreenActivity.this, AddPatientActivity.class);
+					finish();
+					break;
+
+				case Constants.m_family:
+					Util.killMyFamily();
+					intent = new Intent(LoginScreenActivity.this, MyFamilyActivity.class);
+					finish();
+					break;
+
+				case Constants.m_profile:
+					Util.killMyProfile();
+					intent = new Intent(LoginScreenActivity.this, MyProfileActivity.class);
+					finish();
+					break;
+				case Constants.m_health:
+					Util.killHealthTrack();
+					intent = new Intent(LoginScreenActivity.this, HealthTracker.class);
+					finish();
+					break;
+
+				case Constants.m_settings:
+					Util.killSettings();
+					intent = new Intent(LoginScreenActivity.this, SettingsActivity.class);
+					finish();
+					break;
+
+				default:
+					Util.killDashBoard();
+					intent = new Intent(LoginScreenActivity.this, Dashboard.class);
+					finish();
+					break;
+
+			}
+
+			if (intent != null)
+			{
+				startActivity(intent);
+				finish();
+			}
+
+		}
+		else
+		{
+			SharedPrefsUtil.setStringPreference(context, "setpin", "true");
+			Intent intent = new Intent(LoginScreenActivity.this, FourDigitActivity.class);
+			finish();
+			startActivity(intent);
+
+		}
+	}
+
+	private String getData(String ptntcode)
+	{
+		UserData _userAppData = null;
+		try
+		{
+			_userAppData = appDb.getSelectedUserDetail(ptntcode);
+		}
+		catch (Exception e)
+		{
+
+		}
+		return _userAppData.getPtnt_cd();
+	}
+
+	//    @Override
+	//    protected void onResume() {
+	//        fsdfsd
+	//        super.onResume();
+	//    }
+
+	@Override
+	protected void onDestroy()
+	{
+		Constants.isLogin = false;
+
+		if (logout_text.getText().toString().equalsIgnoreCase("Login"))
+		{
+			logout_text.setText("Logout");
+
+		}
+		else
+		{
+
+			logout_text.setText("Login");
+		}
+		super.onDestroy();
+	}
+
+}

@@ -1,0 +1,50 @@
+[
+    {
+        "merged": "D:\\Trupti_workspace\\SRLandroid-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi\\dialog_full_holo_light.9.png",
+        "source": "D:\\Trupti_workspace\\SRLandroid-master\\app\\src\\main\\res\\drawable-xxxhdpi\\dialog_full_holo_light.9.png"
+    },
+    {
+        "merged": "D:\\Trupti_workspace\\SRLandroid-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi\\btn5.png",
+        "source": "D:\\Trupti_workspace\\SRLandroid-master\\app\\src\\main\\res\\drawable-xxxhdpi\\btn5.png"
+    },
+    {
+        "merged": "D:\\Trupti_workspace\\SRLandroid-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi\\btn_keyboard_key_fulltrans_pressed.9.png",
+        "source": "D:\\Trupti_workspace\\SRLandroid-master\\app\\src\\main\\res\\drawable-xxxhdpi\\btn_keyboard_key_fulltrans_pressed.9.png"
+    },
+    {
+        "merged": "D:\\Trupti_workspace\\SRLandroid-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi\\btn1.png",
+        "source": "D:\\Trupti_workspace\\SRLandroid-master\\app\\src\\main\\res\\drawable-xxxhdpi\\btn1.png"
+    },
+    {
+        "merged": "D:\\Trupti_workspace\\SRLandroid-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi\\popup_background_mtrl_mult.9.png",
+        "source": "D:\\Trupti_workspace\\SRLandroid-master\\app\\src\\main\\res\\drawable-xxxhdpi\\popup_background_mtrl_mult.9.png"
+    },
+    {
+        "merged": "D:\\Trupti_workspace\\SRLandroid-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi\\icon_highlight_rectangle.9.png",
+        "source": "D:\\Trupti_workspace\\SRLandroid-master\\app\\src\\main\\res\\drawable-xxxhdpi\\icon_highlight_rectangle.9.png"
+    },
+    {
+        "merged": "D:\\Trupti_workspace\\SRLandroid-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi\\btn_default_normal.9.png",
+        "source": "D:\\Trupti_workspace\\SRLandroid-master\\app\\src\\main\\res\\drawable-xxxhdpi\\btn_default_normal.9.png"
+    },
+    {
+        "merged": "D:\\Trupti_workspace\\SRLandroid-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi\\btn7.png",
+        "source": "D:\\Trupti_workspace\\SRLandroid-master\\app\\src\\main\\res\\drawable-xxxhdpi\\btn7.png"
+    },
+    {
+        "merged": "D:\\Trupti_workspace\\SRLandroid-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi\\bg_button_0.9.png",
+        "source": "D:\\Trupti_workspace\\SRLandroid-master\\app\\src\\main\\res\\drawable-xxxhdpi\\bg_button_0.9.png"
+    },
+    {
+        "merged": "D:\\Trupti_workspace\\SRLandroid-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi\\left_arrow.png",
+        "source": "D:\\Trupti_workspace\\SRLandroid-master\\app\\src\\main\\res\\drawable-xxxhdpi\\left_arrow.png"
+    },
+    {
+        "merged": "D:\\Trupti_workspace\\SRLandroid-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi\\right_arrow.png",
+        "source": "D:\\Trupti_workspace\\SRLandroid-master\\app\\src\\main\\res\\drawable-xxxhdpi\\right_arrow.png"
+    },
+    {
+        "merged": "D:\\Trupti_workspace\\SRLandroid-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi\\btn_default_disabled_holo_dark.9.png",
+        "source": "D:\\Trupti_workspace\\SRLandroid-master\\app\\src\\main\\res\\drawable-xxxhdpi\\btn_default_disabled_holo_dark.9.png"
+    }
+]

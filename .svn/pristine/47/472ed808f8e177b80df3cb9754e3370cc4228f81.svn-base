@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+        <declare-styleable name="ClearableAutoTextView">
+            <attr name="url" format="string"/>
+            <attr name="google_places_api_key" format="string"/>
+            <attr name="input_key" format="string"/>
+        </declare-styleable>
+
+    <declare-styleable name="MaterialTabHost">
+        <attr name="hasIcons" format="boolean"/>
+        <attr name="materialTabsPrimaryColor" format="color"/>
+        <attr name="accentColor" format="color"/>
+        <attr name="iconColor" format="color"/>
+        <attr name="textColor" format="color"/>
+        <attr name="materialTabHostsTextSize" format="integer"/>
+        <attr name="materialTabHostScrollable" format="boolean"/>
+    </declare-styleable>
+
+    <declare-styleable name="MaterialTabViewHost">
+        <attr name="materialViewTabsPrimaryColor" format="color"/>
+        <attr name="materialViewTabsAccentColor" format="color"/>
+        <attr name="materialViewTabsIconColor" format="color"/>
+        <attr name="materialViewTabsTextColor" format="color"/>
+        <attr name="materialViewTabsTextSize" format="integer"/>
+        <attr name="materialTabViewHostScrollable" format="boolean"/>
+    </declare-styleable>
+
+    <declare-styleable name="RoundCornerProgressView">
+        <attr name="rcpvReverse" format="boolean"/>
+        <attr name="rcpvProgress" format="float"/>
+        <attr name="rcpvMax" format="float"/>
+        <attr name="rcpvSecondaryProgress" format="float"/>
+        <attr name="rcpvBackgroundPadding" format="dimension"/>
+        <attr name="rcpvRadius" format="dimension"/>
+        <attr name="rcpvProgressColor" format="color"/>
+        <attr name="rcpvSecondaryProgressColor" format="color"/>
+        <attr name="rcpvBackgroundColor" format="color"/>
+    </declare-styleable>
+
+    <declare-styleable name="SettingsToggle">
+        <attr name="text" format="string"/>
+        <attr name="stTextColor" format="string"/>
+        <attr name="prefName" format="string"/>
+        <attr name="oval_background_off" format="string"/>
+        <attr name="oval_background_on" format="string"/>
+    </declare-styleable>
+
+    <declare-styleable name="ScrollLayout">
+        <attr name="labelerClass" format="string"/>
+        <attr name="labelerFormat" format="string"/>
+        <attr name="childWidth" format="dimension"/>
+        <attr name="childHeight" format="dimension"/>
+    </declare-styleable>
+
+    <declare-styleable name="TextView_TypeFace">
+        <attr name="TypeFace" format="reference|string" localization="suggested"/>
+    </declare-styleable>
+
+</resources>

@@ -1,0 +1,475 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eee"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:paddingBottom="40dp">
+
+        <LinearLayout
+            android:id="@+id/bookfor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:padding="8dp"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:text="You are booking test for - "
+                android:textColor="@color/colorPrimary"
+                android:textSize="14dp" />
+
+            <TextView
+                android:id="@+id/username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:text=""
+                android:textColor="@color/black"
+                android:textSize="14dp" />
+
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#eee"
+                android:orientation="vertical">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#1A84C3" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
+                    android:paddingTop="5dp">
+
+                    <TextView
+                        android:id="@+id/collectionAddress"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="4dp"
+                        android:text="Collection address"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="top"
+                        android:layout_toRightOf="@+id/collectionAddress"
+                        android:gravity="top"
+                        android:text="*"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="16sp" />
+                </RelativeLayout>
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    app:contentPaddingLeft="8dp"
+                    app:contentPaddingRight="8dp">
+
+
+                    <EditText
+                        android:id="@+id/addressEdit"
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+
+                        android:background="#fff"
+                        android:gravity="start"
+                        android:hint="enter your sample address,street name, area name, land mark\n(please enter correct address to help us,to reach you in time)"
+                        android:padding="4dp"
+                        android:textColorHint="@color/textHint"
+
+                        android:textCursorDrawable="@drawable/color_cursor"
+                        android:textSize="14sp" />
+
+                </android.support.v7.widget.CardView>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
+                    android:paddingTop="5dp">
+
+                    <TextView
+                        android:id="@+id/state"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="4dp"
+                        android:text="State"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="top"
+                        android:layout_toRightOf="@+id/state"
+                        android:gravity="top"
+                        android:text="*"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="16sp" />
+
+                    <View
+                        android:id="@+id/center"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_centerHorizontal="true" />
+
+                    <TextView
+                        android:id="@+id/city"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginRight="4dp"
+                        android:layout_toRightOf="@+id/center"
+                        android:text="City"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="top"
+                        android:layout_toRightOf="@+id/city"
+                        android:gravity="top"
+                        android:text="*"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="16sp" />
+                </RelativeLayout>
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    app:contentPaddingLeft="8dp"
+                    app:contentPaddingRight="8dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+
+                        <EditText
+                            android:id="@+id/stateEdit"
+                            android:layout_width="match_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_marginLeft="4dp"
+                            android:layout_toRightOf="@+id/separator"
+                            android:layout_weight="1"
+                            android:background="#fff"
+                            android:gravity="center_vertical"
+
+                            android:inputType="textCapCharacters"
+                            android:textAllCaps="true"
+                            android:textCursorDrawable="@drawable/color_cursor"
+                            android:textSize="14dp" />
+
+                        <View
+                            android:id="@+id/separator"
+                            android:layout_width="1dp"
+                            android:layout_height="40dp"
+                            android:layout_gravity="center_horizontal"
+                            android:background="@color/textHint" />
+
+                        <EditText
+                            android:id="@+id/cityEdit"
+                            android:layout_width="match_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_alignBaseline="@+id/cityEdit"
+                            android:layout_alignBottom="@+id/cityEdit"
+                            android:layout_toLeftOf="@+id/cityEdit"
+                            android:layout_toStartOf="@+id/cityEdit"
+                            android:layout_weight="1"
+                            android:background="#fff"
+                            android:gravity="center_vertical"
+                            android:inputType="textCapCharacters"
+                            android:paddingLeft="5dp"
+                            android:textAllCaps="true"
+                            android:textCursorDrawable="@drawable/color_cursor"
+                            android:textSize="14dp" />
+
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+                <RelativeLayout
+                    android:id="@+id/postrel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
+                    android:paddingTop="5dp">
+
+                    <TextView
+                        android:id="@+id/postalCode"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="4dp"
+                        android:text="Postal Code"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="top"
+                        android:layout_toRightOf="@+id/postalCode"
+                        android:gravity="top"
+                        android:text="*"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="16sp" />
+                </RelativeLayout>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/card"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    app:contentPaddingLeft="8dp"
+                    app:contentPaddingRight="8dp">
+
+                    <EditText
+                        android:id="@+id/postalEdit"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:background="#fff"
+                        android:inputType="number"
+                        android:maxLength="6"
+                        android:textCursorDrawable="@drawable/color_cursor" />
+
+                </android.support.v7.widget.CardView>
+
+                <CheckBox
+                    android:id="@+id/checkboxx"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:text="Please Send My Login Credentials to above mentioned mobile number"
+                    android:textColor="@color/trackingText"
+                    android:textSize="12sp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
+                    android:paddingTop="7dp">
+
+                    <TextView
+                        android:id="@+id/preferredDateTime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="4dp"
+                        android:layout_marginTop="2dp"
+                        android:text="Preferred Collection Date &amp; Time"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="top"
+                        android:layout_toRightOf="@+id/preferredDateTime"
+                        android:gravity="top"
+                        android:text="*"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="16sp" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#EDF8FF"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:id="@+id/selectDateLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="16dp"
+                        android:background="@color/white">
+
+                        <ImageView
+                            android:id="@+id/dateIcon"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_margin="8dp"
+                            android:src="@drawable/date_icon" />
+
+                        <View
+                            android:id="@+id/sep2"
+                            android:layout_width="1dp"
+                            android:layout_height="36dp"
+                            android:layout_toRightOf="@+id/dateIcon"
+                            android:background="@color/textHint" />
+
+                        <EditText
+                            android:id="@+id/dateView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="16dp"
+                            android:layout_toRightOf="@+id/sep2"
+                            android:enabled="false"
+                            android:hint="Select Date"
+                            android:textColor="@color/textHint"
+                            android:textColorHint="@color/textHint"
+                            android:textSize="14sp" />
+
+                        <ImageView
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="16dp"
+                            android:src="@drawable/text_field_drop_down" />
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingBottom="16dp">
+
+                        <RelativeLayout
+                            android:id="@+id/selectTimeSlot1"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginRight="12dp"
+                            android:layout_weight="1"
+                            android:background="@color/white">
+
+                            <ImageView
+                                android:id="@+id/timeIcon"
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:layout_margin="8dp"
+                                android:src="@drawable/time_icon" />
+
+                            <View
+                                android:id="@+id/sep3"
+                                android:layout_width="1dp"
+                                android:layout_height="36dp"
+                                android:layout_toRightOf="@+id/timeIcon"
+                                android:background="@color/textHint" />
+
+                            <EditText
+                                android:id="@+id/timeSlotView1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="5dp"
+                                android:layout_toRightOf="@+id/sep3"
+                                android:enabled="false"
+                                android:hint="From"
+                                android:textColor="@color/textHint"
+                                android:textColorHint="@color/textHint"
+                                android:textSize="14sp" />
+
+                            <ImageView
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginRight="8dp"
+                                android:src="@drawable/text_field_drop_down" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/selectTimeSlot2"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="12dp"
+                            android:layout_marginRight="16dp"
+                            android:layout_weight="1"
+                            android:background="@color/white">
+
+                            <ImageView
+                                android:id="@+id/timeIcon2"
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:layout_margin="8dp"
+                                android:src="@drawable/time_icon" />
+
+                            <View
+                                android:id="@+id/sep4"
+                                android:layout_width="1dp"
+                                android:layout_height="36dp"
+                                android:layout_toRightOf="@+id/timeIcon2"
+                                android:background="@color/textHint" />
+
+                            <EditText
+                                android:id="@+id/timeSlotView2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="5dp"
+                                android:layout_toRightOf="@+id/sep4"
+                                android:enabled="false"
+                                android:hint="To"
+                                android:textColor="@color/textHint"
+                                android:textColorHint="@color/textHint"
+                                android:textSize="14sp" />
+
+                            <ImageView
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginRight="8dp"
+                                android:src="@drawable/text_field_drop_down" />
+                        </RelativeLayout>
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/footer_msg"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="4dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginTop="4dp"
+                   />
+
+
+            </LinearLayout>
+        </ScrollView>
+
+
+    </LinearLayout>
+
+    <include layout="@layout/roundcorner_progressview" />
+</RelativeLayout>

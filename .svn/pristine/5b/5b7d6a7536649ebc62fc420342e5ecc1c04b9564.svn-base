@@ -1,0 +1,54 @@
+[
+    {
+        "merged": "D:\\Trupti_workspace\\SRLandroid-master\\app\\build\\intermediates\\res\\merged\\debug\\color-v23\\abc_tint_btn_checkable.xml",
+        "source": "C:\\Users\\lakhan.yadav\\.android\\build-cache\\d71cdfe1b454ea6b4aebda04361218f8ceeefe18\\output\\res\\color-v23\\abc_tint_btn_checkable.xml"
+    },
+    {
+        "merged": "D:\\Trupti_workspace\\SRLandroid-master\\app\\build\\intermediates\\res\\merged\\debug\\color-v23\\abc_tint_default.xml",
+        "source": "C:\\Users\\lakhan.yadav\\.android\\build-cache\\d71cdfe1b454ea6b4aebda04361218f8ceeefe18\\output\\res\\color-v23\\abc_tint_default.xml"
+    },
+    {
+        "merged": "D:\\Trupti_workspace\\SRLandroid-master\\app\\build\\intermediates\\res\\merged\\debug\\color-v23\\abc_color_highlight_material.xml",
+        "source": "C:\\Users\\lakhan.yadav\\.android\\build-cache\\d71cdfe1b454ea6b4aebda04361218f8ceeefe18\\output\\res\\color-v23\\abc_color_highlight_material.xml"
+    },
+    {
+        "merged": "D:\\Trupti_workspace\\SRLandroid-master\\app\\build\\intermediates\\res\\merged\\debug\\color-v23\\abc_btn_colored_borderless_text_material.xml",
+        "source": "C:\\Users\\lakhan.yadav\\.android\\build-cache\\d71cdfe1b454ea6b4aebda04361218f8ceeefe18\\output\\res\\color-v23\\abc_btn_colored_borderless_text_material.xml"
+    },
+    {
+        "merged": "D:\\Trupti_workspace\\SRLandroid-master\\app\\build\\intermediates\\res\\merged\\debug\\color-v23\\abc_tint_spinner.xml",
+        "source": "C:\\Users\\lakhan.yadav\\.android\\build-cache\\d71cdfe1b454ea6b4aebda04361218f8ceeefe18\\output\\res\\color-v23\\abc_tint_spinner.xml"
+    },
+    {
+        "merged": "D:\\Trupti_workspace\\SRLandroid-master\\app\\build\\intermediates\\res\\merged\\debug\\color-v23\\abc_tint_seek_thumb.xml",
+        "source": "C:\\Users\\lakhan.yadav\\.android\\build-cache\\d71cdfe1b454ea6b4aebda04361218f8ceeefe18\\output\\res\\color-v23\\abc_tint_seek_thumb.xml"
+    },
+    {
+        "merged": "D:\\Trupti_workspace\\SRLandroid-master\\app\\build\\intermediates\\res\\merged\\debug\\color-v23\\abc_tint_switch_thumb.xml",
+        "source": "C:\\Users\\lakhan.yadav\\.android\\build-cache\\d71cdfe1b454ea6b4aebda04361218f8ceeefe18\\output\\res\\color-v23\\abc_tint_switch_thumb.xml"
+    },
+    {
+        "merged": "D:\\Trupti_workspace\\SRLandroid-master\\app\\build\\intermediates\\res\\merged\\debug\\color-v23\\abc_btn_colored_text_material.xml",
+        "source": "C:\\Users\\lakhan.yadav\\.android\\build-cache\\d71cdfe1b454ea6b4aebda04361218f8ceeefe18\\output\\res\\color-v23\\abc_btn_colored_text_material.xml"
+    },
+    {
+        "merged": "D:\\Trupti_workspace\\SRLandroid-master\\app\\build\\intermediates\\res\\merged\\debug\\color-v23\\abc_tint_edittext.xml",
+        "source": "C:\\Users\\lakhan.yadav\\.android\\build-cache\\d71cdfe1b454ea6b4aebda04361218f8ceeefe18\\output\\res\\color-v23\\abc_tint_edittext.xml"
+    },
+    {
+        "merged": "D:\\Trupti_workspace\\SRLandroid-master\\app\\build\\intermediates\\res\\merged\\debug\\color-v23\\abc_tint_switch_track.xml",
+        "source": "C:\\Users\\lakhan.yadav\\.android\\build-cache\\d71cdfe1b454ea6b4aebda04361218f8ceeefe18\\output\\res\\color-v23\\abc_tint_switch_track.xml"
+    },
+    {
+        "merged": "D:\\Trupti_workspace\\SRLandroid-master\\app\\build\\intermediates\\res\\merged\\debug\\color-v23\\design_tint_password_toggle.xml",
+        "source": "C:\\Users\\lakhan.yadav\\.android\\build-cache\\b3efe9a891b216039f289d72cb763e83290e7011\\output\\res\\color-v23\\design_tint_password_toggle.xml"
+    },
+    {
+        "merged": "D:\\Trupti_workspace\\SRLandroid-master\\app\\build\\intermediates\\res\\merged\\debug\\color-v23\\white_disabled_material.xml",
+        "source": "D:\\Trupti_workspace\\SRLandroid-master\\sublimenavigationview\\build\\intermediates\\bundles\\default\\res\\color-v23\\white_disabled_material.xml"
+    },
+    {
+        "merged": "D:\\Trupti_workspace\\SRLandroid-master\\app\\build\\intermediates\\res\\merged\\debug\\color-v23\\snv_c_switch_track_material.xml",
+        "source": "D:\\Trupti_workspace\\SRLandroid-master\\sublimenavigationview\\build\\intermediates\\bundles\\default\\res\\color-v23\\snv_c_switch_track_material.xml"
+    }
+]

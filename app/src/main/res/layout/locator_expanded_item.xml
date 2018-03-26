@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/expanded_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:visibility="gone">
+
+
+    <LinearLayout
+        android:id="@+id/dynamic_layout1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/login_background_color"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:id="@+id/address_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:padding="5dp"
+                android:text="Address:"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/address_data"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="5dp"
+                android:text="Address:" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/city_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:padding="5dp"
+                android:text="City:"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/city_data"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="5dp"
+                android:text="City:" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/state_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:padding="5dp"
+                android:text="State:"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/state_data"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="5dp"
+                android:text="State :" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/contact"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/login_background_color"
+        android:gravity="center_vertical"
+        android:padding="@dimen/default_margin_ledt">
+
+        <ImageView
+            android:id="@+id/contacticon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:scaleType="fitCenter"
+            android:src="@drawable/profile_icon" />
+
+        <TextView
+            android:id="@+id/contact_person"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/ten"
+            android:layout_toRightOf="@+id/contacticon"
+            android:gravity="center_vertical"
+            android:textColor="@color/HeaderTitleColor"
+            android:textSize="@dimen/fourteen" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relemail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/login_background_color"
+        android:gravity="center_vertical"
+        android:padding="@dimen/default_margin_ledt">
+
+        <ImageView
+            android:id="@+id/emailicon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:scaleType="fitCenter"
+            android:src="@drawable/email_icon" />
+
+        <TextView
+            android:id="@+id/emailid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/ten"
+            android:layout_toRightOf="@+id/emailicon"
+            android:gravity="center_vertical"
+            android:textColor="@color/HeaderTitleColor"
+            android:textSize="@dimen/fourteen" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/dynamic_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/login_background_color"
+        android:orientation="horizontal"
+        android:padding="@dimen/default_margin_ledt">
+
+        <ImageView
+            android:id="@+id/addrId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@drawable/address_icon" />
+
+        <TextView
+            android:id="@+id/address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/emailicon"
+            android:gravity="center_vertical"
+            android:padding="5dp"
+            android:text="address"
+            android:textColor="@color/HeaderTitleColor"
+            android:textSize="@dimen/fourteen" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/timing"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/login_background_color"
+        android:orientation="horizontal"
+        android:padding="@dimen/default_margin_ledt">
+
+        <ImageView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@drawable/labstime" />
+
+
+        <LinearLayout
+            android:id="@+id/message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/login_background_color"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/login_background_color"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_labtiming"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/emailicon"
+                    android:gravity="center_vertical"
+                    android:text="Lab Timings : "
+                    android:textColor="@color/HeaderTitleColor"
+                    android:textSize="@dimen/fourteen" />
+
+                <TextView
+                    android:id="@+id/et_labtiming"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/emailicon"
+                    android:gravity="center_vertical"
+
+                    android:textColor="@color/HeaderTitleColor"
+                    android:textSize="@dimen/fourteen" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/et_labmsg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@+id/emailicon"
+                android:gravity="center_vertical"
+
+                android:textColor="@color/HeaderTitleColor"
+                android:textSize="@dimen/fourteen" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <FrameLayout
+        android:id="@+id/expanded_details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:clickable="true">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/drawer_close" />
+
+
+        <ImageView
+            android:layout_width="@dimen/default_image_size_one"
+            android:layout_height="@dimen/default_image_size_one"
+            android:layout_gravity="center_horizontal|bottom"
+            android:gravity="bottom"
+            android:paddingBottom="@dimen/layout_margin_default"
+            android:scaleType="fitCenter"
+            android:src="@drawable/close_list_icon"
+            android:visibility="gone" />
+    </FrameLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto"
+      android:paddingLeft="10dp"
+      android:paddingRight="10dp">
+
+
+    <Group
+
+        android:checkableBehavior="single"
+        app:collapsed="false"
+        app:collapsible="false">
+        <Text
+            android:id="@+id/menu_home"
+            android:icon="@drawable/home_menu_icon"
+            android:title="@string/menu_home"/>
+
+        <Separator/>
+
+        <Text
+            android:id="@+id/menu_book_a_test"
+            android:icon="@drawable/book_a_test_menu_icon"
+            android:title="@string/menu_book_a_test"/>
+
+        <Separator/>
+
+
+        <Text
+            android:id="@+id/menu_srl_locator"
+            android:icon="@drawable/srl_locator_menu_icon"
+            android:title="@string/menu_srl_locator"/>
+
+
+        <Separator/>
+
+        <Text
+            android:id="@+id/menu_track_your_order"
+            android:icon="@drawable/tracker_menu_icon"
+            android:title="@string/menu_track_your_order"/>
+
+
+        <Separator android:id="@+id/separator_item_1"/>
+    </Group>
+    <Group
+        android:id="@+id/group_1"
+        android:checkableBehavior="single"
+        app:collapsed="true"
+        app:collapsible="true">
+
+        <GroupHeader
+            android:id="@+id/menu_my_account"
+            android:checked="true"
+            android:title="@string/menu_my_account"
+            />
+
+        <Text
+            android:id="@+id/menu_my_reports"
+            android:icon="@drawable/my_reports_menu_icon"
+            android:title="@string/menu_my_reports"/>
+        <Separator/>
+       <!-- <Text
+            android:id="@+id/menu_trends"
+            android:icon="@drawable/my_health_menu_icon"
+            android:title="@string/menu_my_trend"/>
+        <Separator/>-->
+        <Text
+            android:id="@+id/menu_orders"
+            android:icon="@drawable/my_orders_menu_icon"
+            android:title="@string/menu_my_orders"/>
+        <Separator/>
+        <Text
+            android:id="@+id/menu_my_family"
+            android:icon="@drawable/my_family_menu_icon_shade"
+            android:title="@string/menu_my_family"/>
+        <Separator/>
+
+        <Text
+            android:id="@+id/menu_my_profile"
+            android:icon="@drawable/my_profile_menu_icon"
+            android:title="@string/menu_my_profile"/>
+        <Separator/>
+        <Text
+            android:id="@+id/menu_health"
+            android:icon="@drawable/my_health_menu_icon"
+            android:title="@string/menu_my_health_tracker"/>
+        <Separator/>
+
+        <Separator/>
+
+        <Text
+            android:id="@+id/menu_change_pwd"
+            android:icon="@drawable/chnage_password_menu_icon"
+            android:title="@string/menu_change_pwd"/>
+
+        <Separator/>
+
+    </Group>
+
+    <Separator/>
+    <Text
+        android:id="@+id/menu_register"
+        android:icon="@drawable/new_registrationmenu_icon"
+        android:title="@string/menu_register"/>
+    <Separator/>
+    <!--<Text-->
+        <!--android:id="@+id/menu_offers"-->
+        <!--android:icon="@drawable/offer_menu_icon"-->
+        <!--android:title="@string/menu_offers"/>-->
+
+    <!--<Separator/>-->
+    <Text
+        android:id="@+id/menu_about_us"
+        android:icon="@drawable/about_us_icon_menu"
+        android:title="@string/menu_about_us"/>
+
+    <Separator/>
+    <Text
+        android:id="@+id/menu_contact_us"
+        android:icon="@drawable/contact_us_menu_icon"
+        android:title="@string/menu_contact_us"/>
+    <Separator/>
+    <Group
+        android:id="@+id/group_2"
+        android:checkableBehavior="single"
+        app:collapsed="true"
+        app:collapsible="true">
+
+        <GroupHeader
+            android:id="@+id/menu_more"
+            android:checked="true"
+            android:title="@string/menu_more"/>
+
+        <Text
+            android:id="@+id/menu_rate"
+            android:icon="@drawable/rate_my_srl_menu_icon"
+            android:title="@string/menu_rate"/>
+
+        <Separator/>
+
+        <Text
+            android:id="@+id/calculate_bmi"
+            android:icon="@drawable/chnage_password_menu_icon"
+            android:title="@string/calculate_bmi" />
+
+    </Group>
+
+    <Separator/>
+    <Text
+        android:id="@+id/menu_settings"
+        android:icon="@drawable/settings_menu_icon"
+        android:title="@string/menu_settings"/>
+
+    <Text
+        />
+</menu>

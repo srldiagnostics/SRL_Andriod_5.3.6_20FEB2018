@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@+id/expanded_layout"
+              xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:visibility="gone"
+              android:orientation="vertical"
+
+    >
+
+    <LinearLayout
+        android:id="@+id/dynamic_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/login_background_color"
+        android:orientation="vertical"
+        android:padding="@dimen/default_margin_ledt">
+
+
+    </LinearLayout>
+
+
+    <FrameLayout
+        android:id="@+id/expanded_details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:clickable="true">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/drawer_close"/>
+
+
+        <ImageView
+            android:layout_width="@dimen/default_image_size_one"
+            android:layout_height="@dimen/default_image_size_one"
+            android:layout_gravity="center_horizontal|bottom"
+            android:gravity="bottom"
+            android:paddingBottom="@dimen/layout_margin_default"
+            android:visibility="gone"
+            android:scaleType="fitCenter"
+            android:src="@drawable/close_list_icon"/>
+    </FrameLayout>
+</LinearLayout>

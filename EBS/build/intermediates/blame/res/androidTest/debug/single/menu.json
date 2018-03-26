@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "D:\\Trupti_workspace\\SRL_SVN\\EBS\\build\\intermediates\\res\\merged\\androidTest\\debug\\menu\\payment_failure.xml",
+        "source": "D:\\Trupti_workspace\\SRL_SVN\\EBS\\build\\intermediates\\bundles\\debug\\res\\menu\\payment_failure.xml"
+    },
+    {
+        "merged": "D:\\Trupti_workspace\\SRL_SVN\\EBS\\build\\intermediates\\res\\merged\\androidTest\\debug\\menu\\menu_idle_time_out.xml",
+        "source": "D:\\Trupti_workspace\\SRL_SVN\\EBS\\build\\intermediates\\bundles\\debug\\res\\menu\\menu_idle_time_out.xml"
+    },
+    {
+        "merged": "D:\\Trupti_workspace\\SRL_SVN\\EBS\\build\\intermediates\\res\\merged\\androidTest\\debug\\menu\\payment_success.xml",
+        "source": "D:\\Trupti_workspace\\SRL_SVN\\EBS\\build\\intermediates\\bundles\\debug\\res\\menu\\payment_success.xml"
+    }
+]

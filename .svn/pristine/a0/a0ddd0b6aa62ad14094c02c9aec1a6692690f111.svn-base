@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <com.synnapps.carouselview.CarouselView
+        android:id="@+id/carouselView"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="#444"
+        app:animateOnBoundary="false"
+        app:autoPlay="true"
+        app:fillColor="#FFFFFFFF"
+        app:indicatorGravity="bottom|center_horizontal"
+        app:pageColor="#00000000"
+        app:pageTransformInterval="1500"
+        app:pageTransformer="flow"
+        app:radius="4dp"
+        app:slideInterval="3000"
+        app:strokeColor="#FF777777"
+        app:strokeWidth="1dp"/>
+
+
+</RelativeLayout>
+

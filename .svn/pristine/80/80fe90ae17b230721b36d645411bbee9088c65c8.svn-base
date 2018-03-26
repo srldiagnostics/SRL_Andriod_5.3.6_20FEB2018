@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/screen"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/packagesList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <!--draggable view code-->
+    <RelativeLayout
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/draggableView"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:background="@drawable/cart_circle">
+
+        <ImageView
+            android:id="@+id/cart_icon"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/mycart_icon"
+            android:layout_marginTop="30dp"
+            android:layout_centerHorizontal="true"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cart_icon"
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal">
+            <TextView
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_alignBaseline="@+id/cart_amount"
+                android:text="$"
+                android:layout_marginRight="4dp"
+                android:textColor="#fff"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:text="1467"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/cart_amount"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:textSize="12sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+            android:textColor="@color/white"
+            android:background="@drawable/circle_cart_count"
+            android:layout_alignTop="@+id/cart_icon"
+            android:layout_alignRight="@+id/cart_icon"
+            android:layout_alignEnd="@+id/cart_icon" />
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

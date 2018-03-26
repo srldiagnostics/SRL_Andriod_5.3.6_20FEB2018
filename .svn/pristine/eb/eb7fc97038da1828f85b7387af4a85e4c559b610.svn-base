@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:attrs="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:background="@color/lightgrey"
+                android:orientation="vertical">
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/darkblue"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:background="@color/emptycolor"
+            android:text="@string/next"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/fourteen"/>
+
+
+        <Button
+            android:id="@+id/skip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@color/emptycolor"
+            android:text="Skip"
+            android:textAllCaps="false"
+            android:visibility="gone"
+            android:textColor="@color/white"
+            android:textSize="@dimen/fourteen"/>
+
+        <Button
+            android:id="@+id/done"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@color/emptycolor"
+            android:text="@string/done"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/fourteen"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <ImageView
+            android:id="@+id/imgpinIVD"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/set_pin_icon"/>
+
+        <LinearLayout
+            android:id="@+id/setpinRLID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_horizontal_margin"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/accessionTVID"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/five"
+                android:text="@string/set_pin"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="@dimen/default_text_size_one"
+                attrs:TypeFace="@string/Bold"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/setpinRLID"
+            android:gravity="center">
+
+            <EditText
+                android:id="@+id/pin1"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/padding_ten"
+                android:background="@drawable/edittext_modify_states"
+                android:gravity="center"
+                android:imeOptions="actionNext"
+                android:inputType="numberPassword"
+                android:textColor="@color/lightblue"
+                android:maxLength="1"
+                android:padding="@dimen/five"
+                android:textCursorDrawable="@drawable/color_cursor"
+                android:password="true"
+                android:textSize="@dimen/settings_toggle_height"/>
+
+
+            <EditText
+                android:id="@+id/pin2"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_margin="@dimen/padding_ten"
+                android:background="@drawable/edittext_modify_states_grey"
+                android:gravity="center"
+                android:imeOptions="actionNext"
+                android:password="true"
+                android:enabled="false"
+                android:maxLength="1"
+                android:inputType="numberPassword"
+                android:textColor="@color/lightblue"
+                android:textCursorDrawable="@drawable/color_cursor"
+                android:textSize="@dimen/settings_toggle_height"/>
+
+            <EditText
+                android:id="@+id/pin3"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_margin="@dimen/padding_ten"
+                android:background="@drawable/edittext_modify_states_grey"
+                android:gravity="center"
+                android:imeOptions="actionNext"
+                android:inputType="numberPassword"
+                android:textColor="@color/lightblue"
+                android:maxLength="1"
+                android:enabled="false"
+                android:password="true"
+                android:textCursorDrawable="@drawable/color_cursor"
+                android:textSize="@dimen/settings_toggle_height"/>
+
+
+            <EditText
+                android:id="@+id/pin4"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_margin="@dimen/padding_ten"
+                android:background="@drawable/edittext_modify_states_grey"
+                android:gravity="center"
+                android:imeOptions="actionDone"
+                android:inputType="numberPassword"
+                android:textColor="@color/lightblue"
+                android:maxLength="1"
+                android:enabled="false"
+                android:password="true"
+                android:textCursorDrawable="@drawable/color_cursor"
+                android:textSize="@dimen/settings_toggle_height"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/confirm_pin_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginTop="@dimen/activity_horizontal_margin"
+            android:gravity="left"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/five"
+                android:text="@string/confirm_pin"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="@dimen/default_text_size_one"
+                attrs:TypeFace="@string/Bold"
+                android:id="@+id/textView4" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/enter_pin_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <EditText
+                android:id="@+id/confirm1"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_margin="@dimen/padding_ten"
+                android:background="@drawable/edittext_modify_states"
+                android:gravity="center"
+                android:imeOptions="actionNext"
+                android:inputType="numberPassword"
+                android:textColor="@color/lightblue"
+                android:maxLength="1"
+                android:password="true"
+                android:textCursorDrawable="@drawable/color_cursor"
+                android:textSize="@dimen/settings_toggle_height"/>
+
+
+            <EditText
+                android:id="@+id/confirm2"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_margin="@dimen/padding_ten"
+                android:background="@drawable/edittext_modify_states_grey"
+                android:gravity="center"
+                android:imeOptions="actionNext"
+                android:inputType="numberPassword"
+                android:textColor="@color/lightblue"
+                android:maxLength="1"
+                android:password="true"
+                android:textCursorDrawable="@drawable/color_cursor"
+                android:textSize="@dimen/settings_toggle_height"/>
+
+            <EditText
+                android:id="@+id/confirm3"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_margin="@dimen/padding_ten"
+                android:background="@drawable/edittext_modify_states_grey"
+                android:gravity="center"
+                android:imeOptions="actionNext"
+                android:inputType="numberPassword"
+                android:textColor="@color/lightblue"
+                android:maxLength="1"
+                android:password="true"
+
+                android:textCursorDrawable="@drawable/color_cursor"
+                android:textSize="@dimen/settings_toggle_height"/>
+
+            <EditText
+                android:id="@+id/confirm4"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_margin="@dimen/padding_ten"
+                android:background="@drawable/edittext_modify_states_grey"
+                android:gravity="center"
+                android:imeOptions="actionDone"
+                android:inputType="numberPassword"
+                android:textColor="@color/lightblue"
+                android:maxLength="1"
+                android:password="true"
+                android:textCursorDrawable="@drawable/color_cursor"
+                android:textSize="@dimen/settings_toggle_height"/>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>

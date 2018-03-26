@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.srllimited.srl.Dashboard">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:attrs="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/myreportHID"
+                android:layout_margin="@dimen/ten"
+                android:gravity="left"
+                android:orientation="vertical">
+
+                <com.srllimited.srl.utilities.CustomTextView
+                    android:id="@+id/accessionTVID"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/five"
+                    android:text="@string/accession_label"
+                    android:textColor="@color/HeaderTitleColor"
+                    android:textSize="@dimen/default_text_size_one"
+                    attrs:TypeFace="@string/Bold" />
+
+                <EditText
+                    android:id="@+id/accessionNoETID"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edittext_modify_states"
+                    android:inputType="number"
+                    android:padding="@dimen/ten"
+                    android:textSize="@dimen/default_text_size_one" />
+
+                <TextView
+                    android:id="@+id/firstNameTVID"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/five"
+                    android:text="@string/firstName_label"
+                    android:textColor="@color/HeaderTitleColor"
+                    android:textSize="@dimen/default_text_size_one" />
+
+                <EditText
+                    android:id="@+id/firstNameETID"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edittext_modify_states"
+                    android:inputType="text"
+                    android:padding="@dimen/ten"
+                    android:textSize="@dimen/default_text_size_one" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_margin="@dimen/ten"
+                android:gravity="left"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/viewReportBTNID"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/ten"
+                    android:background="@color/darkblue"
+                    android:text="@string/viewReport_label"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/fourteen" />
+            </LinearLayout>
+
+
+        </RelativeLayout>
+    </LinearLayout>
+</android.support.design.widget.CoordinatorLayout>

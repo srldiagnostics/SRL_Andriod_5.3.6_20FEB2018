@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/ten"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/five"
+    android:paddingLeft="@dimen/ten"
+    android:paddingTop="@dimen/ten">
+
+
+
+    <LinearLayout
+        android:id="@+id/search1"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+    <ImageView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="@dimen/five"
+        android:background="@drawable/loaction_list_icon" />
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="@dimen/five"
+        android:layout_toRightOf="@+id/locationIVID"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/five">
+
+        <TextView
+            android:id="@+id/place1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/five"
+            android:padding="@dimen/five"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/zeropointfive"
+            android:background="@color/divider"
+            android:paddingTop="@dimen/ten" />
+    </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/search2"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+        <ImageView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="@dimen/five"
+
+            android:background="@drawable/loaction_list_icon" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="@dimen/five"
+            android:layout_toRightOf="@+id/locationIVID"
+            android:orientation="vertical"
+            android:paddingTop="@dimen/five">
+
+            <TextView
+                android:id="@+id/place2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/five"
+                android:padding="@dimen/five"
+                 />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/zeropointfive"
+                android:background="@color/divider"
+                android:paddingTop="@dimen/ten" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:id="@+id/search3"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/locationIVID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="@dimen/five"
+
+            android:background="@drawable/loaction_list_icon" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="@dimen/five"
+            android:layout_toRightOf="@+id/locationIVID"
+            android:orientation="vertical"
+            android:paddingTop="@dimen/five">
+
+            <TextView
+                android:id="@+id/place3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/five"
+                android:padding="@dimen/five"
+               />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/zeropointfive"
+                android:background="@color/divider"
+                android:paddingTop="@dimen/ten" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+</LinearLayout>

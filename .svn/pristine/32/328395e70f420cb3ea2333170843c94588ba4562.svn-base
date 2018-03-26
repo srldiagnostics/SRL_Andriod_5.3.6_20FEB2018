@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="af-android-sdk-4.8.7">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.android/build-cache/94385a9d8a660ce4a61cffc9310d616edb96b36d/output/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.android/build-cache/94385a9d8a660ce4a61cffc9310d616edb96b36d/output/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

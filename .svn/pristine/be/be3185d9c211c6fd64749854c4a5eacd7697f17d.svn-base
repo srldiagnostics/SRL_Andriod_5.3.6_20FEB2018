@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:attrs="http://schemas.android.com/tools"
+    android:id="@+id/bmiDetails"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="5dp"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/eigth"
+        android:paddingRight="@dimen/eigth"
+        >
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="Name : "
+            android:textColor="@color/HeaderTitleColor"
+            android:textSize="@dimen/fifteen"
+            android:textStyle="bold"
+            attrs:TypeFace="@string/Bold" />
+
+        <Button
+            android:id="@+id/indicates"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:background="@color/blue"
+            android:inputType="text"
+
+            android:maxLines="1"
+            android:padding="@dimen/five"
+            android:text="Above Obese"
+            android:textColor="@color/white"
+            android:textCursorDrawable="@drawable/color_cursor"
+            android:textSize="@dimen/fifteen" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/eigth"
+        android:paddingRight="@dimen/five">
+
+        <TextView
+            android:id="@+id/height"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Height : "
+            android:textColor="@color/HeaderTitleColor"
+
+            android:textSize="@dimen/fifteen"
+            android:textStyle="bold"
+            attrs:TypeFace="@string/Bold" />
+
+        <TextView
+            android:id="@+id/weight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/five"
+            android:layout_weight="1"
+            android:text="Weigth : "
+            android:textColor="@color/HeaderTitleColor"
+
+            android:textSize="@dimen/fifteen"
+            android:textStyle="bold"
+            attrs:TypeFace="@string/Bold" />
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/five"
+            android:layout_weight="1"
+            android:text="Date"
+            android:textColor="@color/HeaderTitleColor"
+
+            android:textSize="@dimen/fifteen"
+            android:textStyle="bold"
+            attrs:TypeFace="@string/Bold" />
+
+        <TextView
+            android:id="@+id/result"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/five"
+            android:layout_marginTop="@dimen/five"
+            android:layout_weight="1"
+            android:text="Result"
+
+            android:textColor="@color/HeaderTitleColor"
+            android:textSize="@dimen/fifteen"
+            android:textStyle="bold"
+            attrs:TypeFace="@string/Bold" />
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/divider" />
+</LinearLayout>

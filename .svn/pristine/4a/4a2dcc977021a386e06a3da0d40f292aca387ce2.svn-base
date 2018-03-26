@@ -1,0 +1,1333 @@
+-- Merging decision tree log ---
+manifest
+ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:2:1-481:12
+	package
+		ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:4:5-33
+		INJECTED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml
+		INJECTED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml
+	android:versionName
+		INJECTED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml
+		INJECTED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml
+	xmlns:tools
+		ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:3:5-51
+	xmlns:android
+		ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:2:11-69
+	android:versionCode
+		INJECTED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml
+		INJECTED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml
+uses-sdk
+ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:6:5-56
+MERGED from [com.android.volley:volley:unspecified] D:\Trupti_workspace\SRLandroid-master\volley\build\intermediates\bundles\default\AndroidManifest.xml:7:5-43
+MERGED from [SRLandroid-master:sublimenavigationview:unspecified] D:\Trupti_workspace\SRLandroid-master\sublimenavigationview\build\intermediates\bundles\default\AndroidManifest.xml:7:5-9:41
+MERGED from [SRLandroid-master:placesautocompletetextview:unspecified] D:\Trupti_workspace\SRLandroid-master\placesautocompletetextview\build\intermediates\bundles\default\AndroidManifest.xml:7:5-9:41
+MERGED from [SRLandroid-master:EBS:unspecified] D:\Trupti_workspace\SRLandroid-master\EBS\build\intermediates\bundles\default\AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support:multidex:1.0.1] C:\Users\lakhan.yadav\.android\build-cache\b608c5d374e0bfa95b939eb7bc055a61e4e7d4a5\output\AndroidManifest.xml:18:5-42
+MERGED from [com.android.support:design:25.3.0] C:\Users\lakhan.yadav\.android\build-cache\b3efe9a891b216039f289d72cb763e83290e7011\output\AndroidManifest.xml:21:5-23:62
+MERGED from [com.android.support:transition:25.3.0] C:\Users\lakhan.yadav\.android\build-cache\f54267dd98accf69f628f1b583186dc731b8b307\output\AndroidManifest.xml:20:5-44
+MERGED from [com.github.markushi:android-ui:1.2] C:\Users\lakhan.yadav\.android\build-cache\373b963297c14520d7ffb25a0bad372e9bf454ed\output\AndroidManifest.xml:7:5-44
+MERGED from [info.hoang8f:android-segmented:1.0.6] C:\Users\lakhan.yadav\.android\build-cache\ede66432fde21aef06661685ab295c1fb7ac9411\output\AndroidManifest.xml:7:5-9:41
+MERGED from [com.brucetoo.pickview:library:1.2.2] C:\Users\lakhan.yadav\.android\build-cache\951e79d252f74474a286aa7bd284159f76f3a4f5\output\AndroidManifest.xml:7:5-9:41
+MERGED from [com.google.android.gms:play-services:9.6.1] C:\Users\lakhan.yadav\.android\build-cache\02c19a3fd4ab101ba3146037a0ca49e9e61f5e6a\output\AndroidManifest.xml:4:5-42
+MERGED from [com.google.android.gms:play-services-analytics:9.6.1] C:\Users\lakhan.yadav\.android\build-cache\181192c7ffe5b7dd059e0a38c9dcf9b1750bbd8c\output\AndroidManifest.xml:17:5-42
+MERGED from [com.google.android.gms:play-services-appinvite:9.6.1] C:\Users\lakhan.yadav\.android\build-cache\9f5208702f39495673486625511cc1086d89643c\output\AndroidManifest.xml:17:5-42
+MERGED from [com.google.android.gms:play-services-cast-framework:9.6.1] C:\Users\lakhan.yadav\.android\build-cache\b268592f5705c0949fc82d1b1bda3a5058c09989\output\AndroidManifest.xml:3:5-42
+MERGED from [com.google.android.gms:play-services-cast:9.6.1] C:\Users\lakhan.yadav\.android\build-cache\7645c505ea8ce40890e64188db5054c70da8696b\output\AndroidManifest.xml:17:5-42
+MERGED from [com.android.support:mediarouter-v7:25.3.0] C:\Users\lakhan.yadav\.android\build-cache\17e8b5edf773f0705907c4461526a923a44b4ad8\output\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:palette-v7:25.3.0] C:\Users\lakhan.yadav\.android\build-cache\1d19ffa2114fa6289ed99bd95d95c1efdcffbc07\output\AndroidManifest.xml:20:5-43
+MERGED from [com.google.firebase:firebase-config:9.6.1] C:\Users\lakhan.yadav\.android\build-cache\6c0fac2804b3394a9c19faf236b51b017b4e2d6f\output\AndroidManifest.xml:17:5-42
+MERGED from [com.google.android.gms:play-services-awareness:9.6.1] C:\Users\lakhan.yadav\.android\build-cache\3c6946f991915879dd02bda3ad68fd7042d2c3e7\output\AndroidManifest.xml:17:5-42
+MERGED from [com.google.firebase:firebase-crash:9.6.1] C:\Users\lakhan.yadav\.android\build-cache\269cd2c4ae98f849db91937350fd68b54b0b5b09\output\AndroidManifest.xml:20:5-42
+MERGED from [com.google.firebase:firebase-auth:9.6.1] C:\Users\lakhan.yadav\.android\build-cache\f3739e4f1cd387c149e9752b0ff44174722a2a3d\output\AndroidManifest.xml:17:5-42
+MERGED from [com.google.firebase:firebase-auth-common:9.6.1] C:\Users\lakhan.yadav\.android\build-cache\a2001e2fe1d7ee552029a0ebd805207dd8b3ef4a\output\AndroidManifest.xml:17:5-42
+MERGED from [com.google.firebase:firebase-auth-module:9.6.1] C:\Users\lakhan.yadav\.android\build-cache\cbefd5c080cce6d2f4285bff1b1b427f92034827\output\AndroidManifest.xml:3:5-42
+MERGED from [com.google.firebase:firebase-database:9.6.1] C:\Users\lakhan.yadav\.android\build-cache\970809a983aa1873f18dafa77d89406feb9d00af\output\AndroidManifest.xml:3:5-42
+MERGED from [com.google.firebase:firebase-database-connection:9.6.1] C:\Users\lakhan.yadav\.android\build-cache\85ac499ab5915c6fe045c9a11f7a0651547fae0b\output\AndroidManifest.xml:3:5-42
+MERGED from [com.google.firebase:firebase-storage:9.6.1] C:\Users\lakhan.yadav\.android\build-cache\589b81cee747c135e2e7cd7bf9965408f5938d27\output\AndroidManifest.xml:3:5-42
+MERGED from [com.google.firebase:firebase-storage-common:9.6.1] C:\Users\lakhan.yadav\.android\build-cache\6bfc962ce6a62ccfe9ade78e17c90c14b671d336\output\AndroidManifest.xml:3:5-42
+MERGED from [com.google.android.gms:play-services-fitness:9.6.1] C:\Users\lakhan.yadav\.android\build-cache\77e7d703e6b7fa0e3d436c05cd77dc365e5472e6\output\AndroidManifest.xml:17:5-42
+MERGED from [com.google.android.gms:play-services-games:9.6.1] C:\Users\lakhan.yadav\.android\build-cache\b40c212a95345cdb5c228d76fb12dd02fad73171\output\AndroidManifest.xml:17:5-42
+MERGED from [com.google.android.gms:play-services-drive:9.6.1] C:\Users\lakhan.yadav\.android\build-cache\fae68cd325c6ff3d87dbfe0db16a7ae540cb3dd9\output\AndroidManifest.xml:17:5-42
+MERGED from [com.google.android.gms:play-services-gcm:9.6.1] C:\Users\lakhan.yadav\.android\build-cache\0615b1a347c46dfe6cd099115d739556e24d53fa\output\AndroidManifest.xml:17:5-42
+MERGED from [com.google.android.gms:play-services-appindexing:9.6.1] C:\Users\lakhan.yadav\.android\build-cache\2fa109097df3fb66e1f57d368612b7a02a2b9a02\output\AndroidManifest.xml:17:5-42
+MERGED from [com.google.android.gms:play-services-iid:9.6.1] C:\Users\lakhan.yadav\.android\build-cache\2572983fa042b74d524ffb6dfd282a748490a4ef\output\AndroidManifest.xml:17:5-42
+MERGED from [com.google.android.gms:play-services-instantapps:9.6.1] C:\Users\lakhan.yadav\.android\build-cache\1a742240fe83fc95cc4eaa54703d56290922abe9\output\AndroidManifest.xml:3:5-42
+MERGED from [com.google.android.gms:play-services-location:9.6.1] C:\Users\lakhan.yadav\.android\build-cache\d254e7283053de20b2e1f07e31d5aa2daa991525\output\AndroidManifest.xml:3:5-42
+MERGED from [com.google.android.gms:play-services-nearby:9.6.1] C:\Users\lakhan.yadav\.android\build-cache\dcb9f6e106d51cbba024d2f19d40bd90c4c28f09\output\AndroidManifest.xml:3:5-42
+MERGED from [com.google.android.gms:play-services-panorama:9.6.1] C:\Users\lakhan.yadav\.android\build-cache\34fd0b82faab7f18439ec9a9c62952ef4f634e2d\output\AndroidManifest.xml:17:5-42
+MERGED from [com.google.android.gms:play-services-places:9.6.1] C:\Users\lakhan.yadav\.android\build-cache\8c4e67d05f0a658eec5a5dcba12217f07ef1378c\output\AndroidManifest.xml:17:5-42
+MERGED from [com.google.android.gms:play-services-plus:9.6.1] C:\Users\lakhan.yadav\.android\build-cache\1eb04f3937b5581de7611f2992bbb02443521d63\output\AndroidManifest.xml:17:5-42
+MERGED from [com.google.android.gms:play-services-safetynet:9.6.1] C:\Users\lakhan.yadav\.android\build-cache\041dae8b5afe73d48159b7e7b6a86de7f4110d5e\output\AndroidManifest.xml:17:5-42
+MERGED from [com.google.android.gms:play-services-tagmanager:9.6.1] C:\Users\lakhan.yadav\.android\build-cache\010adda77693a8fdd21b49a8334a600dfee65ae0\output\AndroidManifest.xml:17:5-42
+MERGED from [com.google.android.gms:play-services-analytics-impl:9.6.1] C:\Users\lakhan.yadav\.android\build-cache\2b4e9ce9afe40103b665de587d9df77933c38410\output\AndroidManifest.xml:17:5-42
+MERGED from [com.google.android.gms:play-services-tagmanager-api:9.6.1] C:\Users\lakhan.yadav\.android\build-cache\9eb2c058cdec952a83d8165aa8efa71469e0ee00\output\AndroidManifest.xml:17:5-42
+MERGED from [com.google.android.gms:play-services-vision:9.6.1] C:\Users\lakhan.yadav\.android\build-cache\017998e3266dfb54497c41a9326af06880a3d9be\output\AndroidManifest.xml:3:5-42
+MERGED from [com.google.android.gms:play-services-wallet:9.6.1] C:\Users\lakhan.yadav\.android\build-cache\e79943a08c1f83b67c082c7b5d68c38fe5f1a987\output\AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-identity:9.6.1] C:\Users\lakhan.yadav\.android\build-cache\01df8d91d1554c22546b9aaf704da72088eba707\output\AndroidManifest.xml:17:5-42
+MERGED from [com.google.android.gms:play-services-maps:9.6.1] C:\Users\lakhan.yadav\.android\build-cache\b66f6cd672600e5c13fc0480fdadb058b981ed3c\output\AndroidManifest.xml:23:5-42
+MERGED from [com.google.android.gms:play-services-wearable:9.6.1] C:\Users\lakhan.yadav\.android\build-cache\6b43b44ed270971f436bbb237e13ef6c73b76439\output\AndroidManifest.xml:17:5-42
+MERGED from [com.kyleduo.switchbutton:library:1.4.4] C:\Users\lakhan.yadav\.android\build-cache\ccdcfcde85913d92ba2aa67abd9b93588cd489ce\output\AndroidManifest.xml:8:5-10:41
+MERGED from [com.daimajia.swipelayout:library:1.2.0] C:\Users\lakhan.yadav\.android\build-cache\481c742ab12cc216a143dab2a4cd0a8706328b9e\output\AndroidManifest.xml:6:5-8:41
+MERGED from [de.hdodenhof:circleimageview:2.1.0] C:\Users\lakhan.yadav\.android\build-cache\a8eb8eaf901d781adc824d5fcfbf42517df94bd2\output\AndroidManifest.xml:5:5-7:41
+MERGED from [com.synnapps:carouselview:0.1.3] C:\Users\lakhan.yadav\.android\build-cache\5785bfd3389a197f435ddf7bdba4c13b2d5614ed\output\AndroidManifest.xml:7:5-9:41
+MERGED from [com.android.support:recyclerview-v7:25.3.0] C:\Users\lakhan.yadav\.android\build-cache\37c657c0469ff44f80ce8d9927389c3a7a0a317a\output\AndroidManifest.xml:20:5-43
+MERGED from [com.google.firebase:firebase-messaging:9.6.1] C:\Users\lakhan.yadav\.android\build-cache\ccc6f329bbecfcddf309512276099a9e4b52276d\output\AndroidManifest.xml:17:5-42
+MERGED from [com.google.firebase:firebase-core:9.6.1] C:\Users\lakhan.yadav\.android\build-cache\752b5c17d5ea7e182fab27ab4b208e9b978f2357\output\AndroidManifest.xml:4:5-42
+MERGED from [com.google.firebase:firebase-analytics:9.6.1] C:\Users\lakhan.yadav\.android\build-cache\d703ce618f944a3148304e54110c96a0aad7f1ff\output\AndroidManifest.xml:17:5-42
+MERGED from [com.google.firebase:firebase-analytics-impl:9.6.1] C:\Users\lakhan.yadav\.android\build-cache\3abe65914437caaa8ff2557c8f70ee38f3e108e2\output\AndroidManifest.xml:17:5-42
+MERGED from [com.google.firebase:firebase-iid:9.6.1] C:\Users\lakhan.yadav\.android\build-cache\8eb60d65803ec071e4f96103d0414f2580e2808c\output\AndroidManifest.xml:17:5-42
+MERGED from [com.google.firebase:firebase-common:9.6.1] C:\Users\lakhan.yadav\.android\build-cache\42edc462652209585f62a858e364901be710df69\output\AndroidManifest.xml:3:5-42
+MERGED from [com.appsflyer:af-android-sdk:4.8.7] C:\Users\lakhan.yadav\.android\build-cache\94385a9d8a660ce4a61cffc9310d616edb96b36d\output\AndroidManifest.xml:5:5-43
+MERGED from [com.facebook.android:facebook-android-sdk:4.31.0] C:\Users\lakhan.yadav\.android\build-cache\26fc094de5a7383a3e75aa7c9665d323234fc747\output\AndroidManifest.xml:24:5-26:41
+MERGED from [com.facebook.android:facebook-login:4.31.0] C:\Users\lakhan.yadav\.android\build-cache\2cfa39d22fe539e0a2da188e7866b06348cdc865\output\AndroidManifest.xml:24:5-26:41
+MERGED from [com.facebook.android:facebook-share:4.31.0] C:\Users\lakhan.yadav\.android\build-cache\d635b81b472b0b3d5499f2d48ef347bb61669b08\output\AndroidManifest.xml:24:5-26:41
+MERGED from [com.facebook.android:facebook-common:4.31.0] C:\Users\lakhan.yadav\.android\build-cache\f59d9e6304ba5487c1523e8faa0ed16ef6371a45\output\AndroidManifest.xml:24:5-26:41
+MERGED from [com.android.support:appcompat-v7:25.3.0] C:\Users\lakhan.yadav\.android\build-cache\d71cdfe1b454ea6b4aebda04361218f8ceeefe18\output\AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:animated-vector-drawable:25.3.0] C:\Users\lakhan.yadav\.android\build-cache\8888ff6d2b6338728c0cdc586c850197b42d89d8\output\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:25.3.0] C:\Users\lakhan.yadav\.android\build-cache\16dbe438763c197e249d5311bd30cb0594c6d615\output\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:cardview-v7:25.3.0] C:\Users\lakhan.yadav\.android\build-cache\bf9c5a186e5af54fb91a54b5cf7941fbaefed438\output\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:customtabs:25.3.0] C:\Users\lakhan.yadav\.android\build-cache\b22cc0ff75f9faccd60241243d09621cb95a6cee\output\AndroidManifest.xml:20:5-44
+MERGED from [com.facebook.android:facebook-places:4.31.0] C:\Users\lakhan.yadav\.android\build-cache\74f06623e3377c31fff2f677c7b57d8aa55d43e3\output\AndroidManifest.xml:24:5-26:41
+MERGED from [com.facebook.android:facebook-applinks:4.31.0] C:\Users\lakhan.yadav\.android\build-cache\97746b424c5fbf1317d4df55f5162f82b02b3f55\output\AndroidManifest.xml:24:5-26:41
+MERGED from [com.facebook.android:facebook-messenger:4.31.0] C:\Users\lakhan.yadav\.android\build-cache\e21491a3c0f7ac6d8129bccd6adbb2417b53dc6a\output\AndroidManifest.xml:24:5-26:41
+MERGED from [com.facebook.android:facebook-core:4.31.0] C:\Users\lakhan.yadav\.android\build-cache\2a1d73021671c25715044989d7a2eeaf46fb3cb7\output\AndroidManifest.xml:24:5-26:41
+MERGED from [com.google.android.gms:play-services-ads:9.6.1] C:\Users\lakhan.yadav\.android\build-cache\a7370cbc9e2925ce498b52a362084573b24cb9da\output\AndroidManifest.xml:17:5-42
+MERGED from [com.google.android.gms:play-services-ads-lite:9.6.1] C:\Users\lakhan.yadav\.android\build-cache\094837bc9f1906a5b76c0b475ffe6e2b111230bb\output\AndroidManifest.xml:22:5-42
+MERGED from [com.google.android.gms:play-services-clearcut:9.6.1] C:\Users\lakhan.yadav\.android\build-cache\352e55888b0a5ad2bcb1ffa138dd43cf3aeb0b24\output\AndroidManifest.xml:17:5-42
+MERGED from [com.google.android.gms:play-services-gass:9.6.1] C:\Users\lakhan.yadav\.android\build-cache\bab3b110b863253720430e76483ed206afc490ce\output\AndroidManifest.xml:3:5-42
+MERGED from [com.google.android.gms:play-services-auth:9.6.1] C:\Users\lakhan.yadav\.android\build-cache\857243b3aeb510095ebce6f190c1558c441bd21f\output\AndroidManifest.xml:17:5-42
+MERGED from [com.google.android.gms:play-services-auth-base:9.6.1] C:\Users\lakhan.yadav\.android\build-cache\97a8b0b0df363ac876ab7530a3e569a70273ad1e\output\AndroidManifest.xml:4:5-42
+MERGED from [com.google.android.gms:play-services-base:9.6.1] C:\Users\lakhan.yadav\.android\build-cache\6a2b144a8351f5ef1dd80bfb778d20c2d7b11383\output\AndroidManifest.xml:17:5-42
+MERGED from [com.google.android.gms:play-services-tasks:9.6.1] C:\Users\lakhan.yadav\.android\build-cache\db759ad7c654bd42a0f88caf50ef406d3e549ffe\output\AndroidManifest.xml:3:5-42
+MERGED from [com.google.android.gms:play-services-basement:9.6.1] C:\Users\lakhan.yadav\.android\build-cache\22e15466f648646a11c6246e915d6341fe19b802\output\AndroidManifest.xml:17:5-42
+MERGED from [com.android.support:support-v4:25.3.0] C:\Users\lakhan.yadav\.android\build-cache\2b2e5a8de41c5b9321a03faf7ee0d43415749a46\output\AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-fragment:25.3.0] C:\Users\lakhan.yadav\.android\build-cache\7b392fa2658d8eaefc952217936181ef5a648e52\output\AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-media-compat:25.3.0] C:\Users\lakhan.yadav\.android\build-cache\1320e53928bd89b77a7568eb9e61fd73d24645de\output\AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-core-ui:25.3.0] C:\Users\lakhan.yadav\.android\build-cache\c9db704e5fd9c5ac52e075ce7f59d9a4b0780632\output\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-core-utils:25.3.0] C:\Users\lakhan.yadav\.android\build-cache\a58b075a50bb2b1dc0744620dd85c65d16e6bf5e\output\AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:support-compat:25.3.0] C:\Users\lakhan.yadav\.android\build-cache\39a98a00ec63dbe43fbc18cf7fa8ff898b34ce0f\output\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\lakhan.yadav\.android\build-cache\93d9d651a830bd63ba0c8dc3fe332d4f8fb8c20c\output\AndroidManifest.xml:5:5-7:41
+	tools:overrideLibrary
+		ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:6:15-53
+	android:targetSdkVersion
+		INJECTED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml
+		INJECTED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml
+		INJECTED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml
+uses-permission#android.permission.GET_ACCOUNTS
+ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:9:5-71
+	android:name
+		ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:9:22-68
+uses-permission#android.permission.READ_PROFILE
+ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:10:5-71
+	android:name
+		ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:10:22-68
+uses-permission#android.permission.READ_CONTACTS
+ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:11:5-72
+	android:name
+		ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:11:22-69
+uses-permission#android.permission.INTERNET
+ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:12:5-67
+MERGED from [SRLandroid-master:EBS:unspecified] D:\Trupti_workspace\SRLandroid-master\EBS\build\intermediates\bundles\default\AndroidManifest.xml:9:5-67
+MERGED from [com.google.android.gms:play-services-analytics:9.6.1] C:\Users\lakhan.yadav\.android\build-cache\181192c7ffe5b7dd059e0a38c9dcf9b1750bbd8c\output\AndroidManifest.xml:20:5-66
+MERGED from [com.google.android.gms:play-services-appinvite:9.6.1] C:\Users\lakhan.yadav\.android\build-cache\9f5208702f39495673486625511cc1086d89643c\output\AndroidManifest.xml:18:5-66
+MERGED from [com.google.firebase:firebase-crash:9.6.1] C:\Users\lakhan.yadav\.android\build-cache\269cd2c4ae98f849db91937350fd68b54b0b5b09\output\AndroidManifest.xml:18:5-66
+MERGED from [com.google.android.gms:play-services-gcm:9.6.1] C:\Users\lakhan.yadav\.android\build-cache\0615b1a347c46dfe6cd099115d739556e24d53fa\output\AndroidManifest.xml:21:5-66
+MERGED from [com.google.android.gms:play-services-iid:9.6.1] C:\Users\lakhan.yadav\.android\build-cache\2572983fa042b74d524ffb6dfd282a748490a4ef\output\AndroidManifest.xml:21:5-66
+MERGED from [com.google.android.gms:play-services-analytics-impl:9.6.1] C:\Users\lakhan.yadav\.android\build-cache\2b4e9ce9afe40103b665de587d9df77933c38410\output\AndroidManifest.xml:20:5-66
+MERGED from [com.google.android.gms:play-services-tagmanager-api:9.6.1] C:\Users\lakhan.yadav\.android\build-cache\9eb2c058cdec952a83d8165aa8efa71469e0ee00\output\AndroidManifest.xml:20:5-66
+MERGED from [com.google.android.gms:play-services-maps:9.6.1] C:\Users\lakhan.yadav\.android\build-cache\b66f6cd672600e5c13fc0480fdadb058b981ed3c\output\AndroidManifest.xml:20:5-66
+MERGED from [com.google.firebase:firebase-analytics:9.6.1] C:\Users\lakhan.yadav\.android\build-cache\d703ce618f944a3148304e54110c96a0aad7f1ff\output\AndroidManifest.xml:20:5-66
+MERGED from [com.google.firebase:firebase-analytics-impl:9.6.1] C:\Users\lakhan.yadav\.android\build-cache\3abe65914437caaa8ff2557c8f70ee38f3e108e2\output\AndroidManifest.xml:20:5-66
+MERGED from [com.google.firebase:firebase-iid:9.6.1] C:\Users\lakhan.yadav\.android\build-cache\8eb60d65803ec071e4f96103d0414f2580e2808c\output\AndroidManifest.xml:20:5-66
+MERGED from [com.google.android.gms:play-services-ads-lite:9.6.1] C:\Users\lakhan.yadav\.android\build-cache\094837bc9f1906a5b76c0b475ffe6e2b111230bb\output\AndroidManifest.xml:19:5-66
+	android:name
+		ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:12:22-64
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:13:5-79
+MERGED from [SRLandroid-master:EBS:unspecified] D:\Trupti_workspace\SRLandroid-master\EBS\build\intermediates\bundles\default\AndroidManifest.xml:10:5-79
+MERGED from [com.google.android.gms:play-services-analytics:9.6.1] C:\Users\lakhan.yadav\.android\build-cache\181192c7ffe5b7dd059e0a38c9dcf9b1750bbd8c\output\AndroidManifest.xml:21:5-78
+MERGED from [com.google.android.gms:play-services-nearby:9.6.1] C:\Users\lakhan.yadav\.android\build-cache\dcb9f6e106d51cbba024d2f19d40bd90c4c28f09\output\AndroidManifest.xml:4:5-78
+MERGED from [com.google.android.gms:play-services-analytics-impl:9.6.1] C:\Users\lakhan.yadav\.android\build-cache\2b4e9ce9afe40103b665de587d9df77933c38410\output\AndroidManifest.xml:21:5-78
+MERGED from [com.google.android.gms:play-services-tagmanager-api:9.6.1] C:\Users\lakhan.yadav\.android\build-cache\9eb2c058cdec952a83d8165aa8efa71469e0ee00\output\AndroidManifest.xml:21:5-78
+MERGED from [com.google.android.gms:play-services-maps:9.6.1] C:\Users\lakhan.yadav\.android\build-cache\b66f6cd672600e5c13fc0480fdadb058b981ed3c\output\AndroidManifest.xml:19:5-78
+MERGED from [com.google.firebase:firebase-analytics:9.6.1] C:\Users\lakhan.yadav\.android\build-cache\d703ce618f944a3148304e54110c96a0aad7f1ff\output\AndroidManifest.xml:21:5-78
+MERGED from [com.google.firebase:firebase-analytics-impl:9.6.1] C:\Users\lakhan.yadav\.android\build-cache\3abe65914437caaa8ff2557c8f70ee38f3e108e2\output\AndroidManifest.xml:21:5-78
+MERGED from [com.google.firebase:firebase-iid:9.6.1] C:\Users\lakhan.yadav\.android\build-cache\8eb60d65803ec071e4f96103d0414f2580e2808c\output\AndroidManifest.xml:19:5-78
+MERGED from [com.google.android.gms:play-services-ads-lite:9.6.1] C:\Users\lakhan.yadav\.android\build-cache\094837bc9f1906a5b76c0b475ffe6e2b111230bb\output\AndroidManifest.xml:20:5-78
+	android:name
+		ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:13:22-76
+uses-permission#android.permission.USE_FINGERPRINT
+ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:14:5-74
+	android:name
+		ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:14:22-71
+uses-permission#in.wptrafficanalyzer.locationautogooglemapv2.permission.MAPS_RECEIVE
+ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:16:5-108
+	android:name
+		ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:16:22-105
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:17:5-80
+MERGED from [SRLandroid-master:EBS:unspecified] D:\Trupti_workspace\SRLandroid-master\EBS\build\intermediates\bundles\default\AndroidManifest.xml:13:5-80
+	android:name
+		ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:17:22-77
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:22:5-24:48
+MERGED from [SRLandroid-master:EBS:unspecified] D:\Trupti_workspace\SRLandroid-master\EBS\build\intermediates\bundles\default\AndroidManifest.xml:11:5-81
+	tools:remove
+		ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:24:9-45
+	android:name
+		ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:23:9-65
+uses-permission#com.google.android.providers.gsf.permission.READ_GSERVICES
+ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:25:5-98
+	android:name
+		ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:25:22-95
+uses-permission#android.permission.CAMERA
+ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:26:5-65
+	android:name
+		ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:26:22-62
+uses-feature#android.hardware.camera
+ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:28:5-60
+	android:name
+		ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:28:19-57
+uses-feature#android.hardware.camera.autofocus
+ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:29:5-70
+	android:name
+		ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:29:19-67
+uses-permission#android.permission.ACCESS_COARSE_LOCATION
+ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:31:5-81
+	android:name
+		ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:31:22-78
+uses-permission#android.permission.ACCESS_FINE_LOCATION
+ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:32:5-79
+	android:name
+		ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:32:22-76
+uses-permission#android.permission.CHANGE_NETWORK_STATE
+ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:33:5-79
+	android:name
+		ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:33:22-76
+uses-permission#android.permission.ACCESS_WIFI_STATE
+ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:34:5-76
+	android:name
+		ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:34:22-73
+uses-permission#android.permission.ACCESS_COARSE_UPDATES
+ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:35:5-80
+	android:name
+		ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:35:22-77
+uses-permission#android.permission.RECEIVE_BOOT_COMPLETED
+ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:36:5-81
+	android:name
+		ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:36:22-78
+uses-permission#android.permission.CALL_PHONE
+ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:37:5-69
+	android:name
+		ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:37:22-66
+uses-permission#android.permission.READ_PHONE_STATE
+ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:38:5-75
+MERGED from [SRLandroid-master:EBS:unspecified] D:\Trupti_workspace\SRLandroid-master\EBS\build\intermediates\bundles\default\AndroidManifest.xml:12:5-75
+	android:name
+		ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:38:22-72
+uses-permission#android.permission.READ_SMS
+ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:39:5-67
+	android:name
+		ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:39:22-64
+uses-permission#android.permission.RECEIVE_SMS
+ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:40:5-70
+	android:name
+		ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:40:22-67
+uses-permission#android.permission.GET_TASKS
+ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:41:5-68
+	android:name
+		ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:41:22-65
+application
+ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:44:5-479:19
+MERGED from [com.android.volley:volley:unspecified] D:\Trupti_workspace\SRLandroid-master\volley\build\intermediates\bundles\default\AndroidManifest.xml:9:5-20
+MERGED from [SRLandroid-master:sublimenavigationview:unspecified] D:\Trupti_workspace\SRLandroid-master\sublimenavigationview\build\intermediates\bundles\default\AndroidManifest.xml:11:5-14:19
+MERGED from [SRLandroid-master:EBS:unspecified] D:\Trupti_workspace\SRLandroid-master\EBS\build\intermediates\bundles\default\AndroidManifest.xml:15:5-55:19
+MERGED from [com.android.support:design:25.3.0] C:\Users\lakhan.yadav\.android\build-cache\b3efe9a891b216039f289d72cb763e83290e7011\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:transition:25.3.0] C:\Users\lakhan.yadav\.android\build-cache\f54267dd98accf69f628f1b583186dc731b8b307\output\AndroidManifest.xml:26:5-20
+MERGED from [com.github.markushi:android-ui:1.2] C:\Users\lakhan.yadav\.android\build-cache\373b963297c14520d7ffb25a0bad372e9bf454ed\output\AndroidManifest.xml:9:5-10:19
+MERGED from [com.brucetoo.pickview:library:1.2.2] C:\Users\lakhan.yadav\.android\build-cache\951e79d252f74474a286aa7bd284159f76f3a4f5\output\AndroidManifest.xml:11:5-15:19
+MERGED from [com.google.android.gms:play-services:9.6.1] C:\Users\lakhan.yadav\.android\build-cache\02c19a3fd4ab101ba3146037a0ca49e9e61f5e6a\output\AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-analytics:9.6.1] C:\Users\lakhan.yadav\.android\build-cache\181192c7ffe5b7dd059e0a38c9dcf9b1750bbd8c\output\AndroidManifest.xml:26:5-19
+MERGED from [com.google.android.gms:play-services-appinvite:9.6.1] C:\Users\lakhan.yadav\.android\build-cache\9f5208702f39495673486625511cc1086d89643c\output\AndroidManifest.xml:19:5-26:19
+MERGED from [com.google.android.gms:play-services-cast-framework:9.6.1] C:\Users\lakhan.yadav\.android\build-cache\b268592f5705c0949fc82d1b1bda3a5058c09989\output\AndroidManifest.xml:4:5-8:19
+MERGED from [com.google.android.gms:play-services-cast:9.6.1] C:\Users\lakhan.yadav\.android\build-cache\7645c505ea8ce40890e64188db5054c70da8696b\output\AndroidManifest.xml:18:5-19
+MERGED from [com.android.support:mediarouter-v7:25.3.0] C:\Users\lakhan.yadav\.android\build-cache\17e8b5edf773f0705907c4461526a923a44b4ad8\output\AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:palette-v7:25.3.0] C:\Users\lakhan.yadav\.android\build-cache\1d19ffa2114fa6289ed99bd95d95c1efdcffbc07\output\AndroidManifest.xml:26:5-20
+MERGED from [com.google.firebase:firebase-config:9.6.1] C:\Users\lakhan.yadav\.android\build-cache\6c0fac2804b3394a9c19faf236b51b017b4e2d6f\output\AndroidManifest.xml:18:5-19
+MERGED from [com.google.android.gms:play-services-awareness:9.6.1] C:\Users\lakhan.yadav\.android\build-cache\3c6946f991915879dd02bda3ad68fd7042d2c3e7\output\AndroidManifest.xml:18:5-19
+MERGED from [com.google.firebase:firebase-crash:9.6.1] C:\Users\lakhan.yadav\.android\build-cache\269cd2c4ae98f849db91937350fd68b54b0b5b09\output\AndroidManifest.xml:22:5-28:19
+MERGED from [com.google.firebase:firebase-auth:9.6.1] C:\Users\lakhan.yadav\.android\build-cache\f3739e4f1cd387c149e9752b0ff44174722a2a3d\output\AndroidManifest.xml:19:5-20:19
+MERGED from [com.google.firebase:firebase-auth-common:9.6.1] C:\Users\lakhan.yadav\.android\build-cache\a2001e2fe1d7ee552029a0ebd805207dd8b3ef4a\output\AndroidManifest.xml:19:5-20:19
+MERGED from [com.google.android.gms:play-services-fitness:9.6.1] C:\Users\lakhan.yadav\.android\build-cache\77e7d703e6b7fa0e3d436c05cd77dc365e5472e6\output\AndroidManifest.xml:18:5-19
+MERGED from [com.google.android.gms:play-services-games:9.6.1] C:\Users\lakhan.yadav\.android\build-cache\b40c212a95345cdb5c228d76fb12dd02fad73171\output\AndroidManifest.xml:18:5-19
+MERGED from [com.google.android.gms:play-services-drive:9.6.1] C:\Users\lakhan.yadav\.android\build-cache\fae68cd325c6ff3d87dbfe0db16a7ae540cb3dd9\output\AndroidManifest.xml:18:5-19
+MERGED from [com.google.android.gms:play-services-gcm:9.6.1] C:\Users\lakhan.yadav\.android\build-cache\0615b1a347c46dfe6cd099115d739556e24d53fa\output\AndroidManifest.xml:23:5-19
+MERGED from [com.google.android.gms:play-services-appindexing:9.6.1] C:\Users\lakhan.yadav\.android\build-cache\2fa109097df3fb66e1f57d368612b7a02a2b9a02\output\AndroidManifest.xml:18:5-19
+MERGED from [com.google.android.gms:play-services-iid:9.6.1] C:\Users\lakhan.yadav\.android\build-cache\2572983fa042b74d524ffb6dfd282a748490a4ef\output\AndroidManifest.xml:23:5-19
+MERGED from [com.google.android.gms:play-services-location:9.6.1] C:\Users\lakhan.yadav\.android\build-cache\d254e7283053de20b2e1f07e31d5aa2daa991525\output\AndroidManifest.xml:4:5-19
+MERGED from [com.google.android.gms:play-services-nearby:9.6.1] C:\Users\lakhan.yadav\.android\build-cache\dcb9f6e106d51cbba024d2f19d40bd90c4c28f09\output\AndroidManifest.xml:5:5-19
+MERGED from [com.google.android.gms:play-services-panorama:9.6.1] C:\Users\lakhan.yadav\.android\build-cache\34fd0b82faab7f18439ec9a9c62952ef4f634e2d\output\AndroidManifest.xml:18:5-19
+MERGED from [com.google.android.gms:play-services-places:9.6.1] C:\Users\lakhan.yadav\.android\build-cache\8c4e67d05f0a658eec5a5dcba12217f07ef1378c\output\AndroidManifest.xml:18:5-19
+MERGED from [com.google.android.gms:play-services-plus:9.6.1] C:\Users\lakhan.yadav\.android\build-cache\1eb04f3937b5581de7611f2992bbb02443521d63\output\AndroidManifest.xml:18:5-19
+MERGED from [com.google.android.gms:play-services-safetynet:9.6.1] C:\Users\lakhan.yadav\.android\build-cache\041dae8b5afe73d48159b7e7b6a86de7f4110d5e\output\AndroidManifest.xml:18:5-19
+MERGED from [com.google.android.gms:play-services-analytics-impl:9.6.1] C:\Users\lakhan.yadav\.android\build-cache\2b4e9ce9afe40103b665de587d9df77933c38410\output\AndroidManifest.xml:26:5-19
+MERGED from [com.google.android.gms:play-services-tagmanager-api:9.6.1] C:\Users\lakhan.yadav\.android\build-cache\9eb2c058cdec952a83d8165aa8efa71469e0ee00\output\AndroidManifest.xml:23:5-33:19
+MERGED from [com.google.android.gms:play-services-vision:9.6.1] C:\Users\lakhan.yadav\.android\build-cache\017998e3266dfb54497c41a9326af06880a3d9be\output\AndroidManifest.xml:4:5-19
+MERGED from [com.google.android.gms:play-services-identity:9.6.1] C:\Users\lakhan.yadav\.android\build-cache\01df8d91d1554c22546b9aaf704da72088eba707\output\AndroidManifest.xml:18:5-19
+MERGED from [com.google.android.gms:play-services-maps:9.6.1] C:\Users\lakhan.yadav\.android\build-cache\b66f6cd672600e5c13fc0480fdadb058b981ed3c\output\AndroidManifest.xml:24:5-19
+MERGED from [com.google.android.gms:play-services-wearable:9.6.1] C:\Users\lakhan.yadav\.android\build-cache\6b43b44ed270971f436bbb237e13ef6c73b76439\output\AndroidManifest.xml:18:5-19
+MERGED from [de.hdodenhof:circleimageview:2.1.0] C:\Users\lakhan.yadav\.android\build-cache\a8eb8eaf901d781adc824d5fcfbf42517df94bd2\output\AndroidManifest.xml:9:5-20
+MERGED from [com.synnapps:carouselview:0.1.3] C:\Users\lakhan.yadav\.android\build-cache\5785bfd3389a197f435ddf7bdba4c13b2d5614ed\output\AndroidManifest.xml:11:5-14:19
+MERGED from [com.google.firebase:firebase-messaging:9.6.1] C:\Users\lakhan.yadav\.android\build-cache\ccc6f329bbecfcddf309512276099a9e4b52276d\output\AndroidManifest.xml:19:5-29:19
+MERGED from [com.google.firebase:firebase-core:9.6.1] C:\Users\lakhan.yadav\.android\build-cache\752b5c17d5ea7e182fab27ab4b208e9b978f2357\output\AndroidManifest.xml:5:5-20
+MERGED from [com.google.firebase:firebase-analytics:9.6.1] C:\Users\lakhan.yadav\.android\build-cache\d703ce618f944a3148304e54110c96a0aad7f1ff\output\AndroidManifest.xml:24:5-33:19
+MERGED from [com.google.firebase:firebase-analytics-impl:9.6.1] C:\Users\lakhan.yadav\.android\build-cache\3abe65914437caaa8ff2557c8f70ee38f3e108e2\output\AndroidManifest.xml:24:5-28:19
+MERGED from [com.google.firebase:firebase-iid:9.6.1] C:\Users\lakhan.yadav\.android\build-cache\8eb60d65803ec071e4f96103d0414f2580e2808c\output\AndroidManifest.xml:28:5-50:19
+MERGED from [com.google.firebase:firebase-common:9.6.1] C:\Users\lakhan.yadav\.android\build-cache\42edc462652209585f62a858e364901be710df69\output\AndroidManifest.xml:4:5-7:19
+MERGED from [com.appsflyer:af-android-sdk:4.8.7] C:\Users\lakhan.yadav\.android\build-cache\94385a9d8a660ce4a61cffc9310d616edb96b36d\output\AndroidManifest.xml:7:5-8:19
+MERGED from [com.facebook.android:facebook-android-sdk:4.31.0] C:\Users\lakhan.yadav\.android\build-cache\26fc094de5a7383a3e75aa7c9665d323234fc747\output\AndroidManifest.xml:28:5-29:19
+MERGED from [com.facebook.android:facebook-login:4.31.0] C:\Users\lakhan.yadav\.android\build-cache\2cfa39d22fe539e0a2da188e7866b06348cdc865\output\AndroidManifest.xml:28:5-29:19
+MERGED from [com.facebook.android:facebook-share:4.31.0] C:\Users\lakhan.yadav\.android\build-cache\d635b81b472b0b3d5499f2d48ef347bb61669b08\output\AndroidManifest.xml:28:5-29:19
+MERGED from [com.facebook.android:facebook-common:4.31.0] C:\Users\lakhan.yadav\.android\build-cache\f59d9e6304ba5487c1523e8faa0ed16ef6371a45\output\AndroidManifest.xml:28:5-34:19
+MERGED from [com.android.support:appcompat-v7:25.3.0] C:\Users\lakhan.yadav\.android\build-cache\d71cdfe1b454ea6b4aebda04361218f8ceeefe18\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:animated-vector-drawable:25.3.0] C:\Users\lakhan.yadav\.android\build-cache\8888ff6d2b6338728c0cdc586c850197b42d89d8\output\AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:support-vector-drawable:25.3.0] C:\Users\lakhan.yadav\.android\build-cache\16dbe438763c197e249d5311bd30cb0594c6d615\output\AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:cardview-v7:25.3.0] C:\Users\lakhan.yadav\.android\build-cache\bf9c5a186e5af54fb91a54b5cf7941fbaefed438\output\AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:customtabs:25.3.0] C:\Users\lakhan.yadav\.android\build-cache\b22cc0ff75f9faccd60241243d09621cb95a6cee\output\AndroidManifest.xml:26:5-20
+MERGED from [com.facebook.android:facebook-places:4.31.0] C:\Users\lakhan.yadav\.android\build-cache\74f06623e3377c31fff2f677c7b57d8aa55d43e3\output\AndroidManifest.xml:28:5-29:19
+MERGED from [com.facebook.android:facebook-applinks:4.31.0] C:\Users\lakhan.yadav\.android\build-cache\97746b424c5fbf1317d4df55f5162f82b02b3f55\output\AndroidManifest.xml:28:5-29:19
+MERGED from [com.facebook.android:facebook-messenger:4.31.0] C:\Users\lakhan.yadav\.android\build-cache\e21491a3c0f7ac6d8129bccd6adbb2417b53dc6a\output\AndroidManifest.xml:28:5-29:19
+MERGED from [com.facebook.android:facebook-core:4.31.0] C:\Users\lakhan.yadav\.android\build-cache\2a1d73021671c25715044989d7a2eeaf46fb3cb7\output\AndroidManifest.xml:28:5-43:19
+MERGED from [com.google.android.gms:play-services-ads-lite:9.6.1] C:\Users\lakhan.yadav\.android\build-cache\094837bc9f1906a5b76c0b475ffe6e2b111230bb\output\AndroidManifest.xml:23:5-27:19
+MERGED from [com.google.android.gms:play-services-clearcut:9.6.1] C:\Users\lakhan.yadav\.android\build-cache\352e55888b0a5ad2bcb1ffa138dd43cf3aeb0b24\output\AndroidManifest.xml:18:5-19
+MERGED from [com.google.android.gms:play-services-gass:9.6.1] C:\Users\lakhan.yadav\.android\build-cache\bab3b110b863253720430e76483ed206afc490ce\output\AndroidManifest.xml:4:5-19
+MERGED from [com.google.android.gms:play-services-auth:9.6.1] C:\Users\lakhan.yadav\.android\build-cache\857243b3aeb510095ebce6f190c1558c441bd21f\output\AndroidManifest.xml:19:5-25:19
+MERGED from [com.google.android.gms:play-services-base:9.6.1] C:\Users\lakhan.yadav\.android\build-cache\6a2b144a8351f5ef1dd80bfb778d20c2d7b11383\output\AndroidManifest.xml:18:5-20:19
+MERGED from [com.google.android.gms:play-services-tasks:9.6.1] C:\Users\lakhan.yadav\.android\build-cache\db759ad7c654bd42a0f88caf50ef406d3e549ffe\output\AndroidManifest.xml:4:5-19
+MERGED from [com.google.android.gms:play-services-basement:9.6.1] C:\Users\lakhan.yadav\.android\build-cache\22e15466f648646a11c6246e915d6341fe19b802\output\AndroidManifest.xml:19:5-21:19
+MERGED from [com.android.support:support-v4:25.3.0] C:\Users\lakhan.yadav\.android\build-cache\2b2e5a8de41c5b9321a03faf7ee0d43415749a46\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-fragment:25.3.0] C:\Users\lakhan.yadav\.android\build-cache\7b392fa2658d8eaefc952217936181ef5a648e52\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-media-compat:25.3.0] C:\Users\lakhan.yadav\.android\build-cache\1320e53928bd89b77a7568eb9e61fd73d24645de\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-core-ui:25.3.0] C:\Users\lakhan.yadav\.android\build-cache\c9db704e5fd9c5ac52e075ce7f59d9a4b0780632\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-core-utils:25.3.0] C:\Users\lakhan.yadav\.android\build-cache\a58b075a50bb2b1dc0744620dd85c65d16e6bf5e\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-compat:25.3.0] C:\Users\lakhan.yadav\.android\build-cache\39a98a00ec63dbe43fbc18cf7fa8ff898b34ce0f\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\lakhan.yadav\.android\build-cache\93d9d651a830bd63ba0c8dc3fe332d4f8fb8c20c\output\AndroidManifest.xml:9:5-20
+	android:label
+		ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:48:9-41
+	android:supportsRtl
+		ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:49:9-35
+	android:allowBackup
+		ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:46:9-35
+	android:icon
+		ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:47:9-45
+	android:theme
+		ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:50:9-40
+	android:name
+		ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:45:9-39
+meta-data#com.google.android.gms.version
+ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:53:9-55:69
+MERGED from [com.google.android.gms:play-services-basement:9.6.1] C:\Users\lakhan.yadav\.android\build-cache\22e15466f648646a11c6246e915d6341fe19b802\output\AndroidManifest.xml:20:9-121
+	android:value
+		ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:55:13-66
+	android:name
+		ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:54:13-58
+meta-data#com.facebook.sdk.ApplicationId
+ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:58:9-60:55
+	android:value
+		ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:60:13-52
+	android:name
+		ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:59:13-58
+activity#com.srllimited.srl.SplashActivity
+ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:67:9-78:20
+	android:screenOrientation
+		ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:70:13-49
+	android:label
+		ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:69:13-45
+	android:windowSoftInputMode
+		ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:72:13-54
+	android:theme
+		ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:71:13-56
+	android:name
+		ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:68:13-43
+intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
+ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:73:13-77:29
+action#android.intent.action.MAIN
+ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:74:17-69
+	android:name
+		ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:74:25-66
+category#android.intent.category.LAUNCHER
+ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:76:17-77
+	android:name
+		ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:76:27-74
+activity#com.srllimited.srl.ConfirmPolicy
+ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:79:9-83:66
+	android:screenOrientation
+		ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:81:13-49
+	android:windowSoftInputMode
+		ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:83:13-54
+	android:theme
+		ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:82:13-56
+	android:name
+		ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:80:13-42
+service#com.srllimited.srl.service.MyFirebaseMessagingService
+ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:86:9-90:19
+	android:name
+		ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:86:18-68
+intent-filter#com.google.firebase.MESSAGING_EVENT
+ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:87:13-89:29
+action#com.google.firebase.MESSAGING_EVENT
+ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:88:17-78
+	android:name
+		ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:88:25-75
+service#com.srllimited.srl.service.MyFirebaseInstanceIDService
+ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:91:9-95:19
+	android:name
+		ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:91:18-69
+intent-filter#com.google.firebase.INSTANCE_ID_EVENT
+ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:92:13-94:29
+action#com.google.firebase.INSTANCE_ID_EVENT
+ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:93:17-80
+	android:name
+		ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:93:25-77
+receiver#com.srllimited.srl.service.BootCompletedReceiver
+ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:98:9-104:20
+	android:label
+		ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:100:13-50
+	android:name
+		ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:99:13-58
+intent-filter#android.intent.action.BOOT_COMPLETED
+ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:101:13-103:29
+action#android.intent.action.BOOT_COMPLETED
+ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:102:17-79
+	android:name
+		ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:102:25-76
+activity#com.srllimited.srl.permission.DangerousPermissionActivity
+ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:106:9-108:75
+	android:theme
+		ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:108:13-72
+	android:name
+		ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:107:13-67
+activity#com.srllimited.srl.Dashboard
+ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:109:9-113:67
+	android:screenOrientation
+		ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:111:13-49
+	android:windowSoftInputMode
+		ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:113:13-64
+	android:theme
+		ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:112:13-56
+	android:name
+		ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:110:13-38
+activity#com.srllimited.srl.LoginScreenActivity
+ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:114:9-118:57
+	android:screenOrientation
+		ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:116:13-49
+	android:windowSoftInputMode
+		ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:118:13-54
+	android:theme
+		ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:117:13-56
+	android:name
+		ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:115:13-48
+activity#com.srllimited.srl.RegistrationScreen
+ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:119:9-123:70
+	android:screenOrientation
+		ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:121:13-49
+	android:windowSoftInputMode
+		ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:123:13-67
+	android:theme
+		ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:122:13-56
+	android:name
+		ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:120:13-47
+activity#com.srllimited.srl.AboutUsActivity
+ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:124:9-128:67
+	android:screenOrientation
+		ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:126:13-49
+	android:windowSoftInputMode
+		ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:128:13-64
+	android:theme
+		ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:127:13-56
+	android:name
+		ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:125:13-44
+activity#com.srllimited.srl.ResetPinActivity
+ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:129:9-133:57
+	android:screenOrientation
+		ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:131:13-49
+	android:windowSoftInputMode
+		ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:133:13-54
+	android:theme
+		ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:132:13-56
+	android:name
+		ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:130:13-45
+activity#com.srllimited.srl.SplashFourdigitPinActivity
+ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:134:9-138:57
+	android:screenOrientation
+		ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:136:13-49
+	android:windowSoftInputMode
+		ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:138:13-54
+	android:theme
+		ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:137:13-56
+	android:name
+		ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:135:13-55
+activity#com.srllimited.srl.ConfirmRegistation
+ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:139:9-143:57
+	android:screenOrientation
+		ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:141:13-49
+	android:windowSoftInputMode
+		ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:143:13-54
+	android:theme
+		ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:142:13-56
+	android:name
+		ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:140:13-47
+activity#com.srllimited.srl.OTPRegistration
+ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:144:9-148:57
+	android:screenOrientation
+		ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:146:13-49
+	android:windowSoftInputMode
+		ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:148:13-54
+	android:theme
+		ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:147:13-56
+	android:name
+		ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:145:13-44
+activity#com.srllimited.srl.SearchLocationActivity
+ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:149:9-153:57
+	android:screenOrientation
+		ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:151:13-49
+	android:windowSoftInputMode
+		ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:153:13-54
+	android:theme
+		ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:152:13-72
+	android:name
+		ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:150:13-51
+activity#com.srllimited.srl.BookATestActivity
+ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:154:9-158:67
+	android:screenOrientation
+		ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:156:13-49
+	android:windowSoftInputMode
+		ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:158:13-64
+	android:theme
+		ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:157:13-56
+	android:name
+		ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:155:13-46
+activity#com.srllimited.srl.BookATestFilterActivity
+ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:159:9-163:57
+	android:screenOrientation
+		ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:161:13-49
+	android:windowSoftInputMode
+		ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:163:13-54
+	android:theme
+		ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:162:13-72
+	android:name
+		ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:160:13-52
+activity#com.srllimited.srl.MyCartActivity
+ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:164:9-168:57
+	android:screenOrientation
+		ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:166:13-49
+	android:windowSoftInputMode
+		ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:168:13-54
+	android:theme
+		ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:167:13-56
+	android:name
+		ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:165:13-43
+activity#com.srllimited.srl.CollectionActivity
+ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:169:9-173:57
+	android:screenOrientation
+		ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:171:13-49
+	android:windowSoftInputMode
+		ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:173:13-54
+	android:theme
+		ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:172:13-56
+	android:name
+		ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:170:13-47
+activity#com.srllimited.srl.MyReports
+ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:174:9-178:57
+	android:screenOrientation
+		ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:176:13-49
+	android:windowSoftInputMode
+		ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:178:13-54
+	android:theme
+		ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:177:13-56
+	android:name
+		ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:175:13-38
+activity#com.srllimited.srl.HealthTracker
+ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:179:9-183:57
+	android:screenOrientation
+		ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:181:13-49
+	android:windowSoftInputMode
+		ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:183:13-54
+	android:theme
+		ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:182:13-56
+	android:name
+		ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:180:13-42
+activity#com.srllimited.srl.VisitLabsList
+ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:184:9-188:57
+	android:screenOrientation
+		ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:186:13-49
+	android:windowSoftInputMode
+		ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:188:13-54
+	android:theme
+		ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:187:13-56
+	android:name
+		ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:185:13-42
+activity#com.srllimited.srl.AddPatientActivity
+ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:189:9-193:57
+	android:screenOrientation
+		ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:191:13-49
+	android:windowSoftInputMode
+		ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:193:13-54
+	android:theme
+		ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:192:13-56
+	android:name
+		ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:190:13-47
+activity#com.srllimited.srl.ReportLoginAccessNo
+ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:194:9-198:57
+	android:screenOrientation
+		ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:196:13-49
+	android:windowSoftInputMode
+		ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:198:13-54
+	android:theme
+		ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:197:13-56
+	android:name
+		ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:195:13-48
+activity#com.srllimited.srl.MyReportEntryDetails
+ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:199:9-203:57
+	android:screenOrientation
+		ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:201:13-49
+	android:windowSoftInputMode
+		ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:203:13-54
+	android:theme
+		ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:202:13-56
+	android:name
+		ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:200:13-49
+activity#com.srllimited.srl.MyReportCompleteDetails
+ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:204:9-208:57
+	android:screenOrientation
+		ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:206:13-49
+	android:windowSoftInputMode
+		ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:208:13-54
+	android:theme
+		ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:207:13-56
+	android:name
+		ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:205:13-52
+activity#com.srllimited.srl.MyOrderPatientCollectAddress
+ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:209:9-213:57
+	android:screenOrientation
+		ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:211:13-49
+	android:windowSoftInputMode
+		ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:213:13-54
+	android:theme
+		ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:212:13-56
+	android:name
+		ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:210:13-57
+activity#com.srllimited.srl.OrderConfirmationActivity
+ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:214:9-218:57
+	android:screenOrientation
+		ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:216:13-49
+	android:windowSoftInputMode
+		ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:218:13-54
+	android:theme
+		ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:217:13-56
+	android:name
+		ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:215:13-54
+activity#com.srllimited.srl.OrderTrack
+ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:219:9-223:57
+	android:screenOrientation
+		ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:221:13-49
+	android:windowSoftInputMode
+		ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:223:13-54
+	android:theme
+		ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:222:13-56
+	android:name
+		ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:220:13-39
+activity#com.srllimited.srl.PaymentOptionActivity
+ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:224:9-228:57
+	android:screenOrientation
+		ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:226:13-49
+	android:windowSoftInputMode
+		ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:228:13-54
+	android:theme
+		ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:227:13-56
+	android:name
+		ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:225:13-50
+activity#com.srllimited.srl.TrackOrderActivity
+ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:229:9-233:57
+	android:screenOrientation
+		ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:231:13-49
+	android:windowSoftInputMode
+		ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:233:13-54
+	android:theme
+		ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:232:13-56
+	android:name
+		ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:230:13-47
+activity#com.srllimited.srl.OfferDetails
+ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:241:9-245:57
+	android:screenOrientation
+		ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:243:13-49
+	android:windowSoftInputMode
+		ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:245:13-54
+	android:theme
+		ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:244:13-56
+	android:name
+		ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:242:13-41
+activity#com.srllimited.srl.TrackingDetails
+ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:246:9-250:57
+	android:screenOrientation
+		ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:248:13-49
+	android:windowSoftInputMode
+		ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:250:13-54
+	android:theme
+		ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:249:13-56
+	android:name
+		ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:247:13-44
+activity#com.srllimited.srl.CompleteMap
+ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:253:9-257:57
+	android:screenOrientation
+		ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:255:13-49
+	android:windowSoftInputMode
+		ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:257:13-54
+	android:theme
+		ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:256:13-56
+	android:name
+		ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:254:13-40
+activity#com.srllimited.srl.YourLocationActivity
+ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:258:9-262:57
+	android:screenOrientation
+		ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:260:13-49
+	android:windowSoftInputMode
+		ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:262:13-54
+	android:theme
+		ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:261:13-56
+	android:name
+		ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:259:13-49
+activity#com.srllimited.srl.LabLocatorsActivity
+ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:263:9-267:67
+	android:screenOrientation
+		ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:265:13-49
+	android:windowSoftInputMode
+		ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:267:13-64
+	android:theme
+		ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:266:13-56
+	android:name
+		ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:264:13-48
+activity#com.srllimited.srl.NotificationsActivity
+ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:268:9-276:20
+	android:screenOrientation
+		ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:270:13-49
+	android:windowSoftInputMode
+		ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:272:13-64
+	android:theme
+		ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:271:13-56
+	android:name
+		ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:269:13-50
+meta-data#android.support.PARENT_ACTIVITY
+ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:273:13-275:64
+	android:value
+		ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:275:17-61
+	android:name
+		ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:274:17-63
+activity#com.srllimited.srl.ChangePwdActivity
+ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:277:9-281:57
+	android:screenOrientation
+		ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:279:13-49
+	android:windowSoftInputMode
+		ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:281:13-54
+	android:theme
+		ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:280:13-56
+	android:name
+		ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:278:13-46
+activity#com.srllimited.srl.OrdersActivity
+ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:282:9-286:57
+	android:screenOrientation
+		ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:284:13-49
+	android:windowSoftInputMode
+		ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:286:13-54
+	android:theme
+		ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:285:13-56
+	android:name
+		ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:283:13-43
+activity#com.srllimited.srl.MyFamilyActivity
+ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:287:9-291:57
+	android:screenOrientation
+		ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:289:13-49
+	android:windowSoftInputMode
+		ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:291:13-54
+	android:theme
+		ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:290:13-56
+	android:name
+		ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:288:13-45
+activity#com.srllimited.srl.SettingsActivity
+ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:292:9-296:57
+	android:screenOrientation
+		ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:294:13-49
+	android:windowSoftInputMode
+		ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:296:13-54
+	android:theme
+		ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:295:13-56
+	android:name
+		ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:293:13-45
+activity#com.srllimited.srl.AddMemberActivity
+ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:297:9-301:57
+	android:screenOrientation
+		ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:299:13-49
+	android:windowSoftInputMode
+		ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:301:13-54
+	android:theme
+		ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:300:13-56
+	android:name
+		ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:298:13-46
+activity#com.srllimited.srl.PromoCodes
+ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:303:9-307:57
+	android:screenOrientation
+		ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:305:13-49
+	android:windowSoftInputMode
+		ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:307:13-54
+	android:theme
+		ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:306:13-56
+	android:name
+		ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:304:13-39
+activity#com.srllimited.srl.SupportActivity
+ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:308:9-312:57
+	android:screenOrientation
+		ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:310:13-49
+	android:windowSoftInputMode
+		ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:312:13-54
+	android:theme
+		ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:311:13-56
+	android:name
+		ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:309:13-44
+activity#com.srllimited.srl.FourDigitActivity
+ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:313:9-317:57
+	android:screenOrientation
+		ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:315:13-49
+	android:windowSoftInputMode
+		ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:317:13-54
+	android:theme
+		ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:316:13-56
+	android:name
+		ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:314:13-46
+activity#com.srllimited.srl.MyReportsExpandableListView
+ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:318:9-322:57
+	android:screenOrientation
+		ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:320:13-49
+	android:windowSoftInputMode
+		ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:322:13-54
+	android:theme
+		ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:321:13-56
+	android:name
+		ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:319:13-56
+activity#com.srllimited.srl.MyProfileActivity
+ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:323:9-327:57
+	android:screenOrientation
+		ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:325:13-49
+	android:windowSoftInputMode
+		ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:327:13-54
+	android:theme
+		ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:326:13-56
+	android:name
+		ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:324:13-46
+activity#com.srllimited.srl.PaytmActivity
+ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:328:9-332:57
+	android:screenOrientation
+		ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:330:13-49
+	android:windowSoftInputMode
+		ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:332:13-54
+	android:theme
+		ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:331:13-56
+	android:name
+		ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:329:13-42
+activity#com.srllimited.srl.MobikwikActivity
+ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:333:9-337:57
+	android:screenOrientation
+		ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:335:13-49
+	android:windowSoftInputMode
+		ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:337:13-54
+	android:theme
+		ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:336:13-56
+	android:name
+		ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:334:13-45
+activity#com.srllimited.srl.RateUsActivity
+ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:338:9-342:57
+	android:screenOrientation
+		ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:340:13-49
+	android:windowSoftInputMode
+		ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:342:13-54
+	android:theme
+		ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:341:13-56
+	android:name
+		ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:339:13-43
+activity#com.srllimited.srl.PlayStoreActivity
+ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:343:9-347:57
+	android:screenOrientation
+		ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:345:13-49
+	android:windowSoftInputMode
+		ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:347:13-54
+	android:theme
+		ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:346:13-56
+	android:name
+		ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:344:13-46
+activity#com.srllimited.srl.ShowWebView
+ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:348:9-352:57
+	android:screenOrientation
+		ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:350:13-49
+	android:windowSoftInputMode
+		ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:352:13-54
+	android:theme
+		ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:351:13-56
+	android:name
+		ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:349:13-40
+activity#com.srllimited.srl.BmiCalculation
+ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:353:9-357:57
+	android:screenOrientation
+		ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:355:13-49
+	android:windowSoftInputMode
+		ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:357:13-54
+	android:theme
+		ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:356:13-56
+	android:name
+		ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:354:13-43
+activity#com.srllimited.srl.BmiListView
+ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:358:9-362:57
+	android:screenOrientation
+		ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:360:13-49
+	android:windowSoftInputMode
+		ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:362:13-54
+	android:theme
+		ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:361:13-56
+	android:name
+		ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:359:13-40
+activity#com.srllimited.srl.BmiRegisterActivity
+ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:363:9-367:57
+	android:screenOrientation
+		ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:365:13-49
+	android:windowSoftInputMode
+		ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:367:13-54
+	android:theme
+		ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:366:13-56
+	android:name
+		ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:364:13-48
+activity#com.srllimited.srl.MoreActivity
+ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:368:9-372:57
+	android:screenOrientation
+		ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:370:13-49
+	android:windowSoftInputMode
+		ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:372:13-54
+	android:theme
+		ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:371:13-56
+	android:name
+		ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:369:13-41
+activity#com.paytm.pgsdk.PaytmPGActivity
+ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:373:9-376:52
+	android:screenOrientation
+		ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:376:13-49
+	android:configChanges
+		ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:375:13-72
+	android:name
+		ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:374:13-59
+activity#com.srllimited.srl.MyTrendActivity
+ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:377:9-381:57
+	android:screenOrientation
+		ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:379:13-49
+	android:windowSoftInputMode
+		ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:381:13-54
+	android:theme
+		ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:380:13-56
+	android:name
+		ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:378:13-44
+service#com.srllimited.srl.service.MonitorService
+ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:383:9-59
+	android:name
+		ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:383:18-56
+meta-data#com.google.android.geo.API_KEY
+ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:390:9-392:59
+	android:value
+		ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:392:13-56
+	android:name
+		ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:391:13-58
+activity#com.srllimited.srl.PaymentSuccessActivity
+ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:394:9-408:20
+	android:screenOrientation
+		ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:397:13-49
+	android:label
+		ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:396:13-67
+	android:name
+		ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:395:13-51
+intent-filter#android.intent.action.VIEW+android.intent.category.BROWSABLE+android.intent.category.DEFAULT
+ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:398:13-407:29
+data
+ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:399:17-401:59
+	android:host
+		ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:400:21-42
+	android:scheme
+		ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:401:21-56
+action#android.intent.action.VIEW
+ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:403:17-69
+	android:name
+		ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:403:25-66
+category#android.intent.category.DEFAULT
+ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:405:17-76
+	android:name
+		ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:405:27-73
+category#android.intent.category.BROWSABLE
+ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:406:17-78
+	android:name
+		ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:406:27-75
+activity#com.srllimited.srl.HealthChartActivity
+ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:409:9-413:57
+	android:screenOrientation
+		ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:411:13-49
+	android:windowSoftInputMode
+		ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:413:13-54
+	android:theme
+		ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:412:13-56
+	android:name
+		ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:410:13-48
+provider#android.support.v4.content.FileProvider
+ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:423:9-431:20
+	android:authorities
+		ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:425:13-60
+		INJECTED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml
+	android:grantUriPermissions
+		ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:427:13-47
+	android:exported
+		ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:426:13-37
+	android:name
+		ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:424:13-67
+meta-data#android.support.FILE_PROVIDER_PATHS
+ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:428:13-430:58
+	android:resource
+		ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:430:17-55
+	android:name
+		ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:429:17-67
+receiver#com.appsflyer.SingleInstallBroadcastReceiver
+ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:433:9-439:20
+	android:exported
+		ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:435:13-36
+	android:name
+		ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:434:13-72
+intent-filter#com.android.vending.INSTALL_REFERRER
+ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:436:13-438:29
+action#com.android.vending.INSTALL_REFERRER
+ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:437:17-79
+	android:name
+		ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:437:25-76
+activity#com.facebook.FacebookActivity
+ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:441:9-444:48
+MERGED from [com.facebook.android:facebook-common:4.31.0] C:\Users\lakhan.yadav\.android\build-cache\f59d9e6304ba5487c1523e8faa0ed16ef6371a45\output\AndroidManifest.xml:29:9-32:66
+	android:label
+		ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:444:13-45
+	android:configChanges
+		ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:443:13-96
+	android:theme
+		ADDED from [com.facebook.android:facebook-common:4.31.0] C:\Users\lakhan.yadav\.android\build-cache\f59d9e6304ba5487c1523e8faa0ed16ef6371a45\output\AndroidManifest.xml:32:13-63
+	android:name
+		ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:442:13-57
+activity#com.facebook.CustomTabActivity
+ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:445:9-456:20
+	android:exported
+		ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:447:13-36
+	android:name
+		ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:446:13-58
+meta-data#com.facebook.sdk.AutoLogAppEventsEnabled
+ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:458:9-460:37
+	android:value
+		ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:460:13-34
+	android:name
+		ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:459:13-68
+activity#com.srllimited.srl.TrackCollectExportActivity
+ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:477:9-73
+	android:name
+		ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:477:19-61
+activity#com.srllimited.srl.TakeSurvey_Activity
+ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:478:9-66
+	android:name
+		ADDED from D:\Trupti_workspace\SRLandroid-master\app\src\main\AndroidManifest.xml:478:19-54
+activity#com.ebs.android.sdk.PaymentDetailActivity
+ADDED from [SRLandroid-master:EBS:unspecified] D:\Trupti_workspace\SRLandroid-master\EBS\build\intermediates\bundles\default\AndroidManifest.xml:19:9-23:20
+	android:screenOrientation
+		ADDED from [SRLandroid-master:EBS:unspecified] D:\Trupti_workspace\SRLandroid-master\EBS\build\intermediates\bundles\default\AndroidManifest.xml:22:13-49
+	android:label
+		ADDED from [SRLandroid-master:EBS:unspecified] D:\Trupti_workspace\SRLandroid-master\EBS\build\intermediates\bundles\default\AndroidManifest.xml:21:13-66
+	android:name
+		ADDED from [SRLandroid-master:EBS:unspecified] D:\Trupti_workspace\SRLandroid-master\EBS\build\intermediates\bundles\default\AndroidManifest.xml:20:13-69
+activity#com.ebs.android.sdk.PaymentActivity
+ADDED from [SRLandroid-master:EBS:unspecified] D:\Trupti_workspace\SRLandroid-master\EBS\build\intermediates\bundles\default\AndroidManifest.xml:24:9-30:20
+	android:screenOrientation
+		ADDED from [SRLandroid-master:EBS:unspecified] D:\Trupti_workspace\SRLandroid-master\EBS\build\intermediates\bundles\default\AndroidManifest.xml:27:13-49
+	android:label
+		ADDED from [SRLandroid-master:EBS:unspecified] D:\Trupti_workspace\SRLandroid-master\EBS\build\intermediates\bundles\default\AndroidManifest.xml:26:13-59
+	android:windowSoftInputMode
+		ADDED from [SRLandroid-master:EBS:unspecified] D:\Trupti_workspace\SRLandroid-master\EBS\build\intermediates\bundles\default\AndroidManifest.xml:29:13-52
+	android:theme
+		ADDED from [SRLandroid-master:EBS:unspecified] D:\Trupti_workspace\SRLandroid-master\EBS\build\intermediates\bundles\default\AndroidManifest.xml:28:13-56
+	android:name
+		ADDED from [SRLandroid-master:EBS:unspecified] D:\Trupti_workspace\SRLandroid-master\EBS\build\intermediates\bundles\default\AndroidManifest.xml:25:13-63
+activity#com.ebs.android.sdk.WebViewActivity
+ADDED from [SRLandroid-master:EBS:unspecified] D:\Trupti_workspace\SRLandroid-master\EBS\build\intermediates\bundles\default\AndroidManifest.xml:31:9-38:20
+	android:screenOrientation
+		ADDED from [SRLandroid-master:EBS:unspecified] D:\Trupti_workspace\SRLandroid-master\EBS\build\intermediates\bundles\default\AndroidManifest.xml:35:13-49
+	android:label
+		ADDED from [SRLandroid-master:EBS:unspecified] D:\Trupti_workspace\SRLandroid-master\EBS\build\intermediates\bundles\default\AndroidManifest.xml:34:13-59
+	android:windowSoftInputMode
+		ADDED from [SRLandroid-master:EBS:unspecified] D:\Trupti_workspace\SRLandroid-master\EBS\build\intermediates\bundles\default\AndroidManifest.xml:37:13-86
+	android:configChanges
+		ADDED from [SRLandroid-master:EBS:unspecified] D:\Trupti_workspace\SRLandroid-master\EBS\build\intermediates\bundles\default\AndroidManifest.xml:33:13-63
+	android:theme
+		ADDED from [SRLandroid-master:EBS:unspecified] D:\Trupti_workspace\SRLandroid-master\EBS\build\intermediates\bundles\default\AndroidManifest.xml:36:13-56
+	android:name
+		ADDED from [SRLandroid-master:EBS:unspecified] D:\Trupti_workspace\SRLandroid-master\EBS\build\intermediates\bundles\default\AndroidManifest.xml:32:13-63
+activity#com.ebs.android.sdk.EBSHomeConfigurableActivity
+ADDED from [SRLandroid-master:EBS:unspecified] D:\Trupti_workspace\SRLandroid-master\EBS\build\intermediates\bundles\default\AndroidManifest.xml:39:9-44:20
+	android:screenOrientation
+		ADDED from [SRLandroid-master:EBS:unspecified] D:\Trupti_workspace\SRLandroid-master\EBS\build\intermediates\bundles\default\AndroidManifest.xml:42:13-49
+	android:label
+		ADDED from [SRLandroid-master:EBS:unspecified] D:\Trupti_workspace\SRLandroid-master\EBS\build\intermediates\bundles\default\AndroidManifest.xml:41:13-77
+	android:theme
+		ADDED from [SRLandroid-master:EBS:unspecified] D:\Trupti_workspace\SRLandroid-master\EBS\build\intermediates\bundles\default\AndroidManifest.xml:43:13-56
+	android:name
+		ADDED from [SRLandroid-master:EBS:unspecified] D:\Trupti_workspace\SRLandroid-master\EBS\build\intermediates\bundles\default\AndroidManifest.xml:40:13-75
+activity#com.ebs.android.sdk.PaymentFailureActivity
+ADDED from [SRLandroid-master:EBS:unspecified] D:\Trupti_workspace\SRLandroid-master\EBS\build\intermediates\bundles\default\AndroidManifest.xml:45:9-49:20
+	android:label
+		ADDED from [SRLandroid-master:EBS:unspecified] D:\Trupti_workspace\SRLandroid-master\EBS\build\intermediates\bundles\default\AndroidManifest.xml:47:13-67
+	android:theme
+		ADDED from [SRLandroid-master:EBS:unspecified] D:\Trupti_workspace\SRLandroid-master\EBS\build\intermediates\bundles\default\AndroidManifest.xml:48:13-56
+	android:name
+		ADDED from [SRLandroid-master:EBS:unspecified] D:\Trupti_workspace\SRLandroid-master\EBS\build\intermediates\bundles\default\AndroidManifest.xml:46:13-70
+activity#com.ebs.android.sdk.IdleTimeOut
+ADDED from [SRLandroid-master:EBS:unspecified] D:\Trupti_workspace\SRLandroid-master\EBS\build\intermediates\bundles\default\AndroidManifest.xml:50:9-54:20
+	android:label
+		ADDED from [SRLandroid-master:EBS:unspecified] D:\Trupti_workspace\SRLandroid-master\EBS\build\intermediates\bundles\default\AndroidManifest.xml:52:13-65
+	android:theme
+		ADDED from [SRLandroid-master:EBS:unspecified] D:\Trupti_workspace\SRLandroid-master\EBS\build\intermediates\bundles\default\AndroidManifest.xml:53:13-56
+	android:name
+		ADDED from [SRLandroid-master:EBS:unspecified] D:\Trupti_workspace\SRLandroid-master\EBS\build\intermediates\bundles\default\AndroidManifest.xml:51:13-59
+meta-data#android.support.VERSION
+ADDED from [com.android.support:design:25.3.0] C:\Users\lakhan.yadav\.android\build-cache\b3efe9a891b216039f289d72cb763e83290e7011\output\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:transition:25.3.0] C:\Users\lakhan.yadav\.android\build-cache\f54267dd98accf69f628f1b583186dc731b8b307\output\AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:mediarouter-v7:25.3.0] C:\Users\lakhan.yadav\.android\build-cache\17e8b5edf773f0705907c4461526a923a44b4ad8\output\AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:palette-v7:25.3.0] C:\Users\lakhan.yadav\.android\build-cache\1d19ffa2114fa6289ed99bd95d95c1efdcffbc07\output\AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:recyclerview-v7:25.3.0] C:\Users\lakhan.yadav\.android\build-cache\37c657c0469ff44f80ce8d9927389c3a7a0a317a\output\AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:appcompat-v7:25.3.0] C:\Users\lakhan.yadav\.android\build-cache\d71cdfe1b454ea6b4aebda04361218f8ceeefe18\output\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:animated-vector-drawable:25.3.0] C:\Users\lakhan.yadav\.android\build-cache\8888ff6d2b6338728c0cdc586c850197b42d89d8\output\AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:support-vector-drawable:25.3.0] C:\Users\lakhan.yadav\.android\build-cache\16dbe438763c197e249d5311bd30cb0594c6d615\output\AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:cardview-v7:25.3.0] C:\Users\lakhan.yadav\.android\build-cache\bf9c5a186e5af54fb91a54b5cf7941fbaefed438\output\AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:customtabs:25.3.0] C:\Users\lakhan.yadav\.android\build-cache\b22cc0ff75f9faccd60241243d09621cb95a6cee\output\AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:support-v4:25.3.0] C:\Users\lakhan.yadav\.android\build-cache\2b2e5a8de41c5b9321a03faf7ee0d43415749a46\output\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-fragment:25.3.0] C:\Users\lakhan.yadav\.android\build-cache\7b392fa2658d8eaefc952217936181ef5a648e52\output\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-media-compat:25.3.0] C:\Users\lakhan.yadav\.android\build-cache\1320e53928bd89b77a7568eb9e61fd73d24645de\output\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-core-ui:25.3.0] C:\Users\lakhan.yadav\.android\build-cache\c9db704e5fd9c5ac52e075ce7f59d9a4b0780632\output\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-core-utils:25.3.0] C:\Users\lakhan.yadav\.android\build-cache\a58b075a50bb2b1dc0744620dd85c65d16e6bf5e\output\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-compat:25.3.0] C:\Users\lakhan.yadav\.android\build-cache\39a98a00ec63dbe43fbc18cf7fa8ff898b34ce0f\output\AndroidManifest.xml:25:5-27:34
+	android:value
+		ADDED from [com.android.support:design:25.3.0] C:\Users\lakhan.yadav\.android\build-cache\b3efe9a891b216039f289d72cb763e83290e7011\output\AndroidManifest.xml:27:9-31
+	android:name
+		ADDED from [com.android.support:design:25.3.0] C:\Users\lakhan.yadav\.android\build-cache\b3efe9a891b216039f289d72cb763e83290e7011\output\AndroidManifest.xml:26:9-47
+uses-permission#android.permission.WAKE_LOCK
+ADDED from [com.google.android.gms:play-services-analytics:9.6.1] C:\Users\lakhan.yadav\.android\build-cache\181192c7ffe5b7dd059e0a38c9dcf9b1750bbd8c\output\AndroidManifest.xml:24:5-67
+MERGED from [com.google.android.gms:play-services-analytics-impl:9.6.1] C:\Users\lakhan.yadav\.android\build-cache\2b4e9ce9afe40103b665de587d9df77933c38410\output\AndroidManifest.xml:24:5-67
+MERGED from [com.google.firebase:firebase-analytics:9.6.1] C:\Users\lakhan.yadav\.android\build-cache\d703ce618f944a3148304e54110c96a0aad7f1ff\output\AndroidManifest.xml:22:5-67
+MERGED from [com.google.firebase:firebase-analytics-impl:9.6.1] C:\Users\lakhan.yadav\.android\build-cache\3abe65914437caaa8ff2557c8f70ee38f3e108e2\output\AndroidManifest.xml:22:5-67
+MERGED from [com.google.firebase:firebase-iid:9.6.1] C:\Users\lakhan.yadav\.android\build-cache\8eb60d65803ec071e4f96103d0414f2580e2808c\output\AndroidManifest.xml:21:5-67
+	android:name
+		ADDED from [com.google.android.gms:play-services-analytics:9.6.1] C:\Users\lakhan.yadav\.android\build-cache\181192c7ffe5b7dd059e0a38c9dcf9b1750bbd8c\output\AndroidManifest.xml:24:22-65
+activity#com.google.android.gms.appinvite.PreviewActivity
+ADDED from [com.google.android.gms:play-services-appinvite:9.6.1] C:\Users\lakhan.yadav\.android\build-cache\9f5208702f39495673486625511cc1086d89643c\output\AndroidManifest.xml:20:9-25:20
+	android:exported
+		ADDED from [com.google.android.gms:play-services-appinvite:9.6.1] C:\Users\lakhan.yadav\.android\build-cache\9f5208702f39495673486625511cc1086d89643c\output\AndroidManifest.xml:20:51-74
+	android:theme
+		ADDED from [com.google.android.gms:play-services-appinvite:9.6.1] C:\Users\lakhan.yadav\.android\build-cache\9f5208702f39495673486625511cc1086d89643c\output\AndroidManifest.xml:20:75-121
+	android:name
+		ADDED from [com.google.android.gms:play-services-appinvite:9.6.1] C:\Users\lakhan.yadav\.android\build-cache\9f5208702f39495673486625511cc1086d89643c\output\AndroidManifest.xml:20:19-50
+intent-filter#android.intent.category.DEFAULT+com.google.android.gms.appinvite.ACTION_PREVIEW
+ADDED from [com.google.android.gms:play-services-appinvite:9.6.1] C:\Users\lakhan.yadav\.android\build-cache\9f5208702f39495673486625511cc1086d89643c\output\AndroidManifest.xml:21:13-24:29
+action#com.google.android.gms.appinvite.ACTION_PREVIEW
+ADDED from [com.google.android.gms:play-services-appinvite:9.6.1] C:\Users\lakhan.yadav\.android\build-cache\9f5208702f39495673486625511cc1086d89643c\output\AndroidManifest.xml:22:17-89
+	android:name
+		ADDED from [com.google.android.gms:play-services-appinvite:9.6.1] C:\Users\lakhan.yadav\.android\build-cache\9f5208702f39495673486625511cc1086d89643c\output\AndroidManifest.xml:22:25-87
+receiver#com.google.android.gms.cast.framework.media.MediaIntentReceiver
+ADDED from [com.google.android.gms:play-services-cast-framework:9.6.1] C:\Users\lakhan.yadav\.android\build-cache\b268592f5705c0949fc82d1b1bda3a5058c09989\output\AndroidManifest.xml:5:9-99
+	android:name
+		ADDED from [com.google.android.gms:play-services-cast-framework:9.6.1] C:\Users\lakhan.yadav\.android\build-cache\b268592f5705c0949fc82d1b1bda3a5058c09989\output\AndroidManifest.xml:5:19-97
+service#com.google.android.gms.cast.framework.media.MediaNotificationService
+ADDED from [com.google.android.gms:play-services-cast-framework:9.6.1] C:\Users\lakhan.yadav\.android\build-cache\b268592f5705c0949fc82d1b1bda3a5058c09989\output\AndroidManifest.xml:6:9-103
+	android:name
+		ADDED from [com.google.android.gms:play-services-cast-framework:9.6.1] C:\Users\lakhan.yadav\.android\build-cache\b268592f5705c0949fc82d1b1bda3a5058c09989\output\AndroidManifest.xml:6:18-101
+service#com.google.android.gms.cast.framework.ReconnectionService
+ADDED from [com.google.android.gms:play-services-cast-framework:9.6.1] C:\Users\lakhan.yadav\.android\build-cache\b268592f5705c0949fc82d1b1bda3a5058c09989\output\AndroidManifest.xml:7:9-92
+	android:name
+		ADDED from [com.google.android.gms:play-services-cast-framework:9.6.1] C:\Users\lakhan.yadav\.android\build-cache\b268592f5705c0949fc82d1b1bda3a5058c09989\output\AndroidManifest.xml:7:18-90
+service#com.google.firebase.crash.internal.service.FirebaseCrashReceiverService
+ADDED from [com.google.firebase:firebase-crash:9.6.1] C:\Users\lakhan.yadav\.android\build-cache\269cd2c4ae98f849db91937350fd68b54b0b5b09\output\AndroidManifest.xml:24:9-117
+	android:process
+		ADDED from [com.google.firebase:firebase-crash:9.6.1] C:\Users\lakhan.yadav\.android\build-cache\269cd2c4ae98f849db91937350fd68b54b0b5b09\output\AndroidManifest.xml:24:80-115
+	android:name
+		ADDED from [com.google.firebase:firebase-crash:9.6.1] C:\Users\lakhan.yadav\.android\build-cache\269cd2c4ae98f849db91937350fd68b54b0b5b09\output\AndroidManifest.xml:24:18-79
+service#com.google.firebase.crash.internal.service.FirebaseCrashSenderService
+ADDED from [com.google.firebase:firebase-crash:9.6.1] C:\Users\lakhan.yadav\.android\build-cache\269cd2c4ae98f849db91937350fd68b54b0b5b09\output\AndroidManifest.xml:26:9-115
+	android:process
+		ADDED from [com.google.firebase:firebase-crash:9.6.1] C:\Users\lakhan.yadav\.android\build-cache\269cd2c4ae98f849db91937350fd68b54b0b5b09\output\AndroidManifest.xml:26:78-113
+	android:name
+		ADDED from [com.google.firebase:firebase-crash:9.6.1] C:\Users\lakhan.yadav\.android\build-cache\269cd2c4ae98f849db91937350fd68b54b0b5b09\output\AndroidManifest.xml:26:18-77
+uses-permission#com.google.android.c2dm.permission.RECEIVE
+ADDED from [com.google.android.gms:play-services-gcm:9.6.1] C:\Users\lakhan.yadav\.android\build-cache\0615b1a347c46dfe6cd099115d739556e24d53fa\output\AndroidManifest.xml:20:5-81
+MERGED from [com.google.android.gms:play-services-iid:9.6.1] C:\Users\lakhan.yadav\.android\build-cache\2572983fa042b74d524ffb6dfd282a748490a4ef\output\AndroidManifest.xml:20:5-81
+MERGED from [com.google.firebase:firebase-iid:9.6.1] C:\Users\lakhan.yadav\.android\build-cache\8eb60d65803ec071e4f96103d0414f2580e2808c\output\AndroidManifest.xml:22:5-81
+	android:name
+		ADDED from [com.google.android.gms:play-services-gcm:9.6.1] C:\Users\lakhan.yadav\.android\build-cache\0615b1a347c46dfe6cd099115d739556e24d53fa\output\AndroidManifest.xml:20:22-79
+service#com.google.android.gms.tagmanager.TagManagerService
+ADDED from [com.google.android.gms:play-services-tagmanager-api:9.6.1] C:\Users\lakhan.yadav\.android\build-cache\9eb2c058cdec952a83d8165aa8efa71469e0ee00\output\AndroidManifest.xml:24:9-134
+	android:enabled
+		ADDED from [com.google.android.gms:play-services-tagmanager-api:9.6.1] C:\Users\lakhan.yadav\.android\build-cache\9eb2c058cdec952a83d8165aa8efa71469e0ee00\output\AndroidManifest.xml:24:110-132
+	android:exported
+		ADDED from [com.google.android.gms:play-services-tagmanager-api:9.6.1] C:\Users\lakhan.yadav\.android\build-cache\9eb2c058cdec952a83d8165aa8efa71469e0ee00\output\AndroidManifest.xml:24:85-109
+	android:name
+		ADDED from [com.google.android.gms:play-services-tagmanager-api:9.6.1] C:\Users\lakhan.yadav\.android\build-cache\9eb2c058cdec952a83d8165aa8efa71469e0ee00\output\AndroidManifest.xml:24:18-84
+activity#com.google.android.gms.tagmanager.TagManagerPreviewActivity
+ADDED from [com.google.android.gms:play-services-tagmanager-api:9.6.1] C:\Users\lakhan.yadav\.android\build-cache\9eb2c058cdec952a83d8165aa8efa71469e0ee00\output\AndroidManifest.xml:25:9-32:20
+	android:noHistory
+		ADDED from [com.google.android.gms:play-services-tagmanager-api:9.6.1] C:\Users\lakhan.yadav\.android\build-cache\9eb2c058cdec952a83d8165aa8efa71469e0ee00\output\AndroidManifest.xml:25:94-118
+	android:name
+		ADDED from [com.google.android.gms:play-services-tagmanager-api:9.6.1] C:\Users\lakhan.yadav\.android\build-cache\9eb2c058cdec952a83d8165aa8efa71469e0ee00\output\AndroidManifest.xml:25:19-93
+uses-feature#0x00020000
+ADDED from [com.google.android.gms:play-services-maps:9.6.1] C:\Users\lakhan.yadav\.android\build-cache\b66f6cd672600e5c13fc0480fdadb058b981ed3c\output\AndroidManifest.xml:21:5-77
+	android:glEsVersion
+		ADDED from [com.google.android.gms:play-services-maps:9.6.1] C:\Users\lakhan.yadav\.android\build-cache\b66f6cd672600e5c13fc0480fdadb058b981ed3c\output\AndroidManifest.xml:21:19-51
+	android:required
+		ADDED from [com.google.android.gms:play-services-maps:9.6.1] C:\Users\lakhan.yadav\.android\build-cache\b66f6cd672600e5c13fc0480fdadb058b981ed3c\output\AndroidManifest.xml:21:52-75
+service#com.google.firebase.messaging.FirebaseMessagingService
+ADDED from [com.google.firebase:firebase-messaging:9.6.1] C:\Users\lakhan.yadav\.android\build-cache\ccc6f329bbecfcddf309512276099a9e4b52276d\output\AndroidManifest.xml:23:9-27:19
+	android:exported
+		ADDED from [com.google.firebase:firebase-messaging:9.6.1] C:\Users\lakhan.yadav\.android\build-cache\ccc6f329bbecfcddf309512276099a9e4b52276d\output\AndroidManifest.xml:23:88-111
+	android:name
+		ADDED from [com.google.firebase:firebase-messaging:9.6.1] C:\Users\lakhan.yadav\.android\build-cache\ccc6f329bbecfcddf309512276099a9e4b52276d\output\AndroidManifest.xml:23:18-87
+receiver#com.google.android.gms.measurement.AppMeasurementReceiver
+ADDED from [com.google.firebase:firebase-analytics:9.6.1] C:\Users\lakhan.yadav\.android\build-cache\d703ce618f944a3148304e54110c96a0aad7f1ff\output\AndroidManifest.xml:25:7-26:18
+MERGED from [com.google.firebase:firebase-analytics-impl:9.6.1] C:\Users\lakhan.yadav\.android\build-cache\3abe65914437caaa8ff2557c8f70ee38f3e108e2\output\AndroidManifest.xml:25:7-26:18
+	android:enabled
+		ADDED from [com.google.firebase:firebase-analytics:9.6.1] C:\Users\lakhan.yadav\.android\build-cache\d703ce618f944a3148304e54110c96a0aad7f1ff\output\AndroidManifest.xml:25:90-112
+	android:exported
+		ADDED from [com.google.firebase:firebase-analytics:9.6.1] C:\Users\lakhan.yadav\.android\build-cache\d703ce618f944a3148304e54110c96a0aad7f1ff\output\AndroidManifest.xml:25:113-137
+	android:name
+		ADDED from [com.google.firebase:firebase-analytics:9.6.1] C:\Users\lakhan.yadav\.android\build-cache\d703ce618f944a3148304e54110c96a0aad7f1ff\output\AndroidManifest.xml:25:17-89
+receiver#com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver
+ADDED from [com.google.firebase:firebase-analytics:9.6.1] C:\Users\lakhan.yadav\.android\build-cache\d703ce618f944a3148304e54110c96a0aad7f1ff\output\AndroidManifest.xml:27:7-31:18
+	android:enabled
+		ADDED from [com.google.firebase:firebase-analytics:9.6.1] C:\Users\lakhan.yadav\.android\build-cache\d703ce618f944a3148304e54110c96a0aad7f1ff\output\AndroidManifest.xml:27:162-184
+	android:permission
+		ADDED from [com.google.firebase:firebase-analytics:9.6.1] C:\Users\lakhan.yadav\.android\build-cache\d703ce618f944a3148304e54110c96a0aad7f1ff\output\AndroidManifest.xml:27:105-161
+	android:name
+		ADDED from [com.google.firebase:firebase-analytics:9.6.1] C:\Users\lakhan.yadav\.android\build-cache\d703ce618f944a3148304e54110c96a0aad7f1ff\output\AndroidManifest.xml:27:17-104
+service#com.google.android.gms.measurement.AppMeasurementService
+ADDED from [com.google.firebase:firebase-analytics:9.6.1] C:\Users\lakhan.yadav\.android\build-cache\d703ce618f944a3148304e54110c96a0aad7f1ff\output\AndroidManifest.xml:32:7-137
+MERGED from [com.google.firebase:firebase-analytics-impl:9.6.1] C:\Users\lakhan.yadav\.android\build-cache\3abe65914437caaa8ff2557c8f70ee38f3e108e2\output\AndroidManifest.xml:27:7-137
+	android:enabled
+		ADDED from [com.google.firebase:firebase-analytics:9.6.1] C:\Users\lakhan.yadav\.android\build-cache\d703ce618f944a3148304e54110c96a0aad7f1ff\output\AndroidManifest.xml:32:88-110
+	android:exported
+		ADDED from [com.google.firebase:firebase-analytics:9.6.1] C:\Users\lakhan.yadav\.android\build-cache\d703ce618f944a3148304e54110c96a0aad7f1ff\output\AndroidManifest.xml:32:111-135
+	android:name
+		ADDED from [com.google.firebase:firebase-analytics:9.6.1] C:\Users\lakhan.yadav\.android\build-cache\d703ce618f944a3148304e54110c96a0aad7f1ff\output\AndroidManifest.xml:32:16-87
+permission#${applicationId}.permission.C2D_MESSAGE
+ADDED from [com.google.firebase:firebase-iid:9.6.1] C:\Users\lakhan.yadav\.android\build-cache\8eb60d65803ec071e4f96103d0414f2580e2808c\output\AndroidManifest.xml:24:5-109
+	android:protectionLevel
+		ADDED from [com.google.firebase:firebase-iid:9.6.1] C:\Users\lakhan.yadav\.android\build-cache\8eb60d65803ec071e4f96103d0414f2580e2808c\output\AndroidManifest.xml:24:72-107
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:9.6.1] C:\Users\lakhan.yadav\.android\build-cache\8eb60d65803ec071e4f96103d0414f2580e2808c\output\AndroidManifest.xml:24:17-71
+uses-permission#${applicationId}.permission.C2D_MESSAGE
+ADDED from [com.google.firebase:firebase-iid:9.6.1] C:\Users\lakhan.yadav\.android\build-cache\8eb60d65803ec071e4f96103d0414f2580e2808c\output\AndroidManifest.xml:26:5-78
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:9.6.1] C:\Users\lakhan.yadav\.android\build-cache\8eb60d65803ec071e4f96103d0414f2580e2808c\output\AndroidManifest.xml:26:22-76
+receiver#com.google.firebase.iid.FirebaseInstanceIdReceiver
+ADDED from [com.google.firebase:firebase-iid:9.6.1] C:\Users\lakhan.yadav\.android\build-cache\8eb60d65803ec071e4f96103d0414f2580e2808c\output\AndroidManifest.xml:30:9-36:20
+	android:exported
+		ADDED from [com.google.firebase:firebase-iid:9.6.1] C:\Users\lakhan.yadav\.android\build-cache\8eb60d65803ec071e4f96103d0414f2580e2808c\output\AndroidManifest.xml:30:85-108
+	android:permission
+		ADDED from [com.google.firebase:firebase-iid:9.6.1] C:\Users\lakhan.yadav\.android\build-cache\8eb60d65803ec071e4f96103d0414f2580e2808c\output\AndroidManifest.xml:30:109-169
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:9.6.1] C:\Users\lakhan.yadav\.android\build-cache\8eb60d65803ec071e4f96103d0414f2580e2808c\output\AndroidManifest.xml:30:19-84
+intent-filter#${applicationId}+com.google.android.c2dm.intent.RECEIVE+com.google.android.c2dm.intent.REGISTRATION
+ADDED from [com.google.firebase:firebase-iid:9.6.1] C:\Users\lakhan.yadav\.android\build-cache\8eb60d65803ec071e4f96103d0414f2580e2808c\output\AndroidManifest.xml:31:13-35:29
+action#com.google.android.c2dm.intent.RECEIVE
+ADDED from [com.google.firebase:firebase-iid:9.6.1] C:\Users\lakhan.yadav\.android\build-cache\8eb60d65803ec071e4f96103d0414f2580e2808c\output\AndroidManifest.xml:32:17-80
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:9.6.1] C:\Users\lakhan.yadav\.android\build-cache\8eb60d65803ec071e4f96103d0414f2580e2808c\output\AndroidManifest.xml:32:25-78
+action#com.google.android.c2dm.intent.REGISTRATION
+ADDED from [com.google.firebase:firebase-iid:9.6.1] C:\Users\lakhan.yadav\.android\build-cache\8eb60d65803ec071e4f96103d0414f2580e2808c\output\AndroidManifest.xml:33:17-85
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:9.6.1] C:\Users\lakhan.yadav\.android\build-cache\8eb60d65803ec071e4f96103d0414f2580e2808c\output\AndroidManifest.xml:33:25-83
+category#${applicationId}
+ADDED from [com.google.firebase:firebase-iid:9.6.1] C:\Users\lakhan.yadav\.android\build-cache\8eb60d65803ec071e4f96103d0414f2580e2808c\output\AndroidManifest.xml:34:17-60
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:9.6.1] C:\Users\lakhan.yadav\.android\build-cache\8eb60d65803ec071e4f96103d0414f2580e2808c\output\AndroidManifest.xml:34:27-58
+receiver#com.google.firebase.iid.FirebaseInstanceIdInternalReceiver
+ADDED from [com.google.firebase:firebase-iid:9.6.1] C:\Users\lakhan.yadav\.android\build-cache\8eb60d65803ec071e4f96103d0414f2580e2808c\output\AndroidManifest.xml:40:9-119
+	android:exported
+		ADDED from [com.google.firebase:firebase-iid:9.6.1] C:\Users\lakhan.yadav\.android\build-cache\8eb60d65803ec071e4f96103d0414f2580e2808c\output\AndroidManifest.xml:40:93-117
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:9.6.1] C:\Users\lakhan.yadav\.android\build-cache\8eb60d65803ec071e4f96103d0414f2580e2808c\output\AndroidManifest.xml:40:19-92
+service#com.google.firebase.iid.FirebaseInstanceIdService
+ADDED from [com.google.firebase:firebase-iid:9.6.1] C:\Users\lakhan.yadav\.android\build-cache\8eb60d65803ec071e4f96103d0414f2580e2808c\output\AndroidManifest.xml:44:9-48:19
+	android:exported
+		ADDED from [com.google.firebase:firebase-iid:9.6.1] C:\Users\lakhan.yadav\.android\build-cache\8eb60d65803ec071e4f96103d0414f2580e2808c\output\AndroidManifest.xml:44:83-106
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:9.6.1] C:\Users\lakhan.yadav\.android\build-cache\8eb60d65803ec071e4f96103d0414f2580e2808c\output\AndroidManifest.xml:44:18-82
+provider#com.google.firebase.provider.FirebaseInitProvider
+ADDED from [com.google.firebase:firebase-common:9.6.1] C:\Users\lakhan.yadav\.android\build-cache\42edc462652209585f62a858e364901be710df69\output\AndroidManifest.xml:6:9-175
+	android:authorities
+		ADDED from [com.google.firebase:firebase-common:9.6.1] C:\Users\lakhan.yadav\.android\build-cache\42edc462652209585f62a858e364901be710df69\output\AndroidManifest.xml:6:19-78
+	android:exported
+		ADDED from [com.google.firebase:firebase-common:9.6.1] C:\Users\lakhan.yadav\.android\build-cache\42edc462652209585f62a858e364901be710df69\output\AndroidManifest.xml:6:125-149
+	android:initOrder
+		ADDED from [com.google.firebase:firebase-common:9.6.1] C:\Users\lakhan.yadav\.android\build-cache\42edc462652209585f62a858e364901be710df69\output\AndroidManifest.xml:6:150-173
+	android:name
+		ADDED from [com.google.firebase:firebase-common:9.6.1] C:\Users\lakhan.yadav\.android\build-cache\42edc462652209585f62a858e364901be710df69\output\AndroidManifest.xml:6:79-124
+activity#com.facebook.CustomTabMainActivity
+ADDED from [com.facebook.android:facebook-common:4.31.0] C:\Users\lakhan.yadav\.android\build-cache\f59d9e6304ba5487c1523e8faa0ed16ef6371a45\output\AndroidManifest.xml:33:9-71
+	android:name
+		ADDED from [com.facebook.android:facebook-common:4.31.0] C:\Users\lakhan.yadav\.android\build-cache\f59d9e6304ba5487c1523e8faa0ed16ef6371a45\output\AndroidManifest.xml:33:19-68
+provider#com.facebook.internal.FacebookInitProvider
+ADDED from [com.facebook.android:facebook-core:4.31.0] C:\Users\lakhan.yadav\.android\build-cache\2a1d73021671c25715044989d7a2eeaf46fb3cb7\output\AndroidManifest.xml:39:9-42:40
+	android:authorities
+		ADDED from [com.facebook.android:facebook-core:4.31.0] C:\Users\lakhan.yadav\.android\build-cache\2a1d73021671c25715044989d7a2eeaf46fb3cb7\output\AndroidManifest.xml:41:13-72
+	android:exported
+		ADDED from [com.facebook.android:facebook-core:4.31.0] C:\Users\lakhan.yadav\.android\build-cache\2a1d73021671c25715044989d7a2eeaf46fb3cb7\output\AndroidManifest.xml:42:13-37
+	android:name
+		ADDED from [com.facebook.android:facebook-core:4.31.0] C:\Users\lakhan.yadav\.android\build-cache\2a1d73021671c25715044989d7a2eeaf46fb3cb7\output\AndroidManifest.xml:40:13-70
+activity#com.google.android.gms.ads.AdActivity
+ADDED from [com.google.android.gms:play-services-ads-lite:9.6.1] C:\Users\lakhan.yadav\.android\build-cache\094837bc9f1906a5b76c0b475ffe6e2b111230bb\output\AndroidManifest.xml:25:9-232
+	android:configChanges
+		ADDED from [com.google.android.gms:play-services-ads-lite:9.6.1] C:\Users\lakhan.yadav\.android\build-cache\094837bc9f1906a5b76c0b475ffe6e2b111230bb\output\AndroidManifest.xml:25:72-181
+	android:theme
+		ADDED from [com.google.android.gms:play-services-ads-lite:9.6.1] C:\Users\lakhan.yadav\.android\build-cache\094837bc9f1906a5b76c0b475ffe6e2b111230bb\output\AndroidManifest.xml:25:182-230
+	android:name
+		ADDED from [com.google.android.gms:play-services-ads-lite:9.6.1] C:\Users\lakhan.yadav\.android\build-cache\094837bc9f1906a5b76c0b475ffe6e2b111230bb\output\AndroidManifest.xml:25:19-71
+activity#com.google.android.gms.ads.purchase.InAppPurchaseActivity
+ADDED from [com.google.android.gms:play-services-ads-lite:9.6.1] C:\Users\lakhan.yadav\.android\build-cache\094837bc9f1906a5b76c0b475ffe6e2b111230bb\output\AndroidManifest.xml:26:9-131
+	android:theme
+		ADDED from [com.google.android.gms:play-services-ads-lite:9.6.1] C:\Users\lakhan.yadav\.android\build-cache\094837bc9f1906a5b76c0b475ffe6e2b111230bb\output\AndroidManifest.xml:26:92-129
+	android:name
+		ADDED from [com.google.android.gms:play-services-ads-lite:9.6.1] C:\Users\lakhan.yadav\.android\build-cache\094837bc9f1906a5b76c0b475ffe6e2b111230bb\output\AndroidManifest.xml:26:19-91
+activity#com.google.android.gms.auth.api.signin.internal.SignInHubActivity
+ADDED from [com.google.android.gms:play-services-auth:9.6.1] C:\Users\lakhan.yadav\.android\build-cache\857243b3aeb510095ebce6f190c1558c441bd21f\output\AndroidManifest.xml:20:9-189
+	android:excludeFromRecents
+		ADDED from [com.google.android.gms:play-services-auth:9.6.1] C:\Users\lakhan.yadav\.android\build-cache\857243b3aeb510095ebce6f190c1558c441bd21f\output\AndroidManifest.xml:20:129-162
+	android:exported
+		ADDED from [com.google.android.gms:play-services-auth:9.6.1] C:\Users\lakhan.yadav\.android\build-cache\857243b3aeb510095ebce6f190c1558c441bd21f\output\AndroidManifest.xml:20:163-187
+	android:theme
+		ADDED from [com.google.android.gms:play-services-auth:9.6.1] C:\Users\lakhan.yadav\.android\build-cache\857243b3aeb510095ebce6f190c1558c441bd21f\output\AndroidManifest.xml:20:69-128
+	android:name
+		ADDED from [com.google.android.gms:play-services-auth:9.6.1] C:\Users\lakhan.yadav\.android\build-cache\857243b3aeb510095ebce6f190c1558c441bd21f\output\AndroidManifest.xml:20:19-68
+service#com.google.android.gms.auth.api.signin.RevocationBoundService
+ADDED from [com.google.android.gms:play-services-auth:9.6.1] C:\Users\lakhan.yadav\.android\build-cache\857243b3aeb510095ebce6f190c1558c441bd21f\output\AndroidManifest.xml:24:9-184
+	android:exported
+		ADDED from [com.google.android.gms:play-services-auth:9.6.1] C:\Users\lakhan.yadav\.android\build-cache\857243b3aeb510095ebce6f190c1558c441bd21f\output\AndroidManifest.xml:24:64-87
+	android:permission
+		ADDED from [com.google.android.gms:play-services-auth:9.6.1] C:\Users\lakhan.yadav\.android\build-cache\857243b3aeb510095ebce6f190c1558c441bd21f\output\AndroidManifest.xml:24:88-182
+	android:name
+		ADDED from [com.google.android.gms:play-services-auth:9.6.1] C:\Users\lakhan.yadav\.android\build-cache\857243b3aeb510095ebce6f190c1558c441bd21f\output\AndroidManifest.xml:24:18-63
+activity#com.google.android.gms.common.api.GoogleApiActivity
+ADDED from [com.google.android.gms:play-services-base:9.6.1] C:\Users\lakhan.yadav\.android\build-cache\6a2b144a8351f5ef1dd80bfb778d20c2d7b11383\output\AndroidManifest.xml:19:9-172
+	android:exported
+		ADDED from [com.google.android.gms:play-services-base:9.6.1] C:\Users\lakhan.yadav\.android\build-cache\6a2b144a8351f5ef1dd80bfb778d20c2d7b11383\output\AndroidManifest.xml:19:146-170
+	android:theme
+		ADDED from [com.google.android.gms:play-services-base:9.6.1] C:\Users\lakhan.yadav\.android\build-cache\6a2b144a8351f5ef1dd80bfb778d20c2d7b11383\output\AndroidManifest.xml:19:86-145
+	android:name
+		ADDED from [com.google.android.gms:play-services-base:9.6.1] C:\Users\lakhan.yadav\.android\build-cache\6a2b144a8351f5ef1dd80bfb778d20c2d7b11383\output\AndroidManifest.xml:19:19-85

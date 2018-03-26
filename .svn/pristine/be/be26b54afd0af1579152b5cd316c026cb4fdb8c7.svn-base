@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:attrs="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/ten"
+        android:gravity="left"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/accessionTVID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/five"
+            android:text="@string/patient_id"
+            android:textColor="@color/HeaderTitleColor"
+            android:textSize="@dimen/default_text_size_one"
+            attrs:TypeFace="@string/Bold" />
+
+        <EditText
+            android:id="@+id/accessionNoETID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edittext_modify_states"
+            android:inputType="text"
+            android:padding="@dimen/ten"
+            android:textSize="@dimen/default_text_size_one" />
+
+        <TextView
+            android:id="@+id/firstNameTVID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/five"
+            android:padding="@dimen/five"
+            android:text="@string/user_id"
+            android:textColor="@color/HeaderTitleColor"
+            android:textSize="@dimen/default_text_size_one" />
+
+        <EditText
+            android:id="@+id/firstNameETID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edittext_modify_states"
+            android:inputType="text"
+            android:padding="@dimen/ten"
+            android:textSize="@dimen/default_text_size_one" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/five"
+            android:padding="@dimen/five"
+            android:text="@string/password_label"
+            android:textColor="@color/HeaderTitleColor"
+            android:textSize="@dimen/default_text_size_one" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edittext_modify_states"
+            android:inputType="text"
+            android:padding="@dimen/ten"
+            android:textSize="@dimen/default_text_size_one" />
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/darkblue"
+        android:orientation="vertical">
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:background="@color/emptycolor"
+            android:text="@string/done"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/fourteen" />
+    </RelativeLayout>
+
+
+</RelativeLayout>
